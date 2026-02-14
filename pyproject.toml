@@ -8,7 +8,7 @@ version = "1.0.0"
 description = "Production-grade Document Ingestion & Canonicalization Engine"
 readme = "README.md"
 requires-python = ">=3.12"
-license = {text = "MIT"}
+license = {file = "LICENSE"}
 authors = [
     {name = "Rahul Patnaik"}
 ]
@@ -42,9 +42,9 @@ dev = [
 layoutir = "layoutir.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/RahulPatnaik/CHUNK-MY-PDF"
-Documentation = "https://github.com/RahulPatnaik/CHUNK-MY-PDF/blob/main/README.md"
-Repository = "https://github.com/RahulPatnaik/CHUNK-MY-PDF"
+Homepage = "https://github.com/RahulPatnaik/layoutir"
+Documentation = "https://github.com/RahulPatnaik/layoutir/blob/main/README.md"
+Repository = "https://github.com/RahulPatnaik/layoutir"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

@@ -15,35 +15,24 @@ Think like a compiler engineer:
 
 ### Layer Separation (Non-Negotiable)
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                   Input Adapter Layer                   │
-│              (Format-specific parsing only)             │
-└─────────────────────┬───────────────────────────────────┘
-                      │
-                      ▼
-┌─────────────────────────────────────────────────────────┐
-│                   Extraction Layer                      │
-│           (Extract raw structural elements)             │
-└─────────────────────┬───────────────────────────────────┘
-                      │
-                      ▼
-┌─────────────────────────────────────────────────────────┐
-│                 Normalization Layer                     │
-│         (Convert to canonical IR with hashing)          │
-└─────────────────────┬───────────────────────────────────┘
-                      │
-                      ▼
-┌─────────────────────────────────────────────────────────┐
-│                  Canonical IR Layer                     │
-│        (Typed schema, stable IDs, relationships)        │
-└─────────────────────┬───────────────────────────────────┘
-                      │
-                      ▼
-┌─────────────────────────────────────────────────────────┐
-│                    Export Layer                         │
-│          (Markdown, Text, Parquet, Assets)              │
-└─────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    A[Input Adapter Layer<br/>Format-specific parsing only]
+    B[Extraction Layer<br/>Extract raw structural elements]
+    C[Normalization Layer<br/>Convert to canonical IR with hashing]
+    D[Canonical IR Layer<br/>Typed schema, stable IDs, relationships]
+    E[Export Layer<br/>Markdown, Text, Parquet, Assets]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+
+    style A fill:#e1f5ff
+    style B fill:#e8f5e9
+    style C fill:#fff3e0
+    style D fill:#f3e5f5
+    style E fill:#fce4ec
 ```
 
 ## Key Features
