@@ -17,32 +17,32 @@ Think like a compiler engineer:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                   Input Adapter Layer                    │
-│              (Format-specific parsing only)              │
+│                   Input Adapter Layer                   │
+│              (Format-specific parsing only)             │
 └─────────────────────┬───────────────────────────────────┘
                       │
                       ▼
 ┌─────────────────────────────────────────────────────────┐
-│                   Extraction Layer                       │
-│           (Extract raw structural elements)              │
+│                   Extraction Layer                      │
+│           (Extract raw structural elements)             │
 └─────────────────────┬───────────────────────────────────┘
                       │
                       ▼
 ┌─────────────────────────────────────────────────────────┐
-│                 Normalization Layer                      │
-│         (Convert to canonical IR with hashing)           │
+│                 Normalization Layer                     │
+│         (Convert to canonical IR with hashing)          │
 └─────────────────────┬───────────────────────────────────┘
                       │
                       ▼
 ┌─────────────────────────────────────────────────────────┐
-│                  Canonical IR Layer                      │
-│        (Typed schema, stable IDs, relationships)         │
+│                  Canonical IR Layer                     │
+│        (Typed schema, stable IDs, relationships)        │
 └─────────────────────┬───────────────────────────────────┘
                       │
                       ▼
 ┌─────────────────────────────────────────────────────────┐
-│                    Export Layer                          │
-│          (Markdown, Text, Parquet, Assets)               │
+│                    Export Layer                         │
+│          (Markdown, Text, Parquet, Assets)              │
 └─────────────────────────────────────────────────────────┘
 ```
 
