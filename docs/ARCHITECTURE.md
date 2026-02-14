@@ -12,7 +12,7 @@ The system follows a classic compiler design:
 
 ```mermaid
 graph LR
-    subgraph "Traditional Compiler"
+    subgraph TC[Traditional Compiler]
         CS[Source] --> CL[Lexer/Parser]
         CL --> CA[AST]
         CA --> CI[IR]
@@ -20,7 +20,7 @@ graph LR
         CO --> CC[Code Generation]
     end
 
-    subgraph "LayoutIR Pipeline"
+    subgraph LP[LayoutIR Pipeline]
         PS[PDF] --> PD[Docling]
         PD --> PE[Extract]
         PE --> PN[Normalize]
@@ -28,25 +28,12 @@ graph LR
         PC --> PX[Export]
     end
 
-    CS -.corresponds to.-> PS
-    CL -.corresponds to.-> PD
-    CA -.corresponds to.-> PE
-    CI -.corresponds to.-> PN
-    CO -.corresponds to.-> PC
-    CC -.corresponds to.-> PX
-
-    style CS fill:#e3f2fd
-    style CL fill:#e3f2fd
-    style CA fill:#e3f2fd
-    style CI fill:#e3f2fd
-    style CO fill:#e3f2fd
-    style CC fill:#e3f2fd
-    style PS fill:#f1f8e9
-    style PD fill:#f1f8e9
-    style PE fill:#f1f8e9
-    style PN fill:#f1f8e9
-    style PC fill:#f1f8e9
-    style PX fill:#f1f8e9
+    CS -.-> PS
+    CL -.-> PD
+    CA -.-> PE
+    CI -.-> PN
+    CO -.-> PC
+    CC -.-> PX
 ```
 
 ### 2. Strict Layer Separation
@@ -268,9 +255,6 @@ graph TD
     H2 --> P3
     H2 --> T1
     H2 --> C1
-
-    style C0 fill:#ffeb3b
-    style C1 fill:#ffeb3b
 ```
 
 **Use Case**: When document structure follows logical sections.
@@ -280,22 +264,23 @@ graph TD
 Fixed-size windows with overlap:
 
 ```mermaid
-gantt
-    title Token Window Chunking with Overlap
-    dateFormat X
-    axisFormat %s
+graph LR
+    B1[Block1] --> B2[Block2]
+    B2 --> B3[Block3]
+    B3 --> B4[Block4]
+    B4 --> B5[Block5]
 
-    section Blocks
-    Block1 :b1, 0, 1
-    Block2 :b2, 1, 2
-    Block3 :b3, 2, 3
-    Block4 :b4, 3, 4
-    Block5 :b5, 4, 5
+    subgraph C0[CHUNK 0]
+        B1
+        B2
+        B3
+    end
 
-    section Chunks
-    CHUNK 0 :crit, c0, 0, 3
-    CHUNK 1 (overlap) :crit, c1, 2, 5
-    CHUNK 2 :crit, c2, 4, 7
+    subgraph C1[CHUNK 1 - overlap]
+        B3
+        B4
+        B5
+    end
 ```
 
 **Use Case**: When uniform chunk sizes are needed (e.g., for embedding models).

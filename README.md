@@ -27,12 +27,6 @@ flowchart TD
     B --> C
     C --> D
     D --> E
-
-    style A fill:#e1f5ff
-    style B fill:#e8f5e9
-    style C fill:#fff3e0
-    style D fill:#f3e5f5
-    style E fill:#fce4ec
 ```
 
 ## Key Features
