@@ -1,0 +1,90 @@
+Make a claude-code plugin to chunk Large PDFs exceeding claude-code’s context limit for files, into a folder with smaller chunks in .txt for easier processing.
+
+Use pdftotext. Is there a better available tool? Yes many more! Just look below
+
+
+
+1. The "Core Engine": PyMuPDF (fitz)
+For a "simple and efficient" tool, PyMuPDF should be your primary driver. It is significantly faster than PyPDF2 or pdfplumber and handles both text and images natively.
+Why use it: It can extract "blocks" of text (preserving some layout) and raw image bytes in one pass.
+The CHUNKS Logic: You can iterate through every page and every object. If the object is an image, save it to CHUNKS/img_p1_1.png. If it's text, append it to CHUNKS/page_1.md.
+2. The "Table Specialist": Camelot
+Even the best text extractors fail at tables. If your PDFs have data grids, use Camelot (the "Lattice" flavor).
+Why use it: It looks for lines (ruling) to define table cells, which makes the output much "nicer" than just raw text.
+The CHUNKS Logic: Export tables directly to .csv or formatted Markdown tables within your text chunks.
+3. The "OCR Safety Net": OCRmyPDF + Tesseract
+If you encounter a PDF that is just a scanned image, pdftotext and PyMuPDF will return nothing.
+Why use it: OCRmyPDF is a CLI tool that uses Tesseract to "bake" a searchable text layer into a PDF.
+The Workflow: Run your PDF through OCRmyPDF first (if it lacks a text layer), then use your extraction script. It ensures you never get an empty text file.
+EVEN BETTER LOOK BELOW!
+
+
+
+1. The "Markdown Native" Set
+The industry is moving toward .md because it preserves headers, lists, and tables better than plain text.
+pymupdf4llm: This is a brand new, lightweight wrapper around PyMuPDF. It is specifically designed to output clean Markdown.
+Why it's better: It automatically handles multi-column layouts and can extract images/graphics as Markdown links while saving the files.
+marker-pdf: Often called the "local King" of extraction. It’s a deep-learning-based tool (but runs entirely locally) that converts PDFs to Markdown with near-perfect fidelity.
+CHUNKS logic: It identifies equations, tables, and images, putting them exactly where they belong in the text flow.
+2. The "High-Speed" Core (Rust/C++)
+If you are processing thousands of pages and need raw performance:
+pypdfium2: Currently the fastest Python library for PDF. It’s a wrapper around Google’s PDFium engine (used in Chrome).
+Why it's better: It is significantly faster than PyMuPDF for simple text extraction and page rendering.
+lopdf (Rust): If you are comfortable with Rust, this is a heavy-duty library for PDF manipulation. It's built for safety and speed, allowing you to "surgical-strike" specific objects (like streams or font maps) without loading the whole file into memory.
+3. The "Visual Segmenter" (Advanced Layout)
+Instead of just reading text from top to bottom, these tools "see" the page blocks.
+pdf-document-layout-analysis (HURIDOCS): A modern, Docker-ready local tool that segments PDFs into "titles," "text," "images," and "tables."
+Why it's better: It uses a dual-model approach (LightGBM for speed) to identify the boundaries of every element.
+Surya: A high-performance OCR and layout analysis tool. It is much more accurate than Tesseract for detecting where a table ends and a paragraph begins, which is the hardest part of "chunking."
+1. The "Heavy Hitters" (Best for High-Fidelity Markdown)
+These are the current gold standards for converting complex PDFs into structured text and images without using an external API.
+Docling (IBM): [Highly Recommended] This is arguably the most powerful open-source tool right now. It is designed to turn "messy" PDFs into clean Markdown or JSON.
+Why it's great: It natively handles tables, page layout, and reading order better than almost anything else. It can export a document and its images into a structured format in one go.
+Marker: A high-speed, local-first tool that converts PDFs to Markdown. It’s significantly faster than traditional OCR-based tools and is very good at identifying math formulas and tables.
+CHUNKS Logic: It automatically extracts images and saves them into a specific directory while maintaining links in the Markdown file.
+Grobid: If your PDFs are technical or academic (research papers, journals), Grobid is the king. It uses machine learning (CRF/Deep Learning) to parse the document into structured XML (TEI) or Markdown.
+Pro Tip: It is exceptional at extracting "Metadata" (authors, dates) and "Citations" alongside the body text.
+
+2. High-Performance Engines (Rust & Go)
+If you want to build a tool that feels "instant" and can process thousands of files, look at these low-level powerhouses:
+Kreuzberg: A newer Rust-powered framework that brings native performance to Python. It handles 50+ file formats and is built for "document intelligence."
+pypdfium2: A Python binding to Google’s PDFium (the engine inside Chrome). It is much faster than pdftotext and excellent for rendering pages as images if you need a "thumbnail" chunk.
+rpdf: A Rust library focused on memory safety and speed. If you decide to move away from Python for your core extraction, this is a solid base.
+
+3. Visual & Layout Segmenters (The "Eye" of your Pipeline)
+If your PDFs have wild layouts (magazines, multi-column brochures), standard text extractors will fail. You need a tool that "sees" the blocks before it reads them.
+Surya: A high-performance layout analysis tool. It identifies every "bbox" (bounding box) on a page and labels it: Table, Image, Header, Footer, Text.
+DocTR (Document Text Recognition): A "seamless" OCR and layout tool. It can identify where an image is and "crop" it out for you automatically.
+LayoutParser: A modular toolkit that lets you choose different models to detect document elements. It's highly customizable if you have very specific "chunk" requirements.
+
+1. The "Big Tech" Open-Source Models (Local-First)
+These were released/refined in late 2024 and 2025 by major research labs. They use local vision models (not LLMs or APIs) to "understand" the PDF layout.
+
+Docling (by IBM): This is currently the "it" tool for 2026. It treats a PDF like a structured object. It is brilliant at recognizing where a section ends and an image begins, allowing you to export to Markdown with zero "text-bleeding" from captions into body text.
+
+MinerU (by ByteDance): An industrial-grade tool designed to convert "wild" PDFs (multi-column, complex math, overlapping images) into high-quality Markdown. It uses a "Multi-Model Fusion" approach to ensure tables and formulas aren't broken into pieces.
+
+MarkItDown (by Microsoft): A lightweight utility that focuses specifically on converting various formats (PDF, docx, etc.) into clean Markdown. It’s built to be a "plug-and-play" component for local indexing pipelines.
+
+2. The "Speed & Safety" Set (Rust & Go)
+If your goal is to process thousands of pages per second, Python is your bottleneck. These tools are built in systems languages for maximum throughput.
+
+PDFOxide (Rust): A newer, pure-Rust toolkit. Unlike many others, it doesn't rely on old C-libraries like Poppler. It’s incredibly fast (benchmarked at ~50ms per PDF) and supports extracting text, images, and metadata natively.
+
+Extractous (Rust/Go): A high-performance wrapper that combines the speed of Rust with the breadth of Apache Tika. It’s perfect if you want a single binary that can handle a PDF, extract the "chunks," and move on.
+
+UniPDF (Go): A pure Go library. If you want to build a self-contained extraction tool that has no system dependencies (no Tesseract or Poppler to install), this is the cleanest way to do it.
+
+3. The "Binary Carving" Path (Forensics Style)
+Sometimes a PDF is so "broken" or weirdly formatted that standard parsers fail. In this case, you treat the PDF as a binary file and "carve" out the data.
+
+Foremost-NG: Originally a digital forensics tool used by law enforcement, the "Next Gen" version can be used to "carve" image streams (JPEGs, PNGs) directly out of PDF byte streams. It doesn't "read" the PDF; it finds headers/footers of images inside the binary.
+
+Binwalk: Often used for firmware analysis, it is incredibly effective at identifying "embedded" files within a PDF. If a PDF has a hidden ZIP or a strange image format inside, Binwalk will find it and extract it to your CHUNKS folder.
+
+4. High-Resolution "Visual" Extractors
+Instead of reading characters, these tools render the page and use computer vision to "crop" the chunks.
+
+Surya: A massive upgrade over Tesseract. It focuses on Layout Analysis. It gives you the exact coordinates of every "box" on the page (e.g., "This box is a table," "This box is a sidebar"). You can then use those coordinates to crop the PDF into image chunks.
+
+DocTR (Document Text Recognition): Powered by Mindee, this tool is excellent at "Visual Information Extraction." It provides high-quality OCR and layout detection that works entirely offline.

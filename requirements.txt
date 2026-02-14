@@ -1,0 +1,13 @@
+# Document IR - Production Document Ingestion Engine
+
+# Core dependencies
+pydantic>=2.0.0
+docling>=1.0.0
+torch>=2.0.0
+
+# Data processing
+pandas>=2.0.0
+pyarrow>=10.0.0
+
+# Optional: GPU support (CUDA)
+# Install separately based on your CUDA version
