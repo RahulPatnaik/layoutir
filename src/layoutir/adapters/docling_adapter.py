@@ -47,15 +47,28 @@ class DoclingAdapter(InputAdapter):
             return
 
         try:
-            from docling.document_converter import DocumentConverter
+            from docling.document_converter import DocumentConverter, PdfFormatOption
+            from docling.datamodel.base_models import InputFormat
+            from docling.datamodel.pipeline_options import PdfPipelineOptions
 
-            # Create converter with default options
-            # Note: Current Docling API uses format_options parameter
-            # GPU/CPU selection and batch sizes are handled automatically
-            self._pipeline = DocumentConverter()
+            # Configure pipeline to extract images
+            pipeline_options = PdfPipelineOptions(
+                generate_picture_images=True,  # Extract images from PDF
+                generate_page_images=False,     # Don't need full page rasters
+                images_scale=2.0,              # Scale factor for image resolution (2.0 = 144 DPI)
+            )
+
+            # Create converter with image extraction enabled
+            self._pipeline = DocumentConverter(
+                format_options={
+                    InputFormat.PDF: PdfFormatOption(
+                        pipeline_options=pipeline_options
+                    )
+                }
+            )
 
             self._docling = True
-            logger.info("Docling pipeline initialized successfully")
+            logger.info("Docling pipeline initialized with image extraction enabled")
             if self.use_gpu:
                 logger.info("GPU acceleration will be used if available")
 

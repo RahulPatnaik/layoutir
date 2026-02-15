@@ -85,11 +85,13 @@ All chunking operates on IR, not raw text.
 ## Installation
 
 ```bash
-# Install dependencies
-pip install -r requirements.txt
+# Install from PyPI
+pip install layoutir
 
-# Cache Docling models (~200-500MB, required before first use)
-python tests/docling/doclingCacheModels.py
+# Or install from source
+git clone https://github.com/RahulPatnaik/layoutir.git
+cd layoutir
+pip install -e .
 ```
 
 ## Usage
@@ -97,38 +99,56 @@ python tests/docling/doclingCacheModels.py
 ### Basic Usage
 
 ```bash
-python ingest.py --input file.pdf --output ./out
+# Using the CLI
+layoutir --input file.pdf --output ./out
+
+# Or using Python directly
+python -m layoutir.cli --input file.pdf --output ./out
 ```
 
 ### Advanced Options
 
 ```bash
 # Semantic chunking (default)
-python ingest.py --input file.pdf --output ./out --chunk-strategy semantic
+layoutir --input file.pdf --output ./out --chunk-strategy semantic
 
 # Token-based chunking with custom size
-python ingest.py --input file.pdf --output ./out \
+layoutir --input file.pdf --output ./out \
   --chunk-strategy token \
   --chunk-size 1024 \
   --chunk-overlap 128
 
 # Enable GPU acceleration
-python ingest.py --input file.pdf --output ./out --use-gpu
+layoutir --input file.pdf --output ./out --use-gpu
 
 # Debug mode with structured logging
-python ingest.py --input file.pdf --output ./out \
+layoutir --input file.pdf --output ./out \
   --log-level DEBUG \
   --structured-logs
 ```
 
-### Testing
+### Python API
 
-```bash
-# Run test case
-python test_pipeline.py
+```python
+from pathlib import Path
+from layoutir import Pipeline
+from layoutir.adapters import DoclingAdapter
+from layoutir.chunking import SemanticSectionChunker
 
-# Run benchmark
-python benchmark.py --input docs/pdfs/sample.pdf
+# Create pipeline
+adapter = DoclingAdapter(use_gpu=True)
+chunker = SemanticSectionChunker(max_heading_level=2)
+pipeline = Pipeline(adapter=adapter, chunk_strategy=chunker)
+
+# Process document
+document = pipeline.process(
+    input_path=Path("document.pdf"),
+    output_dir=Path("./output")
+)
+
+# Access results
+print(f"Extracted {len(document.blocks)} blocks")
+print(f"Document ID: {document.document_id}")
 ```
 
 ## Project Structure

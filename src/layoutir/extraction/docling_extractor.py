@@ -83,7 +83,10 @@ class DoclingExtractor:
         global_order = 0
 
         # Extract blocks
-        for item in doc.iterate_items():
+        # FIX: iterate_items() returns tuples of (DocItem, level)
+        for item_tuple in doc.iterate_items():
+            # Extract the actual DocItem from the tuple
+            item = item_tuple[0] if isinstance(item_tuple, tuple) else item_tuple
             item_type = type(item).__name__
 
             # Extract text blocks

@@ -8,9 +8,12 @@ version = "1.0.0"
 description = "Production-grade Document Ingestion & Canonicalization Engine"
 readme = "README.md"
 requires-python = ">=3.12"
-license = {file = "LICENSE"}
+license = "MIT"
 authors = [
-    {name = "Rahul Patnaik"}
+    {name = "Rahul Patnaik", email = "rpatnaik2005@gmail.com"}
+]
+maintainers = [
+    {name = "Rahul Patnaik", email = "rpatnaik2005@gmail.com"}
 ]
 keywords = ["pdf", "document", "parsing", "ir", "layout", "extraction", "chunking"]
 classifiers = [
