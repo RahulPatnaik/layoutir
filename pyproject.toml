@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "layoutir"
-version = "1.0.2"
+version = "1.0.3"
 description = "Production-grade Document Ingestion & Canonicalization Engine"
 readme = "README.md"
 requires-python = ">=3.12"
-license = "MIT"
+license = {text = "Apache-2.0"}
 authors = [
     {name = "Rahul Patnaik", email = "rpatnaik2005@gmail.com"}
 ]
