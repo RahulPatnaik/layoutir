@@ -44,7 +44,7 @@ jobs:
         uses: pypa/gh-action-pypi-publish@release/v1
 
       - name: Upload release assets
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           files: |
             dist/*.whl
