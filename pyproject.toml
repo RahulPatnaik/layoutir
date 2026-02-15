@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "layoutir"
-version = "1.0.1"
+version = "1.0.2"
 description = "Production-grade Document Ingestion & Canonicalization Engine"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -28,12 +28,15 @@ classifiers = [
 dependencies = [
     "pydantic>=2.0.0",
     "docling>=1.0.0",
-    "torch>=2.0.0",
     "pandas>=2.0.0",
     "pyarrow>=10.0.0",
 ]
 
 [project.optional-dependencies]
+cuda = [
+    "torch>=2.5.0",
+    "torchvision>=0.20.0",
+]
 dev = [
     "pytest>=7.0",
     "black>=23.0",

@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.2] - 2026-02-15
+
+### Changed
+- **BREAKING**: Removed PyTorch from base dependencies to allow explicit CUDA version control
+- PyTorch and torchvision now available as optional dependencies via `pip install layoutir[cuda]`
+- Users must install PyTorch separately with CUDA 13.0 support before using LayoutIR
+
+### Installation
+For GPU acceleration with CUDA 13.0, install PyTorch first:
+```bash
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu130
+pip install layoutir
+```
+
+Or use the cuda extra (requires manual PyTorch installation first):
+```bash
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu130
+pip install layoutir[cuda]
+```
+
 ## [1.0.1] - 2026-02-15
 
 ### Fixed

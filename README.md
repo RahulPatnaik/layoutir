@@ -84,15 +84,27 @@ All chunking operates on IR, not raw text.
 
 ## Installation
 
-```bash
-# Install from PyPI
-pip install layoutir
+**IMPORTANT**: LayoutIR requires PyTorch with CUDA 13.0 support for GPU acceleration. Install PyTorch first:
 
-# Or install from source
+```bash
+# Step 1: Install PyTorch with CUDA 13.0 (REQUIRED)
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu130
+
+# Step 2: Install LayoutIR
+pip install layoutir
+```
+
+### Alternative Installation Methods
+
+```bash
+# Install from source
 git clone https://github.com/RahulPatnaik/layoutir.git
 cd layoutir
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu130
 pip install -e .
 ```
+
+**Note**: The package intentionally does not include PyTorch in its base dependencies to ensure you get the correct CUDA version. Any existing PyTorch installation will be overwritten by the CUDA 13.0 version.
 
 ## Usage
 
