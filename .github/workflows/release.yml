@@ -8,6 +8,9 @@ jobs:
   build-and-publish:
     name: Build and Publish Release
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write  # Required for trusted publishing
+      contents: write  # Required for uploading release assets
 
     steps:
       - uses: actions/checkout@v4
@@ -20,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install build twine
+          pip install build
 
       - name: Extract version from tag
         id: version
@@ -37,14 +40,8 @@ jobs:
       - name: Build package
         run: python -m build
 
-      - name: Validate package
-        run: python -m twine check dist/*
-
       - name: Publish to PyPI
-        env:
-          TWINE_USERNAME: __token__
-          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
-        run: python -m twine upload dist/*
+        uses: pypa/gh-action-pypi-publish@release/v1
 
       - name: Upload release assets
         uses: softprops/action-gh-release@v1
