@@ -18,6 +18,8 @@ from .schema import (
     Chunk,
     Manifest,
 )
+from .pipeline import Pipeline
+from .adapters import DoclingAdapter
 
 __all__ = [
     "Document",
@@ -30,4 +32,6 @@ __all__ = [
     "Relationship",
     "Chunk",
     "Manifest",
+    "Pipeline",
+    "DoclingAdapter",
 ]
