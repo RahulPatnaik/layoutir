@@ -2,6 +2,10 @@
 Deterministic hashing utilities for stable ID generation.
 
 All IDs must be reproducible across runs for the same input.
+
+STABILITY-CRITICAL: The composite key format, hash algorithm, truncation
+lengths, and ID prefix strings are frozen in _stability_constants.py.
+Do not change those values inline here; change them there with a schema bump.
 """
 
 import hashlib
@@ -9,8 +13,18 @@ import json
 from pathlib import Path
 from typing import Any, Dict, List, Union
 
+from .._stability_constants import (
+    BLOCK_ID_HASH_ALGORITHM,
+    BLOCK_ID_HEX_LENGTH,
+    BLOCK_ID_CONTENT_TRUNCATION,
+    TABLE_ID_TEXT_TRUNCATION,
+    HASH_STRING_ENCODING,
+    HASH_DICT_SORT_KEYS,
+    HASH_DICT_ENSURE_ASCII,
+)
 
-def hash_file(file_path: Union[str, Path], algorithm: str = "sha256") -> str:
+
+def hash_file(file_path: Union[str, Path], algorithm: str = BLOCK_ID_HASH_ALGORITHM) -> str:
     """
     Compute deterministic hash of a file.
 
@@ -32,7 +46,7 @@ def hash_file(file_path: Union[str, Path], algorithm: str = "sha256") -> str:
     return hasher.hexdigest()
 
 
-def hash_string(text: str, algorithm: str = "sha256") -> str:
+def hash_string(text: str, algorithm: str = BLOCK_ID_HASH_ALGORITHM) -> str:
     """
     Compute deterministic hash of a string.
 
@@ -44,11 +58,11 @@ def hash_string(text: str, algorithm: str = "sha256") -> str:
         Hexadecimal hash digest
     """
     hasher = hashlib.new(algorithm)
-    hasher.update(text.encode("utf-8"))
+    hasher.update(text.encode(HASH_STRING_ENCODING))
     return hasher.hexdigest()
 
 
-def hash_dict(data: Dict[str, Any], algorithm: str = "sha256") -> str:
+def hash_dict(data: Dict[str, Any], algorithm: str = BLOCK_ID_HASH_ALGORITHM) -> str:
     """
     Compute deterministic hash of a dictionary.
 
@@ -61,8 +75,9 @@ def hash_dict(data: Dict[str, Any], algorithm: str = "sha256") -> str:
     Returns:
         Hexadecimal hash digest
     """
-    # Sort keys for determinism
-    normalized = json.dumps(data, sort_keys=True, ensure_ascii=True)
+    # kwargs frozen in _stability_constants.HASH_DICT_*
+    # ensure_ascii intentionally differs from canonical JSON — do not unify
+    normalized = json.dumps(data, sort_keys=HASH_DICT_SORT_KEYS, ensure_ascii=HASH_DICT_ENSURE_ASCII)
     return hash_string(normalized, algorithm)
 
 
@@ -86,14 +101,14 @@ def generate_block_id(
     Returns:
         Block ID (first 16 chars of hash for readability)
     """
-    # Truncate content to avoid huge IDs
-    content_sample = content[:500] if len(content) > 500 else content
+    # Truncate content — length frozen in _stability_constants.BLOCK_ID_CONTENT_TRUNCATION
+    content_sample = content[:BLOCK_ID_CONTENT_TRUNCATION]
 
     composite = f"{block_type}:{page_number}:{order}:{content_sample}"
     full_hash = hash_string(composite)
 
-    # Return shorter ID for usability
-    return f"blk_{full_hash[:16]}"
+    # ID length frozen in _stability_constants.BLOCK_ID_HEX_LENGTH
+    return f"blk_{full_hash[:BLOCK_ID_HEX_LENGTH]}"
 
 
 def generate_document_id(file_hash: str) -> str:
@@ -106,7 +121,8 @@ def generate_document_id(file_hash: str) -> str:
     Returns:
         Document ID
     """
-    return f"doc_{file_hash[:16]}"
+    # ID length frozen in _stability_constants.BLOCK_ID_HEX_LENGTH
+    return f"doc_{file_hash[:BLOCK_ID_HEX_LENGTH]}"
 
 
 def generate_table_id(
@@ -127,9 +143,10 @@ def generate_table_id(
     Returns:
         Table ID
     """
-    composite = f"{document_id}:table:{page_number}:{table_index}:{raw_text[:200]}"
+    # Text truncation length frozen in _stability_constants.TABLE_ID_TEXT_TRUNCATION
+    composite = f"{document_id}:table:{page_number}:{table_index}:{raw_text[:TABLE_ID_TEXT_TRUNCATION]}"
     full_hash = hash_string(composite)
-    return f"tbl_{full_hash[:16]}"
+    return f"tbl_{full_hash[:BLOCK_ID_HEX_LENGTH]}"
 
 
 def generate_image_id(
@@ -150,16 +167,16 @@ def generate_image_id(
     Returns:
         Image ID
     """
-    # Hash the image content
-    hasher = hashlib.sha256()
+    # Hash the image content — algorithm frozen in _stability_constants.BLOCK_ID_HASH_ALGORITHM
+    hasher = hashlib.new(BLOCK_ID_HASH_ALGORITHM)
     hasher.update(image_bytes)
-    image_hash = hasher.hexdigest()[:16]
+    image_hash = hasher.hexdigest()[:BLOCK_ID_HEX_LENGTH]
 
     # Combine with position
     composite = f"{document_id}:img:{page_number}:{image_index}:{image_hash}"
     full_hash = hash_string(composite)
 
-    return f"img_{full_hash[:16]}"
+    return f"img_{full_hash[:BLOCK_ID_HEX_LENGTH]}"
 
 
 def generate_chunk_id(
@@ -185,4 +202,4 @@ def generate_chunk_id(
     composite = f"{document_id}:chunk:{chunk_order}:{blocks_str}"
     full_hash = hash_string(composite)
 
-    return f"chk_{full_hash[:16]}"
+    return f"chk_{full_hash[:BLOCK_ID_HEX_LENGTH]}"

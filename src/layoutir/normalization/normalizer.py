@@ -18,6 +18,9 @@ from ..schema import (
     ImageData,
     DocumentMetadata,
     Relationship,
+    FormattingData,
+    FontProperties,
+    TextStyle,
 )
 from ..extraction.docling_extractor import RawDocument, RawBlock, RawTable, RawImage
 from ..utils.hashing import (
@@ -77,6 +80,11 @@ class Normalizer:
 
         # Sort blocks by order
         blocks.sort(key=lambda b: b.order)
+
+        # NEW: Validate and annotate ordering
+        from .ordering_validator import OrderingValidator
+        validator = OrderingValidator()
+        blocks = validator.validate_and_annotate(blocks)
 
         # Build relationships
         relationships = self._build_relationships(blocks)
@@ -164,6 +172,10 @@ class Normalizer:
                 level=metadata.get('level'),
                 order=raw_block.order,
             )
+
+            # NEW: Convert formatting if present
+            if raw_block.formatting:
+                block.formatting_data = self._normalize_formatting(raw_block.formatting)
 
             blocks.append(block)
 
@@ -290,6 +302,31 @@ class Normalizer:
             page_width=bbox_dict.get('page_width'),
             page_height=bbox_dict.get('page_height'),
         )
+
+    def _normalize_formatting(self, raw_formatting: Dict[str, Any]) -> FormattingData:
+        """Convert raw formatting dict to FormattingData schema"""
+        font = None
+        if 'font' in raw_formatting:
+            font_dict = raw_formatting['font']
+            font = FontProperties(
+                name=font_dict.get('name'),
+                size=font_dict.get('size'),
+                weight=font_dict.get('weight'),
+                color=font_dict.get('color'),
+            )
+
+        style = None
+        if 'style' in raw_formatting:
+            style_dict = raw_formatting['style']
+            style = TextStyle(
+                bold=style_dict.get('bold'),
+                italic=style_dict.get('italic'),
+                underline=style_dict.get('underline'),
+            )
+
+        links = raw_formatting.get('links', [])
+
+        return FormattingData(font=font, style=style, links=links)
 
     def _build_relationships(self, blocks: List[Block]) -> List[Relationship]:
         """Build relationships between blocks"""

@@ -11,6 +11,11 @@ from .hashing import (
     generate_chunk_id,
 )
 from .logging_config import setup_logging, LogContext
+from .equality import (
+    assert_semantic_equality,
+    compute_semantic_hash,
+    SemanticEqualityChecker,
+)
 
 __all__ = [
     "hash_file",
@@ -23,4 +28,7 @@ __all__ = [
     "generate_chunk_id",
     "setup_logging",
     "LogContext",
+    "assert_semantic_equality",
+    "compute_semantic_hash",
+    "SemanticEqualityChecker",
 ]

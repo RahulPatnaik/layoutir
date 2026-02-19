@@ -21,6 +21,7 @@ class RawBlock:
     bbox: Optional[Dict[str, float]]
     order: int
     metadata: Dict[str, Any]
+    formatting: Optional[Dict[str, Any]] = None  # NEW: Optional formatting data
 
 
 @dataclass
@@ -59,6 +60,16 @@ class RawDocument:
 
 class DoclingExtractor:
     """Extracts raw structural elements from Docling ConversionResult"""
+
+    def __init__(self, config: Optional[Dict[str, Any]] = None):
+        """
+        Initialize extractor.
+
+        Args:
+            config: Optional configuration dict
+                - capture_formatting (bool): Extract font/style info (default: False for performance)
+        """
+        self.config = config or {}
 
     def extract(self, docling_result: Any) -> RawDocument:
         """
@@ -108,13 +119,20 @@ class DoclingExtractor:
                 # Extract metadata
                 metadata = self._extract_item_metadata(item)
 
+                # NEW: Extract formatting (conditional - performance optimization)
+                # Default False to preserve baseline performance
+                formatting = None
+                if self.config.get('capture_formatting', False):
+                    formatting = self._extract_formatting(item)
+
                 blocks.append(RawBlock(
                     text=text,
                     block_type=block_type,
                     page_number=page_num,
                     bbox=bbox,
                     order=global_order,
-                    metadata=metadata
+                    metadata=metadata,
+                    formatting=formatting  # NEW (None if not enabled)
                 ))
 
                 global_order += 1
@@ -217,6 +235,62 @@ class DoclingExtractor:
                     pass
 
         return metadata
+
+    def _extract_formatting(self, item: Any) -> Optional[Dict[str, Any]]:
+        """
+        Extract formatting from Docling item (best-effort).
+        Uses defensive hasattr checks - Docling may not provide all attributes.
+        """
+        formatting = {}
+
+        # Extract font properties
+        font_props = {}
+        if hasattr(item, 'prov') and item.prov:
+            for prov_item in item.prov:
+                if hasattr(prov_item, 'font'):
+                    font_obj = prov_item.font
+                    if hasattr(font_obj, 'name'):
+                        font_props['name'] = str(font_obj.name)
+                    if hasattr(font_obj, 'size'):
+                        font_props['size'] = float(font_obj.size)
+                    if hasattr(font_obj, 'weight'):
+                        font_props['weight'] = int(font_obj.weight)
+                    if hasattr(font_obj, 'color'):
+                        # Convert to hex
+                        color = font_obj.color
+                        if isinstance(color, tuple) and len(color) >= 3:
+                            font_props['color'] = f"#{color[0]:02x}{color[1]:02x}{color[2]:02x}"
+
+        if font_props:
+            formatting['font'] = font_props
+
+        # Extract text styling
+        style_props = {}
+        if hasattr(item, 'text_style') or hasattr(item, 'style'):
+            style_obj = getattr(item, 'text_style', None) or getattr(item, 'style', None)
+            if style_obj:
+                if hasattr(style_obj, 'bold'):
+                    style_props['bold'] = bool(style_obj.bold)
+                if hasattr(style_obj, 'italic'):
+                    style_props['italic'] = bool(style_obj.italic)
+                if hasattr(style_obj, 'underline'):
+                    style_props['underline'] = bool(style_obj.underline)
+
+        if style_props:
+            formatting['style'] = style_props
+
+        # Extract links
+        links = []
+        if hasattr(item, 'links') and item.links:
+            for link in item.links:
+                uri = getattr(link, 'uri', None) or getattr(link, 'url', None)
+                if uri:
+                    links.append(str(uri))
+
+        if links:
+            formatting['links'] = links
+
+        return formatting if formatting else None
 
     def _extract_table(self, table: Any, order: int) -> Optional[RawTable]:
         """Extract table data"""

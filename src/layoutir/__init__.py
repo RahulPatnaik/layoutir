@@ -17,9 +17,16 @@ from .schema import (
     Relationship,
     Chunk,
     Manifest,
+    # NEW: Round-trip stability classes
+    FormattingData,
+    TextStyle,
+    FontProperties,
+    OrderingMetadata,
+    CellSpan,
 )
 from .pipeline import Pipeline
 from .adapters import DoclingAdapter
+from .utils.equality import assert_semantic_equality, compute_semantic_hash
 
 __all__ = [
     "Document",
@@ -32,6 +39,13 @@ __all__ = [
     "Relationship",
     "Chunk",
     "Manifest",
+    "FormattingData",
+    "TextStyle",
+    "FontProperties",
+    "OrderingMetadata",
+    "CellSpan",
     "Pipeline",
     "DoclingAdapter",
+    "assert_semantic_equality",
+    "compute_semantic_hash",
 ]

@@ -1,0 +1,169 @@
+{
+  "document_id": "doc_a693998ff2a475d1",
+  "schema_version": "1.0.0",
+  "parser_version": "docling-unknown",
+  "metadata": {
+    "title": null,
+    "author": null,
+    "creation_date": null,
+    "modification_date": null,
+    "page_count": 1,
+    "source_format": "pdf",
+    "source_path": "/home/rahul/Desktop/CHUNK-MY-PDF/docs/pdfs/table.pdf",
+    "source_hash": "a693998ff2a475d128c11644fbf02374249f08ac134d526a4d9b913d8b5834a5"
+  },
+  "blocks": [
+    {
+      "block_id": "blk_2332740b51638f98",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 72.0,
+        "y0": 692.165,
+        "x1": 166.293,
+        "y1": 680.641,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Example table",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 0,
+        "spatial_order": 2,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 0
+    },
+    {
+      "block_id": "blk_77594844ca440f58",
+      "type": "table",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 83.15480041503906,
+        "y0": 648.7343139648438,
+        "x1": 546.4309692382812,
+        "y1": 446.3031921386719,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "",
+      "metadata": {
+        "table_id": "tbl_5508912402337de8"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 0,
+        "spatial_order": 0,
+        "order_discrepancy": false
+      },
+      "table_data": {
+        "table_id": "tbl_5508912402337de8",
+        "rows": 5,
+        "columns": 6,
+        "headers": [
+          "Disability Category",
+          "Participants",
+          "Ballots Completed",
+          "Ballots Incomplete/ Terminated",
+          "Results",
+          "Results"
+        ],
+        "data": [
+          [
+            "",
+            "",
+            "",
+            "",
+            "Accuracy",
+            "Time to complete"
+          ],
+          [
+            "Blind",
+            "5",
+            "1",
+            "4",
+            "34.5%, n=1",
+            "1199 sec, n=1"
+          ],
+          [
+            "Low Vision",
+            "5",
+            "2",
+            "3",
+            "98.3% n=2 (97.7%, n=3)",
+            "1716 sec, n=3 (1934 sec, n=2)"
+          ],
+          [
+            "Dexterity",
+            "5",
+            "4",
+            "1",
+            "98.3%, n=4",
+            "1672.1 sec, n=4"
+          ],
+          [
+            "Mobility",
+            "3",
+            "3",
+            "0",
+            "95.4%, n=3",
+            "1416 sec, n=3"
+          ]
+        ],
+        "raw_text": "",
+        "cell_spans": null
+      },
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 0
+    },
+    {
+      "block_id": "blk_a8337d19720c3921",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 72.0,
+        "y0": 674.527,
+        "x1": 295.679,
+        "y1": 662.385,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "This is an example of a data table.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 1,
+        "spatial_order": 1,
+        "order_discrepancy": false
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 1
+    }
+  ],
+  "relationships": [],
+  "stats": {
+    "block_count": 3,
+    "table_count": 1,
+    "image_count": 0,
+    "page_count": 1
+  },
+  "processing_timestamp": "2026-02-18T12:59:58.449762",
+  "config_used": {}
+}

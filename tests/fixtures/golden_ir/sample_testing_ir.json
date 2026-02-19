@@ -1,0 +1,5946 @@
+{
+  "document_id": "doc_5e4d40fcd8b22453",
+  "schema_version": "1.0.0",
+  "parser_version": "docling-unknown",
+  "metadata": {
+    "title": null,
+    "author": null,
+    "creation_date": null,
+    "modification_date": null,
+    "page_count": 30,
+    "source_format": "pdf",
+    "source_path": "/home/rahul/Desktop/CHUNK-MY-PDF/docs/pdfs/sample_testing.pdf",
+    "source_hash": "5e4d40fcd8b22453a5da2d32533b128f2565f3fc7a4d1647a93c86cdbb4be37a"
+  },
+  "blocks": [
+    {
+      "block_id": "blk_0b4f8143dd844da4",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 206.0,
+        "y0": 772.34,
+        "x1": 389.372,
+        "y1": 741.092,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Lorem ipsum",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 0,
+        "spatial_order": 164,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 0
+    },
+    {
+      "block_id": "blk_77594844ca440f58",
+      "type": "table",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 55.61140823364258,
+        "y0": 464.3465576171875,
+        "x1": 539.6201782226562,
+        "y1": 274.18817138671875,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "",
+      "metadata": {
+        "table_id": "tbl_8e3580d8d2dbefb9"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 0,
+        "spatial_order": 100,
+        "order_discrepancy": true
+      },
+      "table_data": {
+        "table_id": "tbl_8e3580d8d2dbefb9",
+        "rows": 5,
+        "columns": 4,
+        "headers": [
+          "",
+          "Lorem ipsum",
+          "Lorem ipsum",
+          "Lorem ipsum"
+        ],
+        "data": [
+          [
+            "1",
+            "In eleifend velit vitae libero sollicitudin euismod.",
+            "Lorem",
+            ""
+          ],
+          [
+            "2",
+            "Cras fringilla ipsum magna, in fringilla dui commodo a.",
+            "Ipsum",
+            ""
+          ],
+          [
+            "3",
+            "Aliquam erat volutpat.",
+            "Lorem",
+            ""
+          ],
+          [
+            "4",
+            "Fusce vitae vestibulum velit.",
+            "Lorem",
+            ""
+          ],
+          [
+            "5",
+            "Etiam vehicula luctus fermentum.",
+            "Ipsum",
+            ""
+          ]
+        ],
+        "raw_text": "",
+        "cell_spans": null
+      },
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 0
+    },
+    {
+      "block_id": "blk_b1ac83e335cac9f3",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 154.65399169921875,
+        "y0": 259.614990234375,
+        "x1": 463.3984680175781,
+        "y1": 105.14398193359375,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_f260fbac83655c5c]",
+      "metadata": {
+        "image_id": "img_f260fbac83655c5c"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 0,
+        "spatial_order": 27,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_f260fbac83655c5c",
+        "page_number": 1,
+        "bbox": {
+          "x0": 154.65399169921875,
+          "y0": 259.614990234375,
+          "x1": 463.3984680175781,
+          "y1": 105.14398193359375,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_f260fbac83655c5c.png",
+        "caption": null,
+        "format": "png",
+        "width": 618,
+        "height": 309
+      },
+      "level": null,
+      "list_level": null,
+      "order": 0
+    },
+    {
+      "block_id": "blk_6449a9a356254c46",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 696.49,
+        "x1": 521.416,
+        "y1": 655.702,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac faucibus odio.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 1,
+        "spatial_order": 144,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 1
+    },
+    {
+      "block_id": "blk_5e8a97093224ec20",
+      "type": "table",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 55.62703323364258,
+        "y0": 438.3018493652344,
+        "x1": 539.5828247070312,
+        "y1": 248.0924072265625,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "",
+      "metadata": {
+        "table_id": "tbl_550f7138b17ef487"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 1,
+        "spatial_order": 94,
+        "order_discrepancy": true
+      },
+      "table_data": {
+        "table_id": "tbl_550f7138b17ef487",
+        "rows": 5,
+        "columns": 4,
+        "headers": [
+          "",
+          "Lorem ipsum",
+          "Lorem ipsum",
+          "Lorem ipsum"
+        ],
+        "data": [
+          [
+            "1",
+            "In eleifend velit vitae libero sollicitudin euismod.",
+            "Lorem",
+            ""
+          ],
+          [
+            "2",
+            "Cras fringilla ipsum magna, in fringilla dui commodo a.",
+            "Ipsum",
+            ""
+          ],
+          [
+            "3",
+            "Aliquam erat volutpat.",
+            "Lorem",
+            ""
+          ],
+          [
+            "4",
+            "Fusce vitae vestibulum velit.",
+            "Lorem",
+            ""
+          ],
+          [
+            "5",
+            "Etiam vehicula luctus fermentum.",
+            "Ipsum",
+            ""
+          ]
+        ],
+        "raw_text": "",
+        "cell_spans": null
+      },
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 1
+    },
+    {
+      "block_id": "blk_34580e2356441086",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 55.389381408691406,
+        "y0": 786.3973121643066,
+        "x1": 539.444091796875,
+        "y1": 463.9205627441406,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_d37cfc37bcd91763]",
+      "metadata": {
+        "image_id": "img_d37cfc37bcd91763"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 1,
+        "spatial_order": 175,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_d37cfc37bcd91763",
+        "page_number": 1,
+        "bbox": {
+          "x0": 55.389381408691406,
+          "y0": 786.3973121643066,
+          "x1": 539.444091796875,
+          "y1": 463.9205627441406,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_d37cfc37bcd91763.png",
+        "caption": null,
+        "format": "png",
+        "width": 968,
+        "height": 645
+      },
+      "level": null,
+      "list_level": null,
+      "order": 1
+    },
+    {
+      "block_id": "blk_6a1cac92a84eaa38",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.139,
+        "y0": 623.744,
+        "x1": 539.979,
+        "y1": 493.933,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Vestibulum neque massa, scelerisque sit amet ligula eu, congue molestie mi. Praesent ut varius sem. Nullam at porttitor arcu, nec lacinia nisi. Ut ac dolor vitae odio interdum condimentum. Vivamus   dapibus   sodales   ex,   vitae   malesuada   ipsum   cursus convallis. Maecenas sed egestas nulla, ac condimentum orci. Mauris diam felis, vulputate ac suscipit et, iaculis non est. Curabitur semper arcu ac ligula semper, nec luctus nisl blandit. Integer lacinia ante ac libero lobortis imperdiet. Nullam mollis convallis ipsum, ac accumsan nunc vehicula vitae. Nulla eget justo in felis tristique fringilla. Morbi sit amet tortor quis risus auctor condimentum. Morbi in ullamcorper elit. Nulla iaculis tellus sit amet mauris tempus fringilla.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 2,
+        "spatial_order": 132,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 2
+    },
+    {
+      "block_id": "blk_82c28244ab782661",
+      "type": "table",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 55.612632751464844,
+        "y0": 464.346923828125,
+        "x1": 539.6212158203125,
+        "y1": 274.187744140625,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "",
+      "metadata": {
+        "table_id": "tbl_79abf7dde991bcb7"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 2,
+        "spatial_order": 101,
+        "order_discrepancy": true
+      },
+      "table_data": {
+        "table_id": "tbl_79abf7dde991bcb7",
+        "rows": 5,
+        "columns": 4,
+        "headers": [
+          "",
+          "Lorem ipsum",
+          "Lorem ipsum",
+          "Lorem ipsum"
+        ],
+        "data": [
+          [
+            "1",
+            "In eleifend velit vitae libero sollicitudin euismod.",
+            "Lorem",
+            ""
+          ],
+          [
+            "2",
+            "Cras fringilla ipsum magna, in fringilla dui commodo a.",
+            "Ipsum",
+            ""
+          ],
+          [
+            "3",
+            "Aliquam erat volutpat.",
+            "Lorem",
+            ""
+          ],
+          [
+            "4",
+            "Fusce vitae vestibulum velit.",
+            "Lorem",
+            ""
+          ],
+          [
+            "5",
+            "Etiam vehicula luctus fermentum.",
+            "Ipsum",
+            ""
+          ]
+        ],
+        "raw_text": "",
+        "cell_spans": null
+      },
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 2
+    },
+    {
+      "block_id": "blk_eff0de8d9dfbb548",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 55.463966369628906,
+        "y0": 786.4971084594727,
+        "x1": 539.5562133789062,
+        "y1": 464.1099853515625,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_50be4f142e1c64c2]",
+      "metadata": {
+        "image_id": "img_50be4f142e1c64c2"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 2,
+        "spatial_order": 179,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_50be4f142e1c64c2",
+        "page_number": 1,
+        "bbox": {
+          "x0": 55.463966369628906,
+          "y0": 786.4971084594727,
+          "x1": 539.5562133789062,
+          "y1": 464.1099853515625,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_50be4f142e1c64c2.png",
+        "caption": null,
+        "format": "png",
+        "width": 968,
+        "height": 645
+      },
+      "level": null,
+      "list_level": null,
+      "order": 2
+    },
+    {
+      "block_id": "blk_db1a25ee831ca72e",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 480.244,
+        "x1": 430.768,
+        "y1": 468.033,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas mauris lectus, lobortis et purus mattis, blandit dictum tellus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 3,
+        "spatial_order": 106,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 3
+    },
+    {
+      "block_id": "blk_af189f5201187b4d",
+      "type": "table",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 55.62703323364258,
+        "y0": 438.3018493652344,
+        "x1": 539.5828247070312,
+        "y1": 248.0924072265625,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "",
+      "metadata": {
+        "table_id": "tbl_491c0a7491b82650"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 3,
+        "spatial_order": 95,
+        "order_discrepancy": true
+      },
+      "table_data": {
+        "table_id": "tbl_491c0a7491b82650",
+        "rows": 5,
+        "columns": 4,
+        "headers": [
+          "",
+          "Lorem ipsum",
+          "Lorem ipsum",
+          "Lorem ipsum"
+        ],
+        "data": [
+          [
+            "1",
+            "In eleifend velit vitae libero sollicitudin euismod.",
+            "Lorem",
+            ""
+          ],
+          [
+            "2",
+            "Cras fringilla ipsum magna, in fringilla dui commodo a.",
+            "Ipsum",
+            ""
+          ],
+          [
+            "3",
+            "Aliquam erat volutpat.",
+            "Lorem",
+            ""
+          ],
+          [
+            "4",
+            "Fusce vitae vestibulum velit.",
+            "Lorem",
+            ""
+          ],
+          [
+            "5",
+            "Etiam vehicula luctus fermentum.",
+            "Ipsum",
+            ""
+          ]
+        ],
+        "raw_text": "",
+        "cell_spans": null
+      },
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 3
+    },
+    {
+      "block_id": "blk_4ca769d7e3962a7e",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 57.885684967041016,
+        "y0": 610.4812927246094,
+        "x1": 218.0767364501953,
+        "y1": 504.39691162109375,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_ee1e9b7a718165c7]",
+      "metadata": {
+        "image_id": "img_ee1e9b7a718165c7"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 3,
+        "spatial_order": 128,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_ee1e9b7a718165c7",
+        "page_number": 1,
+        "bbox": {
+          "x0": 57.885684967041016,
+          "y0": 610.4812927246094,
+          "x1": 218.0767364501953,
+          "y1": 504.39691162109375,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_ee1e9b7a718165c7.png",
+        "caption": null,
+        "format": "png",
+        "width": 320,
+        "height": 212
+      },
+      "level": null,
+      "list_level": null,
+      "order": 3
+    },
+    {
+      "block_id": "blk_74ea29ee70146245",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 454.305,
+        "x1": 380.206,
+        "y1": 440.624,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Maecenas non lorem quis tellus placerat varius.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 4,
+        "spatial_order": 96,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 4
+    },
+    {
+      "block_id": "blk_efb6847432e42513",
+      "type": "table",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 55.612632751464844,
+        "y0": 464.346923828125,
+        "x1": 539.6212158203125,
+        "y1": 274.187744140625,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "",
+      "metadata": {
+        "table_id": "tbl_8cb80a283d21fe0c"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 4,
+        "spatial_order": 102,
+        "order_discrepancy": true
+      },
+      "table_data": {
+        "table_id": "tbl_8cb80a283d21fe0c",
+        "rows": 5,
+        "columns": 4,
+        "headers": [
+          "",
+          "Lorem ipsum",
+          "Lorem ipsum",
+          "Lorem ipsum"
+        ],
+        "data": [
+          [
+            "1",
+            "In eleifend velit vitae libero sollicitudin euismod.",
+            "Lorem",
+            ""
+          ],
+          [
+            "2",
+            "Cras fringilla ipsum magna, in fringilla dui commodo a.",
+            "Ipsum",
+            ""
+          ],
+          [
+            "3",
+            "Aliquam erat volutpat.",
+            "Lorem",
+            ""
+          ],
+          [
+            "4",
+            "Fusce vitae vestibulum velit.",
+            "Lorem",
+            ""
+          ],
+          [
+            "5",
+            "Etiam vehicula luctus fermentum.",
+            "Ipsum",
+            ""
+          ]
+        ],
+        "raw_text": "",
+        "cell_spans": null
+      },
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 4
+    },
+    {
+      "block_id": "blk_da97fd01efa60cbd",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 154.58978271484375,
+        "y0": 215.91766357421875,
+        "x1": 463.32769775390625,
+        "y1": 61.10748291015625,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_27b34e9e7474bf42]",
+      "metadata": {
+        "image_id": "img_27b34e9e7474bf42"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 4,
+        "spatial_order": 12,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_27b34e9e7474bf42",
+        "page_number": 1,
+        "bbox": {
+          "x0": 154.58978271484375,
+          "y0": 215.91766357421875,
+          "x1": 463.32769775390625,
+          "y1": 61.10748291015625,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_27b34e9e7474bf42.png",
+        "caption": null,
+        "format": "png",
+        "width": 618,
+        "height": 310
+      },
+      "level": null,
+      "list_level": null,
+      "order": 4
+    },
+    {
+      "block_id": "blk_917676b9504ed920",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 426.605,
+        "x1": 165.173,
+        "y1": 412.924,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Nulla facilisi.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 5,
+        "spatial_order": 84,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 5
+    },
+    {
+      "block_id": "blk_28cfe4349a6c6bb6",
+      "type": "table",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 55.612632751464844,
+        "y0": 464.346923828125,
+        "x1": 539.6212158203125,
+        "y1": 274.187744140625,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "",
+      "metadata": {
+        "table_id": "tbl_40baf3a106d0616e"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 5,
+        "spatial_order": 103,
+        "order_discrepancy": true
+      },
+      "table_data": {
+        "table_id": "tbl_40baf3a106d0616e",
+        "rows": 5,
+        "columns": 4,
+        "headers": [
+          "",
+          "Lorem ipsum",
+          "Lorem ipsum",
+          "Lorem ipsum"
+        ],
+        "data": [
+          [
+            "1",
+            "In eleifend velit vitae libero sollicitudin euismod.",
+            "Lorem",
+            ""
+          ],
+          [
+            "2",
+            "Cras fringilla ipsum magna, in fringilla dui commodo a.",
+            "Ipsum",
+            ""
+          ],
+          [
+            "3",
+            "Aliquam erat volutpat.",
+            "Lorem",
+            ""
+          ],
+          [
+            "4",
+            "Fusce vitae vestibulum velit.",
+            "Lorem",
+            ""
+          ],
+          [
+            "5",
+            "Etiam vehicula luctus fermentum.",
+            "Ipsum",
+            ""
+          ]
+        ],
+        "raw_text": "",
+        "cell_spans": null
+      },
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 5
+    },
+    {
+      "block_id": "blk_08654b4c3a4452a7",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 55.438819885253906,
+        "y0": 759.8514633178711,
+        "x1": 539.3995361328125,
+        "y1": 438.12109375,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_7788f43a760e5385]",
+      "metadata": {
+        "image_id": "img_7788f43a760e5385"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 5,
+        "spatial_order": 162,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_7788f43a760e5385",
+        "page_number": 1,
+        "bbox": {
+          "x0": 55.438819885253906,
+          "y0": 759.8514633178711,
+          "x1": 539.3995361328125,
+          "y1": 438.12109375,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_7788f43a760e5385.png",
+        "caption": null,
+        "format": "png",
+        "width": 968,
+        "height": 644
+      },
+      "level": null,
+      "list_level": null,
+      "order": 5
+    },
+    {
+      "block_id": "blk_a1884f779a113cc8",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 399.005,
+        "x1": 312.355,
+        "y1": 385.323,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Aenean congue fringilla justo ut aliquam.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 6,
+        "spatial_order": 76,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 6
+    },
+    {
+      "block_id": "blk_90de9b153db451d3",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 55.463966369628906,
+        "y0": 786.4971084594727,
+        "x1": 539.5562133789062,
+        "y1": 464.1099853515625,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_1e3b0c74463b3476]",
+      "metadata": {
+        "image_id": "img_1e3b0c74463b3476"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 6,
+        "spatial_order": 180,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_1e3b0c74463b3476",
+        "page_number": 1,
+        "bbox": {
+          "x0": 55.463966369628906,
+          "y0": 786.4971084594727,
+          "x1": 539.5562133789062,
+          "y1": 464.1099853515625,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_1e3b0c74463b3476.png",
+        "caption": null,
+        "format": "png",
+        "width": 968,
+        "height": 645
+      },
+      "level": null,
+      "list_level": null,
+      "order": 6
+    },
+    {
+      "block_id": "blk_1859c1d0026d8d2a",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 371.32,
+        "x1": 538.168,
+        "y1": 341.033,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Mauris id ex erat. Nunc vulputate neque vitae justo facilisis, non condimentum ante sagittis.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 7,
+        "spatial_order": 60,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 7
+    },
+    {
+      "block_id": "blk_66aeb2b5484c52b3",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 154.65695190429688,
+        "y0": 259.59539794921875,
+        "x1": 463.3999938964844,
+        "y1": 105.14825439453125,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_cdc9195745a8bbd6]",
+      "metadata": {
+        "image_id": "img_cdc9195745a8bbd6"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 7,
+        "spatial_order": 24,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_cdc9195745a8bbd6",
+        "page_number": 1,
+        "bbox": {
+          "x0": 154.65695190429688,
+          "y0": 259.59539794921875,
+          "x1": 463.3999938964844,
+          "y1": 105.14825439453125,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_cdc9195745a8bbd6.png",
+        "caption": null,
+        "format": "png",
+        "width": 618,
+        "height": 309
+      },
+      "level": null,
+      "list_level": null,
+      "order": 7
+    },
+    {
+      "block_id": "blk_75aedb23f56b06a6",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 327.30500000000006,
+        "x1": 315.631,
+        "y1": 313.624,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Morbi viverra semper lorem nec molestie.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 8,
+        "spatial_order": 52,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 8
+    },
+    {
+      "block_id": "blk_d937df58fc5bc444",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 55.3875732421875,
+        "y0": 786.399341583252,
+        "x1": 539.4479370117188,
+        "y1": 463.91986083984375,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_8480ee4a5380df4a]",
+      "metadata": {
+        "image_id": "img_8480ee4a5380df4a"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 8,
+        "spatial_order": 176,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_8480ee4a5380df4a",
+        "page_number": 1,
+        "bbox": {
+          "x0": 55.3875732421875,
+          "y0": 786.399341583252,
+          "x1": 539.4479370117188,
+          "y1": 463.91986083984375,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_8480ee4a5380df4a.png",
+        "caption": null,
+        "format": "png",
+        "width": 968,
+        "height": 645
+      },
+      "level": null,
+      "list_level": null,
+      "order": 8
+    },
+    {
+      "block_id": "blk_596681fc4a9040d6",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 299.605,
+        "x1": 501.659,
+        "y1": 285.924,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Maecenas tincidunt est efficitur ligula euismod, sit amet ornare est vulputate.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 9,
+        "spatial_order": 38,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 9
+    },
+    {
+      "block_id": "blk_dd49ce6690b0b3b3",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 55.463966369628906,
+        "y0": 786.4971084594727,
+        "x1": 539.5562133789062,
+        "y1": 464.1099853515625,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_52fe5bea23d46415]",
+      "metadata": {
+        "image_id": "img_52fe5bea23d46415"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 9,
+        "spatial_order": 181,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_52fe5bea23d46415",
+        "page_number": 1,
+        "bbox": {
+          "x0": 55.463966369628906,
+          "y0": 786.4971084594727,
+          "x1": 539.5562133789062,
+          "y1": 464.1099853515625,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_52fe5bea23d46415.png",
+        "caption": null,
+        "format": "png",
+        "width": 968,
+        "height": 645
+      },
+      "level": null,
+      "list_level": null,
+      "order": 9
+    },
+    {
+      "block_id": "blk_5405a1fa64cfbe9d",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 759.344,
+        "x1": 537.973,
+        "y1": 658.933,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In non mauris justo. Duis vehicula mi vel mi pretium, a viverra erat efficitur. Cras aliquam est ac eros varius, id iaculis dui auctor. Duis pretium neque ligula, et pulvinar mi placerat et. Nulla nec nunc sit amet nunc posuere vestibulum. Ut id neque eget tortor mattis tristique. Donec ante est, blandit sit amet tristique vel, lacinia pulvinar arcu. Pellentesque scelerisque fermentum erat, id posuere justo pulvinar ut. Cras id eros sed enim aliquam lobortis. Sed lobortis nisl ut eros efficitur tincidunt. Cras justo mi, porttitor quis mattis vel, ultricies ut purus. Ut facilisis et lacus eu cursus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 10,
+        "spatial_order": 158,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 10
+    },
+    {
+      "block_id": "blk_39d67e2cb8110525",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 57.885684967041016,
+        "y0": 610.4812927246094,
+        "x1": 218.0767364501953,
+        "y1": 504.39691162109375,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_7e682a51b94f78bc]",
+      "metadata": {
+        "image_id": "img_7e682a51b94f78bc"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 10,
+        "spatial_order": 129,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_7e682a51b94f78bc",
+        "page_number": 1,
+        "bbox": {
+          "x0": 57.885684967041016,
+          "y0": 610.4812927246094,
+          "x1": 218.0767364501953,
+          "y1": 504.39691162109375,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_7e682a51b94f78bc.png",
+        "caption": null,
+        "format": "png",
+        "width": 320,
+        "height": 212
+      },
+      "level": null,
+      "list_level": null,
+      "order": 10
+    },
+    {
+      "block_id": "blk_a4e6cebafb1cb8c0",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 645.144,
+        "x1": 537.984,
+        "y1": 588.833,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In eleifend velit vitae libero sollicitudin euismod. Fusce vitae vestibulum velit. Pellentesque vulputate lectus quis pellentesque commodo. Aliquam erat volutpat. Vestibulum in egestas velit.   Pellentesque  fermentum nisl vitae fringilla venenatis. Etiam id mauris vitae orci maximus ultricies.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 11,
+        "spatial_order": 138,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 11
+    },
+    {
+      "block_id": "blk_158e3b1204bcf41c",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 154.58978271484375,
+        "y0": 215.91766357421875,
+        "x1": 463.32769775390625,
+        "y1": 61.10748291015625,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_b357eeffec3ac436]",
+      "metadata": {
+        "image_id": "img_b357eeffec3ac436"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 11,
+        "spatial_order": 13,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_b357eeffec3ac436",
+        "page_number": 1,
+        "bbox": {
+          "x0": 154.58978271484375,
+          "y0": 215.91766357421875,
+          "x1": 463.32769775390625,
+          "y1": 61.10748291015625,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_b357eeffec3ac436.png",
+        "caption": null,
+        "format": "png",
+        "width": 618,
+        "height": 310
+      },
+      "level": null,
+      "list_level": null,
+      "order": 11
+    },
+    {
+      "block_id": "blk_6d9fb98d7c74fa16",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 536.59,
+        "x1": 529.282,
+        "y1": 495.802,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Cras fringilla ipsum magna, in fringilla dui commodo a.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 12,
+        "spatial_order": 118,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 12
+    },
+    {
+      "block_id": "blk_2cbf012d19754da8",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 55.438819885253906,
+        "y0": 759.8514633178711,
+        "x1": 539.3995361328125,
+        "y1": 438.12109375,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_a13705cd0aa7848f]",
+      "metadata": {
+        "image_id": "img_a13705cd0aa7848f"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 12,
+        "spatial_order": 163,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_a13705cd0aa7848f",
+        "page_number": 1,
+        "bbox": {
+          "x0": 55.438819885253906,
+          "y0": 759.8514633178711,
+          "x1": 539.3995361328125,
+          "y1": 438.12109375,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_a13705cd0aa7848f.png",
+        "caption": null,
+        "format": "png",
+        "width": 968,
+        "height": 644
+      },
+      "level": null,
+      "list_level": null,
+      "order": 12
+    },
+    {
+      "block_id": "blk_590738619dad637e",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 248.44399999999996,
+        "x1": 538.299,
+        "y1": 118.63300000000004,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Etiam vehicula luctus fermentum. In vel metus congue, pulvinar lectus vel, fermentum dui. Maecenas ante orci, egestas ut aliquet sit amet, sagittis a magna. Aliquam ante quam, pellentesque ut dignissim quis, laoreet eget est. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ullamcorper justo sapien, in cursus libero viverra eget. Vivamus auctor imperdiet urna, at pulvinar leo posuere laoreet. Suspendisse neque nisl, fringilla at iaculis scelerisque, ornare vel dolor. Ut et   pulvinar   nunc.   Pellentesque   fringilla   mollis   efficitur.   Nullam   venenatis   commodo imperdiet. Morbi velit neque, semper quis lorem quis, efficitur dignissim ipsum. Ut ac lorem sed turpis imperdiet eleifend sit amet id sapien.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 13,
+        "spatial_order": 16,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 13
+    },
+    {
+      "block_id": "blk_a2a42d42e032e62e",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 55.463966369628906,
+        "y0": 786.4971084594727,
+        "x1": 539.5562133789062,
+        "y1": 464.1099853515625,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_c25aea2131b833fc]",
+      "metadata": {
+        "image_id": "img_c25aea2131b833fc"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 13,
+        "spatial_order": 182,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_c25aea2131b833fc",
+        "page_number": 1,
+        "bbox": {
+          "x0": 55.463966369628906,
+          "y0": 786.4971084594727,
+          "x1": 539.5562133789062,
+          "y1": 464.1099853515625,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_c25aea2131b833fc.png",
+        "caption": null,
+        "format": "png",
+        "width": 968,
+        "height": 645
+      },
+      "level": null,
+      "list_level": null,
+      "order": 13
+    },
+    {
+      "block_id": "blk_0741e9c72987d0df",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 784.69,
+        "x1": 521.416,
+        "y1": 743.902,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 14,
+        "spatial_order": 170,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 14
+    },
+    {
+      "block_id": "blk_32ad5b734a3385c6",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 154.65695190429688,
+        "y0": 259.59539794921875,
+        "x1": 463.3999938964844,
+        "y1": 105.14825439453125,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_39b0d2c9bd70d8cb]",
+      "metadata": {
+        "image_id": "img_39b0d2c9bd70d8cb"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 14,
+        "spatial_order": 25,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_39b0d2c9bd70d8cb",
+        "page_number": 1,
+        "bbox": {
+          "x0": 154.65695190429688,
+          "y0": 259.59539794921875,
+          "x1": 463.3999938964844,
+          "y1": 105.14825439453125,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_39b0d2c9bd70d8cb.png",
+        "caption": null,
+        "format": "png",
+        "width": 618,
+        "height": 309
+      },
+      "level": null,
+      "list_level": null,
+      "order": 14
+    },
+    {
+      "block_id": "blk_0a956c64ee522d37",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 711.944,
+        "x1": 538.141,
+        "y1": 582.133,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Nunc ac faucibus odio. Vestibulum neque massa, scelerisque sit amet ligula eu, congue molestie mi. Praesent ut varius sem. Nullam at porttitor arcu, nec lacinia nisi. Ut ac dolor vitae odio interdum condimentum. Vivamus dapibus sodales ex, vitae malesuada ipsum cursus convallis. Maecenas sed egestas nulla, ac condimentum orci. Mauris diam felis, vulputate ac suscipit et, iaculis non est. Curabitur semper arcu ac ligula semper, nec luctus nisl blandit. Integer lacinia ante ac libero lobortis imperdiet. Nullam mollis convallis ipsum, ac accumsan nunc vehicula vitae. Nulla eget justo in felis tristique fringilla. Morbi sit amet tortor quis risus auctor condimentum. Morbi in ullamcorper elit. Nulla iaculis tellus sit amet mauris tempus fringilla.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 15,
+        "spatial_order": 150,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 15
+    },
+    {
+      "block_id": "blk_a17e6eb8b4e1a04a",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 55.3875732421875,
+        "y0": 786.399341583252,
+        "x1": 539.4479370117188,
+        "y1": 463.91986083984375,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_c9dc022a950799a1]",
+      "metadata": {
+        "image_id": "img_c9dc022a950799a1"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 15,
+        "spatial_order": 177,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_c9dc022a950799a1",
+        "page_number": 1,
+        "bbox": {
+          "x0": 55.3875732421875,
+          "y0": 786.399341583252,
+          "x1": 539.4479370117188,
+          "y1": 463.91986083984375,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_c9dc022a950799a1.png",
+        "caption": null,
+        "format": "png",
+        "width": 968,
+        "height": 645
+      },
+      "level": null,
+      "list_level": null,
+      "order": 15
+    },
+    {
+      "block_id": "blk_e2bc0850dd24ea31",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 557.88,
+        "x1": 510.928,
+        "y1": 521.624,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas mauris lectus, lobortis et purus mattis, blandit dictum tellus.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 16,
+        "spatial_order": 122,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 16
+    },
+    {
+      "block_id": "blk_85122690da4ceb9b",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 55.463966369628906,
+        "y0": 786.4971084594727,
+        "x1": 539.5562133789062,
+        "y1": 464.1099853515625,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_6e52cae86e9a8ccc]",
+      "metadata": {
+        "image_id": "img_6e52cae86e9a8ccc"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 16,
+        "spatial_order": 183,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_6e52cae86e9a8ccc",
+        "page_number": 1,
+        "bbox": {
+          "x0": 55.463966369628906,
+          "y0": 786.4971084594727,
+          "x1": 539.5562133789062,
+          "y1": 464.1099853515625,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_6e52cae86e9a8ccc.png",
+        "caption": null,
+        "format": "png",
+        "width": 968,
+        "height": 645
+      },
+      "level": null,
+      "list_level": null,
+      "order": 16
+    },
+    {
+      "block_id": "blk_2c9755b0ab85029c",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 515.544,
+        "x1": 538.204,
+        "y1": 345.133,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas non lorem quis tellus placerat varius. Nulla facilisi. Aenean congue fringilla justo ut aliquam. Mauris id ex erat. Nunc vulputate neque vitae justo facilisis, non condimentum ante sagittis. Morbi viverra semper lorem nec molestie. Maecenas tincidunt est efficitur ligula euismod, sit amet ornare est vulputate. In non mauris justo. Duis vehicula mi vel mi pretium, a viverra erat efficitur. Cras aliquam est ac eros varius, id iaculis dui auctor. Duis pretium neque ligula, et pulvinar mi placerat et. Nulla nec nunc sit amet nunc posuere vestibulum. Ut id neque eget tortor mattis tristique. Donec ante est, blandit sit amet tristique vel, lacinia pulvinar arcu. Pellentesque scelerisque fermentum erat, id posuere justo pulvinar ut. Cras id eros sed enim aliquam lobortis. Sed lobortis nisl ut eros efficitur tincidunt. Cras justo mi, porttitor quis mattis vel, ultricies ut purus. Ut facilisis et lacus eu cursus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 17,
+        "spatial_order": 112,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 17
+    },
+    {
+      "block_id": "blk_53757f594301adea",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 154.65695190429688,
+        "y0": 259.59539794921875,
+        "x1": 463.3999938964844,
+        "y1": 105.14825439453125,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_75ddd0aec73fdc92]",
+      "metadata": {
+        "image_id": "img_75ddd0aec73fdc92"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 17,
+        "spatial_order": 26,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_75ddd0aec73fdc92",
+        "page_number": 1,
+        "bbox": {
+          "x0": 154.65695190429688,
+          "y0": 259.59539794921875,
+          "x1": 463.3999938964844,
+          "y1": 105.14825439453125,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_75ddd0aec73fdc92.png",
+        "caption": null,
+        "format": "png",
+        "width": 618,
+        "height": 309
+      },
+      "level": null,
+      "list_level": null,
+      "order": 17
+    },
+    {
+      "block_id": "blk_df58ed4ddafa5bee",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 320.88,
+        "x1": 446.976,
+        "y1": 303.024,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In eleifend velit vitae libero sollicitudin euismod.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 18,
+        "spatial_order": 46,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 18
+    },
+    {
+      "block_id": "blk_3855dd0f3f5ef5af",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 55.390357971191406,
+        "y0": 786.396858215332,
+        "x1": 539.4454345703125,
+        "y1": 463.9214172363281,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_9f3f5346fc025c24]",
+      "metadata": {
+        "image_id": "img_9f3f5346fc025c24"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 18,
+        "spatial_order": 174,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_9f3f5346fc025c24",
+        "page_number": 1,
+        "bbox": {
+          "x0": 55.390357971191406,
+          "y0": 786.396858215332,
+          "x1": 539.4454345703125,
+          "y1": 463.9214172363281,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_9f3f5346fc025c24.png",
+        "caption": null,
+        "format": "png",
+        "width": 968,
+        "height": 645
+      },
+      "level": null,
+      "list_level": null,
+      "order": 18
+    },
+    {
+      "block_id": "blk_aa756c09aa11234e",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 296.94399999999996,
+        "x1": 538.32,
+        "y1": 97.13300000000004,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Fusce vitae vestibulum velit. Pellentesque vulputate lectus quis pellentesque commodo. Aliquam erat volutpat. Vestibulum in egestas velit. Pellentesque fermentum nisl vitae fringilla   venenatis.   Etiam   id   mauris   vitae   orci   maximus   ultricies.   Cras   fringilla   ipsum magna, in fringilla dui commodo a. Etiam vehicula luctus fermentum. In vel metus congue, pulvinar lectus vel, fermentum dui. Maecenas ante orci, egestas ut aliquet sit amet, sagittis a magna. Aliquam ante quam, pellentesque ut dignissim quis, laoreet eget est. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ullamcorper justo sapien, in cursus libero viverra eget. Vivamus auctor imperdiet urna, at pulvinar leo posuere laoreet. Suspendisse neque nisl, fringilla at iaculis scelerisque, ornare vel dolor. Ut et   pulvinar   nunc.   Pellentesque   fringilla   mollis   efficitur.   Nullam   venenatis   commodo imperdiet. Morbi velit neque, semper quis lorem quis, efficitur dignissim ipsum. Ut ac lorem sed turpis imperdiet eleifend sit amet id sapien.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 19,
+        "spatial_order": 34,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 19
+    },
+    {
+      "block_id": "blk_3011cbb665c16280",
+      "type": "image",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 55.46403503417969,
+        "y0": 786.4969825744629,
+        "x1": 539.5560913085938,
+        "y1": 464.10986328125,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "[Image img_75f3cf3304101554]",
+      "metadata": {
+        "image_id": "img_75f3cf3304101554"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 19,
+        "spatial_order": 178,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": {
+        "image_id": "img_75f3cf3304101554",
+        "page_number": 1,
+        "bbox": {
+          "x0": 55.46403503417969,
+          "y0": 786.4969825744629,
+          "x1": 539.5560913085938,
+          "y1": 464.10986328125,
+          "page_width": null,
+          "page_height": null
+        },
+        "extracted_path": "assets/images/img_75f3cf3304101554.png",
+        "caption": null,
+        "format": "png",
+        "width": 968,
+        "height": 645
+      },
+      "level": null,
+      "list_level": null,
+      "order": 19
+    },
+    {
+      "block_id": "blk_450c3e2aba7df477",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 427.38,
+        "x1": 510.928,
+        "y1": 391.124,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas mauris lectus, lobortis et purus mattis, blandit dictum tellus.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 20,
+        "spatial_order": 88,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 20
+    },
+    {
+      "block_id": "blk_c7f241fa9c960ae1",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 385.144,
+        "x1": 538.204,
+        "y1": 328.8330000000001,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas non lorem quis tellus placerat varius. Nulla facilisi. Aenean congue fringilla justo ut aliquam. Mauris id ex erat. Nunc vulputate neque vitae justo facilisis, non condimentum ante sagittis. Morbi viverra semper lorem nec molestie. Maecenas tincidunt est efficitur ligula euismod, sit amet ornare est vulputate.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 21,
+        "spatial_order": 66,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 21
+    },
+    {
+      "block_id": "blk_82fd970b4267c15a",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 315.044,
+        "x1": 537.973,
+        "y1": 214.63300000000004,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In non mauris justo. Duis vehicula mi vel mi pretium, a viverra erat efficitur. Cras aliquam est ac eros varius, id iaculis dui auctor. Duis pretium neque ligula, et pulvinar mi placerat et. Nulla nec nunc sit amet nunc posuere vestibulum. Ut id neque eget tortor mattis tristique. Donec ante est, blandit sit amet tristique vel, lacinia pulvinar arcu. Pellentesque scelerisque fermentum erat, id posuere justo pulvinar ut. Cras id eros sed enim aliquam lobortis. Sed lobortis nisl ut eros efficitur tincidunt. Cras justo mi, porttitor quis mattis vel, ultricies ut purus. Ut facilisis et lacus eu cursus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 22,
+        "spatial_order": 42,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 22
+    },
+    {
+      "block_id": "blk_15d86712456be1e2",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 190.38,
+        "x1": 446.976,
+        "y1": 172.524,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In eleifend velit vitae libero sollicitudin euismod.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 23,
+        "spatial_order": 8,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 23
+    },
+    {
+      "block_id": "blk_6946601ecd98db6d",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 166.54399999999998,
+        "x1": 538.32,
+        "y1": 110.23299999999995,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Fusce vitae vestibulum velit. Pellentesque vulputate lectus quis pellentesque commodo. Aliquam erat volutpat. Vestibulum in egestas velit. Pellentesque fermentum nisl vitae fringilla   venenatis.   Etiam   id   mauris   vitae   orci   maximus   ultricies.   Cras   fringilla   ipsum magna, in fringilla dui commodo a.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 24,
+        "spatial_order": 4,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 24
+    },
+    {
+      "block_id": "blk_b704292b70fc8661",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 391.644,
+        "x1": 538.257,
+        "y1": 261.8330000000001,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Etiam vehicula luctus fermentum. In vel metus congue, pulvinar lectus vel, fermentum dui. Maecenas ante orci, egestas ut aliquet sit amet, sagittis a magna. Aliquam ante quam, pellentesque ut dignissim quis, laoreet eget est. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nosatra, per inceptos himenaeos. Ut ullamcorper justo sapien, in cursus libero viverra eget. Vivamus auctor imperdiet urna, at pulvinar leo posuere laoreet. Suspendisse neque nisl, fringilla at iaculis scelerisque, ornare vel dolor. Ut et   pulvinar   nunc.   Pellentesque   fringilla   mollis   efficitur.   Nullam   venenatis   commodo imperdiet. Morbi velit neque, semper quis lorem quis, efficitur dignissim ipsum. Ut ac lorem sed turpis imperdiet eleifend sit amet id sapien.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 25,
+        "spatial_order": 70,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 25
+    },
+    {
+      "block_id": "blk_bcbb89e4f6034333",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 206.0,
+        "y0": 772.34,
+        "x1": 389.372,
+        "y1": 741.092,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Lorem ipsum",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 26,
+        "spatial_order": 165,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 26
+    },
+    {
+      "block_id": "blk_89448624d05607d0",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 696.49,
+        "x1": 521.416,
+        "y1": 655.702,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac faucibus odio.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 27,
+        "spatial_order": 145,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 27
+    },
+    {
+      "block_id": "blk_0b3c3c3eb98ee96e",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 623.744,
+        "x1": 537.669,
+        "y1": 611.533,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Vestibulum neque massa, scelerisque sit amet ligula eu, congue molestie mi. Praesent ut",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 28,
+        "spatial_order": 136,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 28
+    },
+    {
+      "block_id": "blk_3079bf0642ef93e8",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 230.939,
+        "y0": 609.044,
+        "x1": 540.084,
+        "y1": 479.233,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "varius sem. Nullam at porttitor arcu, nec lacinia nisi. Ut ac dolor   vitae   odio   interdum   condimentum. Vivamus dapibus sodales ex, vitae malesuada ipsum cursus convallis.   Maecenas   sed   egestas   nulla,   ac condimentum   orci. Mauris   diam   felis,   vulputate   ac suscipit   et,   iaculis   non   est.   Curabitur   semper   arcu   ac ligula semper, nec luctus nisl blandit. Integer lacinia ante ac   libero   lobortis   imperdiet. Nullam   mollis   convallis ipsum, ac accumsan nunc vehicula vitae. Nulla eget justo in felis tristique fringilla. Morbi sit amet tortor quis risus auctor condimentum. Morbi in ullamcorper elit. Nulla iaculis tellus sit amet mauris tempus fringilla.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 29,
+        "spatial_order": 126,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 29
+    },
+    {
+      "block_id": "blk_d18010aa3c14fb4c",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 436.144,
+        "x1": 430.768,
+        "y1": 423.933,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas mauris lectus, lobortis et purus mattis, blandit dictum tellus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 30,
+        "spatial_order": 92,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 30
+    },
+    {
+      "block_id": "blk_12f9359e3de40341",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 410.205,
+        "x1": 380.206,
+        "y1": 396.524,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Maecenas non lorem quis tellus placerat varius.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 31,
+        "spatial_order": 82,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 31
+    },
+    {
+      "block_id": "blk_9c3aa985cc6a9566",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 382.505,
+        "x1": 165.173,
+        "y1": 368.823,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Nulla facilisi.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 32,
+        "spatial_order": 64,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 32
+    },
+    {
+      "block_id": "blk_aa10ccc9e97cf3f8",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 354.905,
+        "x1": 312.355,
+        "y1": 341.224,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Aenean congue fringilla justo ut aliquam.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 33,
+        "spatial_order": 56,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 33
+    },
+    {
+      "block_id": "blk_e2fb994d9e42dd99",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 327.22,
+        "x1": 538.168,
+        "y1": 296.933,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Mauris id ex erat. Nunc vulputate neque vitae justo facilisis, non condimentum ante sagittis.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 34,
+        "spatial_order": 50,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 34
+    },
+    {
+      "block_id": "blk_abe1ea8ea878e711",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 283.2049999999999,
+        "x1": 315.631,
+        "y1": 269.524,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Morbi viverra semper lorem nec molestie.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 35,
+        "spatial_order": 30,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 35
+    },
+    {
+      "block_id": "blk_2aeed1a219826ece",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 255.505,
+        "x1": 501.659,
+        "y1": 241.82400000000007,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Maecenas tincidunt est efficitur ligula euismod, sit amet ornare est vulputate.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 36,
+        "spatial_order": 20,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 36
+    },
+    {
+      "block_id": "blk_5d4105467f2be1d7",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 733.344,
+        "x1": 537.973,
+        "y1": 632.933,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In non mauris justo. Duis vehicula mi vel mi pretium, a viverra erat efficitur. Cras aliquam est ac eros varius, id iaculis dui auctor. Duis pretium neque ligula, et pulvinar mi placerat et. Nulla nec nunc sit amet nunc posuere vestibulum. Ut id neque eget tortor mattis tristique. Donec ante est, blandit sit amet tristique vel, lacinia pulvinar arcu. Pellentesque scelerisque fermentum erat, id posuere justo pulvinar ut. Cras id eros sed enim aliquam lobortis. Sed lobortis nisl ut eros efficitur tincidunt. Cras justo mi, porttitor quis mattis vel, ultricies ut purus. Ut facilisis et lacus eu cursus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 37,
+        "spatial_order": 154,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 37
+    },
+    {
+      "block_id": "blk_2499d0ae74e9fde2",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 619.244,
+        "x1": 537.984,
+        "y1": 562.933,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In eleifend velit vitae libero sollicitudin euismod. Fusce vitae vestibulum velit. Pellentesque vulputate lectus quis pellentesque commodo. Aliquam erat volutpat. Vestibulum in egestas velit.   Pellentesque  fermentum nisl vitae fringilla venenatis. Etiam id mauris vitae orci maximus ultricies.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 38,
+        "spatial_order": 130,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 38
+    },
+    {
+      "block_id": "blk_3881381c32863b40",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 510.59,
+        "x1": 529.282,
+        "y1": 469.802,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Cras fringilla ipsum magna, in fringilla dui commodo a.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 39,
+        "spatial_order": 110,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 39
+    },
+    {
+      "block_id": "blk_8fde1589c734a977",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 222.54399999999998,
+        "x1": 538.299,
+        "y1": 92.73299999999995,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Etiam vehicula luctus fermentum. In vel metus congue, pulvinar lectus vel, fermentum dui. Maecenas ante orci, egestas ut aliquet sit amet, sagittis a magna. Aliquam ante quam, pellentesque ut dignissim quis, laoreet eget est. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ullamcorper justo sapien, in cursus libero viverra eget. Vivamus auctor imperdiet urna, at pulvinar leo posuere laoreet. Suspendisse neque nisl, fringilla at iaculis scelerisque, ornare vel dolor. Ut et   pulvinar   nunc.   Pellentesque   fringilla   mollis   efficitur.   Nullam   venenatis   commodo imperdiet. Morbi velit neque, semper quis lorem quis, efficitur dignissim ipsum. Ut ac lorem sed turpis imperdiet eleifend sit amet id sapien.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 40,
+        "spatial_order": 14,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 40
+    },
+    {
+      "block_id": "blk_e466ec0653b2a0f8",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 746.69,
+        "x1": 521.416,
+        "y1": 705.902,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 41,
+        "spatial_order": 156,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 41
+    },
+    {
+      "block_id": "blk_48c750ae9fdff90a",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 673.944,
+        "x1": 538.141,
+        "y1": 544.133,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Nunc ac faucibus odio. Vestibulum neque massa, scelerisque sit amet ligula eu, congue molestie mi. Praesent ut varius sem. Nullam at porttitor arcu, nec lacinia nisi. Ut ac dolor vitae odio interdum condimentum. Vivamus dapibus sodales ex, vitae malesuada ipsum cursus convallis. Maecenas sed egestas nulla, ac condimentum orci. Mauris diam felis, vulputate ac suscipit et, iaculis non est. Curabitur semper arcu ac ligula semper, nec luctus nisl blandit. Integer lacinia ante ac libero lobortis imperdiet. Nullam mollis convallis ipsum, ac accumsan nunc vehicula vitae. Nulla eget justo in felis tristique fringilla. Morbi sit amet tortor quis risus auctor condimentum. Morbi in ullamcorper elit. Nulla iaculis tellus sit amet mauris tempus fringilla.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 42,
+        "spatial_order": 142,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 42
+    },
+    {
+      "block_id": "blk_54d523069dd5954e",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 519.88,
+        "x1": 510.928,
+        "y1": 483.624,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas mauris lectus, lobortis et purus mattis, blandit dictum tellus.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 43,
+        "spatial_order": 116,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 43
+    },
+    {
+      "block_id": "blk_4db98dd184a11cc7",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 477.644,
+        "x1": 538.204,
+        "y1": 307.13300000000004,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas non lorem quis tellus placerat varius. Nulla facilisi. Aenean congue fringilla justo ut aliquam. Mauris id ex erat. Nunc vulputate neque vitae justo facilisis, non condimentum ante sagittis. Morbi viverra semper lorem nec molestie. Maecenas tincidunt est efficitur ligula euismod, sit amet ornare est vulputate. In non mauris justo. Duis vehicula mi vel mi pretium, a viverra erat efficitur. Cras aliquam est ac eros varius, id iaculis dui auctor. Duis pretium neque ligula, et pulvinar mi placerat et. Nulla nec nunc sit amet nunc posuere vestibulum. Ut id neque eget tortor mattis tristique. Donec ante est, blandit sit amet tristique vel, lacinia pulvinar arcu. Pellentesque scelerisque fermentum erat, id posuere justo pulvinar ut. Cras id eros sed enim aliquam lobortis. Sed lobortis nisl ut eros efficitur tincidunt. Cras justo mi, porttitor quis mattis vel, ultricies ut purus. Ut facilisis et lacus eu cursus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 44,
+        "spatial_order": 104,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 44
+    },
+    {
+      "block_id": "blk_e7901af755b8ea8e",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 282.88,
+        "x1": 446.976,
+        "y1": 265.024,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In eleifend velit vitae libero sollicitudin euismod.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 45,
+        "spatial_order": 28,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 45
+    },
+    {
+      "block_id": "blk_b6eec47c3b61f912",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 259.044,
+        "x1": 538.32,
+        "y1": 59.13300000000004,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Fusce vitae vestibulum velit. Pellentesque vulputate lectus quis pellentesque commodo. Aliquam erat volutpat. Vestibulum in egestas velit. Pellentesque fermentum nisl vitae fringilla   venenatis.   Etiam   id   mauris   vitae   orci   maximus   ultricies.   Cras   fringilla   ipsum magna, in fringilla dui commodo a. Etiam vehicula luctus fermentum. In vel metus congue, pulvinar lectus vel, fermentum dui. Maecenas ante orci, egestas ut aliquet sit amet, sagittis a magna. Aliquam ante quam, pellentesque ut dignissim quis, laoreet eget est. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ullamcorper justo sapien, in cursus libero viverra eget. Vivamus auctor imperdiet urna, at pulvinar leo posuere laoreet. Suspendisse neque nisl, fringilla at iaculis scelerisque, ornare vel dolor. Ut et   pulvinar   nunc.   Pellentesque   fringilla   mollis   efficitur.   Nullam   venenatis   commodo imperdiet. Morbi velit neque, semper quis lorem quis, efficitur dignissim ipsum. Ut ac lorem sed turpis imperdiet eleifend sit amet id sapien.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 46,
+        "spatial_order": 22,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 46
+    },
+    {
+      "block_id": "blk_876070a9d088c18d",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 401.48,
+        "x1": 510.928,
+        "y1": 365.224,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas mauris lectus, lobortis et purus mattis, blandit dictum tellus.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 47,
+        "spatial_order": 80,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 47
+    },
+    {
+      "block_id": "blk_670fa9c4430fbaf2",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 359.144,
+        "x1": 538.204,
+        "y1": 302.8330000000001,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas non lorem quis tellus placerat varius. Nulla facilisi. Aenean congue fringilla justo ut aliquam. Mauris id ex erat. Nunc vulputate neque vitae justo facilisis, non condimentum ante sagittis. Morbi viverra semper lorem nec molestie. Maecenas tincidunt est efficitur ligula euismod, sit amet ornare est vulputate.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 48,
+        "spatial_order": 58,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 48
+    },
+    {
+      "block_id": "blk_149ca126ace56af0",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 289.144,
+        "x1": 537.973,
+        "y1": 188.73299999999995,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In non mauris justo. Duis vehicula mi vel mi pretium, a viverra erat efficitur. Cras aliquam est ac eros varius, id iaculis dui auctor. Duis pretium neque ligula, et pulvinar mi placerat et. Nulla nec nunc sit amet nunc posuere vestibulum. Ut id neque eget tortor mattis tristique. Donec ante est, blandit sit amet tristique vel, lacinia pulvinar arcu. Pellentesque scelerisque fermentum erat, id posuere justo pulvinar ut. Cras id eros sed enim aliquam lobortis. Sed lobortis nisl ut eros efficitur tincidunt. Cras justo mi, porttitor quis mattis vel, ultricies ut purus. Ut facilisis et lacus eu cursus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 49,
+        "spatial_order": 32,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 49
+    },
+    {
+      "block_id": "blk_3f79a395b7b8fba8",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 164.48000000000002,
+        "x1": 446.976,
+        "y1": 146.62400000000002,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In eleifend velit vitae libero sollicitudin euismod.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 50,
+        "spatial_order": 2,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 50
+    },
+    {
+      "block_id": "blk_10d5bd24b3e7454b",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 140.54399999999998,
+        "x1": 538.32,
+        "y1": 84.23299999999995,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Fusce vitae vestibulum velit. Pellentesque vulputate lectus quis pellentesque commodo. Aliquam erat volutpat. Vestibulum in egestas velit. Pellentesque fermentum nisl vitae fringilla   venenatis.   Etiam   id   mauris   vitae   orci   maximus   ultricies.   Cras   fringilla   ipsum magna, in fringilla dui commodo a.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 51,
+        "spatial_order": 0,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 51
+    },
+    {
+      "block_id": "blk_972f05c1aa304c1d",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 391.644,
+        "x1": 538.257,
+        "y1": 261.8330000000001,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Etiam vehicula luctus fermentum. In vel metus congue, pulvinar lectus vel, fermentum dui. Maecenas ante orci, egestas ut aliquet sit amet, sagittis a magna. Aliquam ante quam, pellentesque ut dignissim quis, laoreet eget est. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nosatra, per inceptos himenaeos. Ut ullamcorper justo sapien, in cursus libero viverra eget. Vivamus auctor imperdiet urna, at pulvinar leo posuere laoreet. Suspendisse neque nisl, fringilla at iaculis scelerisque, ornare vel dolor. Ut et   pulvinar   nunc.   Pellentesque   fringilla   mollis   efficitur.   Nullam   venenatis   commodo imperdiet. Morbi velit neque, semper quis lorem quis, efficitur dignissim ipsum. Ut ac lorem sed turpis imperdiet eleifend sit amet id sapien.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 52,
+        "spatial_order": 71,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 52
+    },
+    {
+      "block_id": "blk_9f2d42d0dbc12633",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 206.0,
+        "y0": 772.34,
+        "x1": 389.372,
+        "y1": 741.092,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Lorem ipsum",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 53,
+        "spatial_order": 166,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 53
+    },
+    {
+      "block_id": "blk_9bb2d135e5dadb6a",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 696.49,
+        "x1": 521.416,
+        "y1": 655.702,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac faucibus odio.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 54,
+        "spatial_order": 146,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 54
+    },
+    {
+      "block_id": "blk_bc5d999e4e276a62",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.139,
+        "y0": 623.744,
+        "x1": 539.979,
+        "y1": 493.933,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Vestibulum neque massa, scelerisque sit amet ligula eu, congue molestie mi. Praesent ut varius sem. Nullam at porttitor arcu, nec lacinia nisi. Ut ac dolor vitae odio interdum condimentum. Vivamus   dapibus   sodales   ex,   vitae   malesuada   ipsum   cursus convallis. Maecenas sed egestas nulla, ac condimentum orci. Mauris diam felis, vulputate ac suscipit et, iaculis non est. Curabitur semper arcu ac ligula semper, nec luctus nisl blandit. Integer lacinia ante ac libero lobortis imperdiet. Nullam mollis convallis ipsum, ac accumsan nunc vehicula vitae. Nulla eget justo in felis tristique fringilla. Morbi sit amet tortor quis risus auctor condimentum. Morbi in ullamcorper elit. Nulla iaculis tellus sit amet mauris tempus fringilla.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 55,
+        "spatial_order": 133,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 55
+    },
+    {
+      "block_id": "blk_0d4ff0484b324279",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 480.244,
+        "x1": 430.768,
+        "y1": 468.033,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas mauris lectus, lobortis et purus mattis, blandit dictum tellus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 56,
+        "spatial_order": 107,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 56
+    },
+    {
+      "block_id": "blk_9aad3fdc434afded",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 454.305,
+        "x1": 380.206,
+        "y1": 440.624,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Maecenas non lorem quis tellus placerat varius.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 57,
+        "spatial_order": 97,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 57
+    },
+    {
+      "block_id": "blk_c8d6772c3e0b3182",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 426.605,
+        "x1": 165.173,
+        "y1": 412.924,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Nulla facilisi.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 58,
+        "spatial_order": 85,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 58
+    },
+    {
+      "block_id": "blk_f35b742510957dab",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 399.005,
+        "x1": 312.355,
+        "y1": 385.323,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Aenean congue fringilla justo ut aliquam.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 59,
+        "spatial_order": 77,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 59
+    },
+    {
+      "block_id": "blk_ea91a4416ade227e",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 371.32,
+        "x1": 538.168,
+        "y1": 341.033,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Mauris id ex erat. Nunc vulputate neque vitae justo facilisis, non condimentum ante sagittis.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 60,
+        "spatial_order": 61,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 60
+    },
+    {
+      "block_id": "blk_13ae643825a54d67",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 327.30500000000006,
+        "x1": 315.631,
+        "y1": 313.624,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Morbi viverra semper lorem nec molestie.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 61,
+        "spatial_order": 53,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 61
+    },
+    {
+      "block_id": "blk_aced25b96fe15862",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 299.605,
+        "x1": 501.659,
+        "y1": 285.924,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Maecenas tincidunt est efficitur ligula euismod, sit amet ornare est vulputate.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 62,
+        "spatial_order": 39,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 62
+    },
+    {
+      "block_id": "blk_b805a126986036bf",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 759.344,
+        "x1": 537.973,
+        "y1": 658.933,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In non mauris justo. Duis vehicula mi vel mi pretium, a viverra erat efficitur. Cras aliquam est ac eros varius, id iaculis dui auctor. Duis pretium neque ligula, et pulvinar mi placerat et. Nulla nec nunc sit amet nunc posuere vestibulum. Ut id neque eget tortor mattis tristique. Donec ante est, blandit sit amet tristique vel, lacinia pulvinar arcu. Pellentesque scelerisque fermentum erat, id posuere justo pulvinar ut. Cras id eros sed enim aliquam lobortis. Sed lobortis nisl ut eros efficitur tincidunt. Cras justo mi, porttitor quis mattis vel, ultricies ut purus. Ut facilisis et lacus eu cursus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 63,
+        "spatial_order": 159,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 63
+    },
+    {
+      "block_id": "blk_b03675844cfd0b19",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 645.144,
+        "x1": 537.984,
+        "y1": 588.833,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In eleifend velit vitae libero sollicitudin euismod. Fusce vitae vestibulum velit. Pellentesque vulputate lectus quis pellentesque commodo. Aliquam erat volutpat. Vestibulum in egestas velit.   Pellentesque  fermentum nisl vitae fringilla venenatis. Etiam id mauris vitae orci maximus ultricies.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 64,
+        "spatial_order": 139,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 64
+    },
+    {
+      "block_id": "blk_f6b7008ebfe7c82d",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 536.59,
+        "x1": 529.282,
+        "y1": 495.802,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Cras fringilla ipsum magna, in fringilla dui commodo a.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 65,
+        "spatial_order": 119,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 65
+    },
+    {
+      "block_id": "blk_2c25a7d00b1c3e92",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 248.44399999999996,
+        "x1": 538.299,
+        "y1": 118.63300000000004,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Etiam vehicula luctus fermentum. In vel metus congue, pulvinar lectus vel, fermentum dui. Maecenas ante orci, egestas ut aliquet sit amet, sagittis a magna. Aliquam ante quam, pellentesque ut dignissim quis, laoreet eget est. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ullamcorper justo sapien, in cursus libero viverra eget. Vivamus auctor imperdiet urna, at pulvinar leo posuere laoreet. Suspendisse neque nisl, fringilla at iaculis scelerisque, ornare vel dolor. Ut et   pulvinar   nunc.   Pellentesque   fringilla   mollis   efficitur.   Nullam   venenatis   commodo imperdiet. Morbi velit neque, semper quis lorem quis, efficitur dignissim ipsum. Ut ac lorem sed turpis imperdiet eleifend sit amet id sapien.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 66,
+        "spatial_order": 17,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 66
+    },
+    {
+      "block_id": "blk_23cb1857e28d885f",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 784.69,
+        "x1": 521.416,
+        "y1": 743.902,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 67,
+        "spatial_order": 171,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 67
+    },
+    {
+      "block_id": "blk_4e2582d652d1262b",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 711.944,
+        "x1": 538.141,
+        "y1": 582.133,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Nunc ac faucibus odio. Vestibulum neque massa, scelerisque sit amet ligula eu, congue molestie mi. Praesent ut varius sem. Nullam at porttitor arcu, nec lacinia nisi. Ut ac dolor vitae odio interdum condimentum. Vivamus dapibus sodales ex, vitae malesuada ipsum cursus convallis. Maecenas sed egestas nulla, ac condimentum orci. Mauris diam felis, vulputate ac suscipit et, iaculis non est. Curabitur semper arcu ac ligula semper, nec luctus nisl blandit. Integer lacinia ante ac libero lobortis imperdiet. Nullam mollis convallis ipsum, ac accumsan nunc vehicula vitae. Nulla eget justo in felis tristique fringilla. Morbi sit amet tortor quis risus auctor condimentum. Morbi in ullamcorper elit. Nulla iaculis tellus sit amet mauris tempus fringilla.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 68,
+        "spatial_order": 151,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 68
+    },
+    {
+      "block_id": "blk_9f8f6c63869975d7",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 557.88,
+        "x1": 510.928,
+        "y1": 521.624,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas mauris lectus, lobortis et purus mattis, blandit dictum tellus.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 69,
+        "spatial_order": 123,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 69
+    },
+    {
+      "block_id": "blk_3163d93872a34777",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 515.544,
+        "x1": 538.204,
+        "y1": 345.133,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas non lorem quis tellus placerat varius. Nulla facilisi. Aenean congue fringilla justo ut aliquam. Mauris id ex erat. Nunc vulputate neque vitae justo facilisis, non condimentum ante sagittis. Morbi viverra semper lorem nec molestie. Maecenas tincidunt est efficitur ligula euismod, sit amet ornare est vulputate. In non mauris justo. Duis vehicula mi vel mi pretium, a viverra erat efficitur. Cras aliquam est ac eros varius, id iaculis dui auctor. Duis pretium neque ligula, et pulvinar mi placerat et. Nulla nec nunc sit amet nunc posuere vestibulum. Ut id neque eget tortor mattis tristique. Donec ante est, blandit sit amet tristique vel, lacinia pulvinar arcu. Pellentesque scelerisque fermentum erat, id posuere justo pulvinar ut. Cras id eros sed enim aliquam lobortis. Sed lobortis nisl ut eros efficitur tincidunt. Cras justo mi, porttitor quis mattis vel, ultricies ut purus. Ut facilisis et lacus eu cursus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 70,
+        "spatial_order": 113,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 70
+    },
+    {
+      "block_id": "blk_6f5cfc0cd426eaaf",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 320.88,
+        "x1": 446.976,
+        "y1": 303.024,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In eleifend velit vitae libero sollicitudin euismod.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 71,
+        "spatial_order": 47,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 71
+    },
+    {
+      "block_id": "blk_1ff47738d8ecbc0d",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 296.94399999999996,
+        "x1": 538.32,
+        "y1": 97.13300000000004,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Fusce vitae vestibulum velit. Pellentesque vulputate lectus quis pellentesque commodo. Aliquam erat volutpat. Vestibulum in egestas velit. Pellentesque fermentum nisl vitae fringilla   venenatis.   Etiam   id   mauris   vitae   orci   maximus   ultricies.   Cras   fringilla   ipsum magna, in fringilla dui commodo a. Etiam vehicula luctus fermentum. In vel metus congue, pulvinar lectus vel, fermentum dui. Maecenas ante orci, egestas ut aliquet sit amet, sagittis a magna. Aliquam ante quam, pellentesque ut dignissim quis, laoreet eget est. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ullamcorper justo sapien, in cursus libero viverra eget. Vivamus auctor imperdiet urna, at pulvinar leo posuere laoreet. Suspendisse neque nisl, fringilla at iaculis scelerisque, ornare vel dolor. Ut et   pulvinar   nunc.   Pellentesque   fringilla   mollis   efficitur.   Nullam   venenatis   commodo imperdiet. Morbi velit neque, semper quis lorem quis, efficitur dignissim ipsum. Ut ac lorem sed turpis imperdiet eleifend sit amet id sapien.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 72,
+        "spatial_order": 35,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 72
+    },
+    {
+      "block_id": "blk_37a54b7c4053a358",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 427.38,
+        "x1": 510.928,
+        "y1": 391.124,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas mauris lectus, lobortis et purus mattis, blandit dictum tellus.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 73,
+        "spatial_order": 89,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 73
+    },
+    {
+      "block_id": "blk_18823d26d7c4b7a6",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 385.144,
+        "x1": 538.204,
+        "y1": 328.8330000000001,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas non lorem quis tellus placerat varius. Nulla facilisi. Aenean congue fringilla justo ut aliquam. Mauris id ex erat. Nunc vulputate neque vitae justo facilisis, non condimentum ante sagittis. Morbi viverra semper lorem nec molestie. Maecenas tincidunt est efficitur ligula euismod, sit amet ornare est vulputate.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 74,
+        "spatial_order": 67,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 74
+    },
+    {
+      "block_id": "blk_b37c52fb577302ce",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 315.044,
+        "x1": 537.973,
+        "y1": 214.63300000000004,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In non mauris justo. Duis vehicula mi vel mi pretium, a viverra erat efficitur. Cras aliquam est ac eros varius, id iaculis dui auctor. Duis pretium neque ligula, et pulvinar mi placerat et. Nulla nec nunc sit amet nunc posuere vestibulum. Ut id neque eget tortor mattis tristique. Donec ante est, blandit sit amet tristique vel, lacinia pulvinar arcu. Pellentesque scelerisque fermentum erat, id posuere justo pulvinar ut. Cras id eros sed enim aliquam lobortis. Sed lobortis nisl ut eros efficitur tincidunt. Cras justo mi, porttitor quis mattis vel, ultricies ut purus. Ut facilisis et lacus eu cursus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 75,
+        "spatial_order": 43,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 75
+    },
+    {
+      "block_id": "blk_82801d2f09feed53",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 190.38,
+        "x1": 446.976,
+        "y1": 172.524,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In eleifend velit vitae libero sollicitudin euismod.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 76,
+        "spatial_order": 9,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 76
+    },
+    {
+      "block_id": "blk_b64aac6874c26a86",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 166.54399999999998,
+        "x1": 538.32,
+        "y1": 110.23299999999995,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Fusce vitae vestibulum velit. Pellentesque vulputate lectus quis pellentesque commodo. Aliquam erat volutpat. Vestibulum in egestas velit. Pellentesque fermentum nisl vitae fringilla   venenatis.   Etiam   id   mauris   vitae   orci   maximus   ultricies.   Cras   fringilla   ipsum magna, in fringilla dui commodo a.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 77,
+        "spatial_order": 5,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 77
+    },
+    {
+      "block_id": "blk_fa83adeb6b22bc0d",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 391.644,
+        "x1": 538.257,
+        "y1": 261.8330000000001,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Etiam vehicula luctus fermentum. In vel metus congue, pulvinar lectus vel, fermentum dui. Maecenas ante orci, egestas ut aliquet sit amet, sagittis a magna. Aliquam ante quam, pellentesque ut dignissim quis, laoreet eget est. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nosatra, per inceptos himenaeos. Ut ullamcorper justo sapien, in cursus libero viverra eget. Vivamus auctor imperdiet urna, at pulvinar leo posuere laoreet. Suspendisse neque nisl, fringilla at iaculis scelerisque, ornare vel dolor. Ut et   pulvinar   nunc.   Pellentesque   fringilla   mollis   efficitur.   Nullam   venenatis   commodo imperdiet. Morbi velit neque, semper quis lorem quis, efficitur dignissim ipsum. Ut ac lorem sed turpis imperdiet eleifend sit amet id sapien.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 78,
+        "spatial_order": 72,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 78
+    },
+    {
+      "block_id": "blk_dcff3d7f7f2d23a3",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 206.0,
+        "y0": 772.34,
+        "x1": 389.372,
+        "y1": 741.092,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Lorem ipsum",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 79,
+        "spatial_order": 167,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 79
+    },
+    {
+      "block_id": "blk_be4f4dd28c6d5ed7",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 696.49,
+        "x1": 521.416,
+        "y1": 655.702,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac faucibus odio.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 80,
+        "spatial_order": 147,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 80
+    },
+    {
+      "block_id": "blk_281cb033c41cf4aa",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 623.744,
+        "x1": 537.669,
+        "y1": 611.533,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Vestibulum neque massa, scelerisque sit amet ligula eu, congue molestie mi. Praesent ut",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 81,
+        "spatial_order": 137,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 81
+    },
+    {
+      "block_id": "blk_2d563c2671a355ab",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 230.939,
+        "y0": 609.044,
+        "x1": 540.084,
+        "y1": 479.233,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "varius sem. Nullam at porttitor arcu, nec lacinia nisi. Ut ac dolor   vitae   odio   interdum   condimentum. Vivamus dapibus sodales ex, vitae malesuada ipsum cursus convallis.   Maecenas   sed   egestas   nulla,   ac condimentum   orci. Mauris   diam   felis,   vulputate   ac suscipit   et,   iaculis   non   est.   Curabitur   semper   arcu   ac ligula semper, nec luctus nisl blandit. Integer lacinia ante ac   libero   lobortis   imperdiet. Nullam   mollis   convallis ipsum, ac accumsan nunc vehicula vitae. Nulla eget justo in felis tristique fringilla. Morbi sit amet tortor quis risus auctor condimentum. Morbi in ullamcorper elit. Nulla iaculis tellus sit amet mauris tempus fringilla.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 82,
+        "spatial_order": 127,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 82
+    },
+    {
+      "block_id": "blk_742f7f248e8154f6",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 436.144,
+        "x1": 430.768,
+        "y1": 423.933,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas mauris lectus, lobortis et purus mattis, blandit dictum tellus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 83,
+        "spatial_order": 93,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 83
+    },
+    {
+      "block_id": "blk_d1ef9498a6902159",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 410.205,
+        "x1": 380.206,
+        "y1": 396.524,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Maecenas non lorem quis tellus placerat varius.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 84,
+        "spatial_order": 83,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 84
+    },
+    {
+      "block_id": "blk_07fe1c1a616934b9",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 382.505,
+        "x1": 165.173,
+        "y1": 368.823,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Nulla facilisi.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 85,
+        "spatial_order": 65,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 85
+    },
+    {
+      "block_id": "blk_2865fbc4274640c6",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 354.905,
+        "x1": 312.355,
+        "y1": 341.224,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Aenean congue fringilla justo ut aliquam.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 86,
+        "spatial_order": 57,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 86
+    },
+    {
+      "block_id": "blk_0ec336f69b26401f",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 327.22,
+        "x1": 538.168,
+        "y1": 296.933,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Mauris id ex erat. Nunc vulputate neque vitae justo facilisis, non condimentum ante sagittis.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 87,
+        "spatial_order": 51,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 87
+    },
+    {
+      "block_id": "blk_add2d9fef9b8dd7b",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 283.2049999999999,
+        "x1": 315.631,
+        "y1": 269.524,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Morbi viverra semper lorem nec molestie.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 88,
+        "spatial_order": 31,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 88
+    },
+    {
+      "block_id": "blk_2d62f783a1a8947d",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 255.505,
+        "x1": 501.659,
+        "y1": 241.82400000000007,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Maecenas tincidunt est efficitur ligula euismod, sit amet ornare est vulputate.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 89,
+        "spatial_order": 21,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 89
+    },
+    {
+      "block_id": "blk_d9e956ee8a68b632",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 733.344,
+        "x1": 537.973,
+        "y1": 632.933,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In non mauris justo. Duis vehicula mi vel mi pretium, a viverra erat efficitur. Cras aliquam est ac eros varius, id iaculis dui auctor. Duis pretium neque ligula, et pulvinar mi placerat et. Nulla nec nunc sit amet nunc posuere vestibulum. Ut id neque eget tortor mattis tristique. Donec ante est, blandit sit amet tristique vel, lacinia pulvinar arcu. Pellentesque scelerisque fermentum erat, id posuere justo pulvinar ut. Cras id eros sed enim aliquam lobortis. Sed lobortis nisl ut eros efficitur tincidunt. Cras justo mi, porttitor quis mattis vel, ultricies ut purus. Ut facilisis et lacus eu cursus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 90,
+        "spatial_order": 155,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 90
+    },
+    {
+      "block_id": "blk_2f727a64fbf80889",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 619.244,
+        "x1": 537.984,
+        "y1": 562.933,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In eleifend velit vitae libero sollicitudin euismod. Fusce vitae vestibulum velit. Pellentesque vulputate lectus quis pellentesque commodo. Aliquam erat volutpat. Vestibulum in egestas velit.   Pellentesque  fermentum nisl vitae fringilla venenatis. Etiam id mauris vitae orci maximus ultricies.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 91,
+        "spatial_order": 131,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 91
+    },
+    {
+      "block_id": "blk_9d10a5fefaddfb94",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 510.59,
+        "x1": 529.282,
+        "y1": 469.802,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Cras fringilla ipsum magna, in fringilla dui commodo a.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 92,
+        "spatial_order": 111,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 92
+    },
+    {
+      "block_id": "blk_5e82f29dd464fccf",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 222.54399999999998,
+        "x1": 538.299,
+        "y1": 92.73299999999995,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Etiam vehicula luctus fermentum. In vel metus congue, pulvinar lectus vel, fermentum dui. Maecenas ante orci, egestas ut aliquet sit amet, sagittis a magna. Aliquam ante quam, pellentesque ut dignissim quis, laoreet eget est. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ullamcorper justo sapien, in cursus libero viverra eget. Vivamus auctor imperdiet urna, at pulvinar leo posuere laoreet. Suspendisse neque nisl, fringilla at iaculis scelerisque, ornare vel dolor. Ut et   pulvinar   nunc.   Pellentesque   fringilla   mollis   efficitur.   Nullam   venenatis   commodo imperdiet. Morbi velit neque, semper quis lorem quis, efficitur dignissim ipsum. Ut ac lorem sed turpis imperdiet eleifend sit amet id sapien.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 93,
+        "spatial_order": 15,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 93
+    },
+    {
+      "block_id": "blk_0b5c29ae42b70859",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 746.69,
+        "x1": 521.416,
+        "y1": 705.902,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 94,
+        "spatial_order": 157,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 94
+    },
+    {
+      "block_id": "blk_fac4677fe9f12991",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 673.944,
+        "x1": 538.141,
+        "y1": 544.133,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Nunc ac faucibus odio. Vestibulum neque massa, scelerisque sit amet ligula eu, congue molestie mi. Praesent ut varius sem. Nullam at porttitor arcu, nec lacinia nisi. Ut ac dolor vitae odio interdum condimentum. Vivamus dapibus sodales ex, vitae malesuada ipsum cursus convallis. Maecenas sed egestas nulla, ac condimentum orci. Mauris diam felis, vulputate ac suscipit et, iaculis non est. Curabitur semper arcu ac ligula semper, nec luctus nisl blandit. Integer lacinia ante ac libero lobortis imperdiet. Nullam mollis convallis ipsum, ac accumsan nunc vehicula vitae. Nulla eget justo in felis tristique fringilla. Morbi sit amet tortor quis risus auctor condimentum. Morbi in ullamcorper elit. Nulla iaculis tellus sit amet mauris tempus fringilla.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 95,
+        "spatial_order": 143,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 95
+    },
+    {
+      "block_id": "blk_e185c3b04da7f43b",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 519.88,
+        "x1": 510.928,
+        "y1": 483.624,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas mauris lectus, lobortis et purus mattis, blandit dictum tellus.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 96,
+        "spatial_order": 117,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 96
+    },
+    {
+      "block_id": "blk_ed6bde94bf6a09fb",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 477.644,
+        "x1": 538.204,
+        "y1": 307.13300000000004,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas non lorem quis tellus placerat varius. Nulla facilisi. Aenean congue fringilla justo ut aliquam. Mauris id ex erat. Nunc vulputate neque vitae justo facilisis, non condimentum ante sagittis. Morbi viverra semper lorem nec molestie. Maecenas tincidunt est efficitur ligula euismod, sit amet ornare est vulputate. In non mauris justo. Duis vehicula mi vel mi pretium, a viverra erat efficitur. Cras aliquam est ac eros varius, id iaculis dui auctor. Duis pretium neque ligula, et pulvinar mi placerat et. Nulla nec nunc sit amet nunc posuere vestibulum. Ut id neque eget tortor mattis tristique. Donec ante est, blandit sit amet tristique vel, lacinia pulvinar arcu. Pellentesque scelerisque fermentum erat, id posuere justo pulvinar ut. Cras id eros sed enim aliquam lobortis. Sed lobortis nisl ut eros efficitur tincidunt. Cras justo mi, porttitor quis mattis vel, ultricies ut purus. Ut facilisis et lacus eu cursus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 97,
+        "spatial_order": 105,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 97
+    },
+    {
+      "block_id": "blk_27fd1c67dcfd48a7",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 282.88,
+        "x1": 446.976,
+        "y1": 265.024,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In eleifend velit vitae libero sollicitudin euismod.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 98,
+        "spatial_order": 29,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 98
+    },
+    {
+      "block_id": "blk_e1a54dfb78a6150c",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 259.044,
+        "x1": 538.32,
+        "y1": 59.13300000000004,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Fusce vitae vestibulum velit. Pellentesque vulputate lectus quis pellentesque commodo. Aliquam erat volutpat. Vestibulum in egestas velit. Pellentesque fermentum nisl vitae fringilla   venenatis.   Etiam   id   mauris   vitae   orci   maximus   ultricies.   Cras   fringilla   ipsum magna, in fringilla dui commodo a. Etiam vehicula luctus fermentum. In vel metus congue, pulvinar lectus vel, fermentum dui. Maecenas ante orci, egestas ut aliquet sit amet, sagittis a magna. Aliquam ante quam, pellentesque ut dignissim quis, laoreet eget est. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ullamcorper justo sapien, in cursus libero viverra eget. Vivamus auctor imperdiet urna, at pulvinar leo posuere laoreet. Suspendisse neque nisl, fringilla at iaculis scelerisque, ornare vel dolor. Ut et   pulvinar   nunc.   Pellentesque   fringilla   mollis   efficitur.   Nullam   venenatis   commodo imperdiet. Morbi velit neque, semper quis lorem quis, efficitur dignissim ipsum. Ut ac lorem sed turpis imperdiet eleifend sit amet id sapien.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 99,
+        "spatial_order": 23,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 99
+    },
+    {
+      "block_id": "blk_3878fd63cf52b388",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 401.48,
+        "x1": 510.928,
+        "y1": 365.224,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas mauris lectus, lobortis et purus mattis, blandit dictum tellus.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 100,
+        "spatial_order": 81,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 100
+    },
+    {
+      "block_id": "blk_13883cf31520e5e3",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 359.144,
+        "x1": 538.204,
+        "y1": 302.8330000000001,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas non lorem quis tellus placerat varius. Nulla facilisi. Aenean congue fringilla justo ut aliquam. Mauris id ex erat. Nunc vulputate neque vitae justo facilisis, non condimentum ante sagittis. Morbi viverra semper lorem nec molestie. Maecenas tincidunt est efficitur ligula euismod, sit amet ornare est vulputate.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 101,
+        "spatial_order": 59,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 101
+    },
+    {
+      "block_id": "blk_b8783ea36e70775f",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 289.144,
+        "x1": 537.973,
+        "y1": 188.73299999999995,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In non mauris justo. Duis vehicula mi vel mi pretium, a viverra erat efficitur. Cras aliquam est ac eros varius, id iaculis dui auctor. Duis pretium neque ligula, et pulvinar mi placerat et. Nulla nec nunc sit amet nunc posuere vestibulum. Ut id neque eget tortor mattis tristique. Donec ante est, blandit sit amet tristique vel, lacinia pulvinar arcu. Pellentesque scelerisque fermentum erat, id posuere justo pulvinar ut. Cras id eros sed enim aliquam lobortis. Sed lobortis nisl ut eros efficitur tincidunt. Cras justo mi, porttitor quis mattis vel, ultricies ut purus. Ut facilisis et lacus eu cursus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 102,
+        "spatial_order": 33,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 102
+    },
+    {
+      "block_id": "blk_15444b46f5bedbee",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 164.48000000000002,
+        "x1": 446.976,
+        "y1": 146.62400000000002,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In eleifend velit vitae libero sollicitudin euismod.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 103,
+        "spatial_order": 3,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 103
+    },
+    {
+      "block_id": "blk_11921c63209cffad",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 140.54399999999998,
+        "x1": 538.32,
+        "y1": 84.23299999999995,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Fusce vitae vestibulum velit. Pellentesque vulputate lectus quis pellentesque commodo. Aliquam erat volutpat. Vestibulum in egestas velit. Pellentesque fermentum nisl vitae fringilla   venenatis.   Etiam   id   mauris   vitae   orci   maximus   ultricies.   Cras   fringilla   ipsum magna, in fringilla dui commodo a.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 104,
+        "spatial_order": 1,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 104
+    },
+    {
+      "block_id": "blk_565069d570f40c59",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 391.644,
+        "x1": 538.257,
+        "y1": 261.8330000000001,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Etiam vehicula luctus fermentum. In vel metus congue, pulvinar lectus vel, fermentum dui. Maecenas ante orci, egestas ut aliquet sit amet, sagittis a magna. Aliquam ante quam, pellentesque ut dignissim quis, laoreet eget est. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nosatra, per inceptos himenaeos. Ut ullamcorper justo sapien, in cursus libero viverra eget. Vivamus auctor imperdiet urna, at pulvinar leo posuere laoreet. Suspendisse neque nisl, fringilla at iaculis scelerisque, ornare vel dolor. Ut et   pulvinar   nunc.   Pellentesque   fringilla   mollis   efficitur.   Nullam   venenatis   commodo imperdiet. Morbi velit neque, semper quis lorem quis, efficitur dignissim ipsum. Ut ac lorem sed turpis imperdiet eleifend sit amet id sapien.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 105,
+        "spatial_order": 73,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 105
+    },
+    {
+      "block_id": "blk_8eefa0aedd9e19cb",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 206.0,
+        "y0": 772.34,
+        "x1": 389.372,
+        "y1": 741.092,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Lorem ipsum",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 106,
+        "spatial_order": 168,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 106
+    },
+    {
+      "block_id": "blk_90a55fa444b4ddbd",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 696.49,
+        "x1": 521.416,
+        "y1": 655.702,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac faucibus odio.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 107,
+        "spatial_order": 148,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 107
+    },
+    {
+      "block_id": "blk_65708f457f46bfbc",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.139,
+        "y0": 623.744,
+        "x1": 539.979,
+        "y1": 493.933,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Vestibulum neque massa, scelerisque sit amet ligula eu, congue molestie mi. Praesent ut varius sem. Nullam at porttitor arcu, nec lacinia nisi. Ut ac dolor vitae odio interdum condimentum. Vivamus   dapibus   sodales   ex,   vitae   malesuada   ipsum   cursus convallis. Maecenas sed egestas nulla, ac condimentum orci. Mauris diam felis, vulputate ac suscipit et, iaculis non est. Curabitur semper arcu ac ligula semper, nec luctus nisl blandit. Integer lacinia ante ac libero lobortis imperdiet. Nullam mollis convallis ipsum, ac accumsan nunc vehicula vitae. Nulla eget justo in felis tristique fringilla. Morbi sit amet tortor quis risus auctor condimentum. Morbi in ullamcorper elit. Nulla iaculis tellus sit amet mauris tempus fringilla.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 108,
+        "spatial_order": 134,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 108
+    },
+    {
+      "block_id": "blk_f28b36b5a2fa45b8",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 480.244,
+        "x1": 430.768,
+        "y1": 468.033,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas mauris lectus, lobortis et purus mattis, blandit dictum tellus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 109,
+        "spatial_order": 108,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 109
+    },
+    {
+      "block_id": "blk_ac0d54cf7bf0bab0",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 454.305,
+        "x1": 380.206,
+        "y1": 440.624,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Maecenas non lorem quis tellus placerat varius.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 110,
+        "spatial_order": 98,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 110
+    },
+    {
+      "block_id": "blk_459c8194c5af1691",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 426.605,
+        "x1": 165.173,
+        "y1": 412.924,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Nulla facilisi.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 111,
+        "spatial_order": 86,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 111
+    },
+    {
+      "block_id": "blk_60f62019a16c8eed",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 399.005,
+        "x1": 312.355,
+        "y1": 385.323,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Aenean congue fringilla justo ut aliquam.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 112,
+        "spatial_order": 78,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 112
+    },
+    {
+      "block_id": "blk_bf077b2834e0f63f",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 371.32,
+        "x1": 538.168,
+        "y1": 341.033,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Mauris id ex erat. Nunc vulputate neque vitae justo facilisis, non condimentum ante sagittis.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 113,
+        "spatial_order": 62,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 113
+    },
+    {
+      "block_id": "blk_7eada26add4dd152",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 327.30500000000006,
+        "x1": 315.631,
+        "y1": 313.624,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Morbi viverra semper lorem nec molestie.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 114,
+        "spatial_order": 54,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 114
+    },
+    {
+      "block_id": "blk_6ad9cf4a9abef553",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 299.605,
+        "x1": 501.659,
+        "y1": 285.924,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Maecenas tincidunt est efficitur ligula euismod, sit amet ornare est vulputate.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 115,
+        "spatial_order": 40,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 115
+    },
+    {
+      "block_id": "blk_aff43cca5d9d6495",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 759.344,
+        "x1": 537.973,
+        "y1": 658.933,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In non mauris justo. Duis vehicula mi vel mi pretium, a viverra erat efficitur. Cras aliquam est ac eros varius, id iaculis dui auctor. Duis pretium neque ligula, et pulvinar mi placerat et. Nulla nec nunc sit amet nunc posuere vestibulum. Ut id neque eget tortor mattis tristique. Donec ante est, blandit sit amet tristique vel, lacinia pulvinar arcu. Pellentesque scelerisque fermentum erat, id posuere justo pulvinar ut. Cras id eros sed enim aliquam lobortis. Sed lobortis nisl ut eros efficitur tincidunt. Cras justo mi, porttitor quis mattis vel, ultricies ut purus. Ut facilisis et lacus eu cursus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 116,
+        "spatial_order": 160,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 116
+    },
+    {
+      "block_id": "blk_3efa103414ae9682",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 645.144,
+        "x1": 537.984,
+        "y1": 588.833,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In eleifend velit vitae libero sollicitudin euismod. Fusce vitae vestibulum velit. Pellentesque vulputate lectus quis pellentesque commodo. Aliquam erat volutpat. Vestibulum in egestas velit.   Pellentesque  fermentum nisl vitae fringilla venenatis. Etiam id mauris vitae orci maximus ultricies.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 117,
+        "spatial_order": 140,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 117
+    },
+    {
+      "block_id": "blk_f94bbeb4d9cbabfe",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 536.59,
+        "x1": 529.282,
+        "y1": 495.802,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Cras fringilla ipsum magna, in fringilla dui commodo a.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 118,
+        "spatial_order": 120,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 118
+    },
+    {
+      "block_id": "blk_57aa0acaf94e8128",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 248.44399999999996,
+        "x1": 538.299,
+        "y1": 118.63300000000004,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Etiam vehicula luctus fermentum. In vel metus congue, pulvinar lectus vel, fermentum dui. Maecenas ante orci, egestas ut aliquet sit amet, sagittis a magna. Aliquam ante quam, pellentesque ut dignissim quis, laoreet eget est. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ullamcorper justo sapien, in cursus libero viverra eget. Vivamus auctor imperdiet urna, at pulvinar leo posuere laoreet. Suspendisse neque nisl, fringilla at iaculis scelerisque, ornare vel dolor. Ut et   pulvinar   nunc.   Pellentesque   fringilla   mollis   efficitur.   Nullam   venenatis   commodo imperdiet. Morbi velit neque, semper quis lorem quis, efficitur dignissim ipsum. Ut ac lorem sed turpis imperdiet eleifend sit amet id sapien.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 119,
+        "spatial_order": 18,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 119
+    },
+    {
+      "block_id": "blk_7648073d1cd3ae39",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 784.69,
+        "x1": 521.416,
+        "y1": 743.902,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 120,
+        "spatial_order": 172,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 120
+    },
+    {
+      "block_id": "blk_7a0b64ab9e4db04b",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 711.944,
+        "x1": 538.141,
+        "y1": 582.133,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Nunc ac faucibus odio. Vestibulum neque massa, scelerisque sit amet ligula eu, congue molestie mi. Praesent ut varius sem. Nullam at porttitor arcu, nec lacinia nisi. Ut ac dolor vitae odio interdum condimentum. Vivamus dapibus sodales ex, vitae malesuada ipsum cursus convallis. Maecenas sed egestas nulla, ac condimentum orci. Mauris diam felis, vulputate ac suscipit et, iaculis non est. Curabitur semper arcu ac ligula semper, nec luctus nisl blandit. Integer lacinia ante ac libero lobortis imperdiet. Nullam mollis convallis ipsum, ac accumsan nunc vehicula vitae. Nulla eget justo in felis tristique fringilla. Morbi sit amet tortor quis risus auctor condimentum. Morbi in ullamcorper elit. Nulla iaculis tellus sit amet mauris tempus fringilla.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 121,
+        "spatial_order": 152,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 121
+    },
+    {
+      "block_id": "blk_6d734cc4ad7e56a4",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 557.88,
+        "x1": 510.928,
+        "y1": 521.624,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas mauris lectus, lobortis et purus mattis, blandit dictum tellus.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 122,
+        "spatial_order": 124,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 122
+    },
+    {
+      "block_id": "blk_a90a1d465ad9e803",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 515.544,
+        "x1": 538.204,
+        "y1": 345.133,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas non lorem quis tellus placerat varius. Nulla facilisi. Aenean congue fringilla justo ut aliquam. Mauris id ex erat. Nunc vulputate neque vitae justo facilisis, non condimentum ante sagittis. Morbi viverra semper lorem nec molestie. Maecenas tincidunt est efficitur ligula euismod, sit amet ornare est vulputate. In non mauris justo. Duis vehicula mi vel mi pretium, a viverra erat efficitur. Cras aliquam est ac eros varius, id iaculis dui auctor. Duis pretium neque ligula, et pulvinar mi placerat et. Nulla nec nunc sit amet nunc posuere vestibulum. Ut id neque eget tortor mattis tristique. Donec ante est, blandit sit amet tristique vel, lacinia pulvinar arcu. Pellentesque scelerisque fermentum erat, id posuere justo pulvinar ut. Cras id eros sed enim aliquam lobortis. Sed lobortis nisl ut eros efficitur tincidunt. Cras justo mi, porttitor quis mattis vel, ultricies ut purus. Ut facilisis et lacus eu cursus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 123,
+        "spatial_order": 114,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 123
+    },
+    {
+      "block_id": "blk_5240e187d13a1c95",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 320.88,
+        "x1": 446.976,
+        "y1": 303.024,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In eleifend velit vitae libero sollicitudin euismod.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 124,
+        "spatial_order": 48,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 124
+    },
+    {
+      "block_id": "blk_0c11a5189a989055",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 296.94399999999996,
+        "x1": 538.32,
+        "y1": 97.13300000000004,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Fusce vitae vestibulum velit. Pellentesque vulputate lectus quis pellentesque commodo. Aliquam erat volutpat. Vestibulum in egestas velit. Pellentesque fermentum nisl vitae fringilla   venenatis.   Etiam   id   mauris   vitae   orci   maximus   ultricies.   Cras   fringilla   ipsum magna, in fringilla dui commodo a. Etiam vehicula luctus fermentum. In vel metus congue, pulvinar lectus vel, fermentum dui. Maecenas ante orci, egestas ut aliquet sit amet, sagittis a magna. Aliquam ante quam, pellentesque ut dignissim quis, laoreet eget est. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ullamcorper justo sapien, in cursus libero viverra eget. Vivamus auctor imperdiet urna, at pulvinar leo posuere laoreet. Suspendisse neque nisl, fringilla at iaculis scelerisque, ornare vel dolor. Ut et   pulvinar   nunc.   Pellentesque   fringilla   mollis   efficitur.   Nullam   venenatis   commodo imperdiet. Morbi velit neque, semper quis lorem quis, efficitur dignissim ipsum. Ut ac lorem sed turpis imperdiet eleifend sit amet id sapien.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 125,
+        "spatial_order": 36,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 125
+    },
+    {
+      "block_id": "blk_5d2ff5c05e57485c",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 427.38,
+        "x1": 510.928,
+        "y1": 391.124,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas mauris lectus, lobortis et purus mattis, blandit dictum tellus.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 126,
+        "spatial_order": 90,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 126
+    },
+    {
+      "block_id": "blk_8d6352bb139dfd39",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 385.144,
+        "x1": 538.204,
+        "y1": 328.8330000000001,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas non lorem quis tellus placerat varius. Nulla facilisi. Aenean congue fringilla justo ut aliquam. Mauris id ex erat. Nunc vulputate neque vitae justo facilisis, non condimentum ante sagittis. Morbi viverra semper lorem nec molestie. Maecenas tincidunt est efficitur ligula euismod, sit amet ornare est vulputate.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 127,
+        "spatial_order": 68,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 127
+    },
+    {
+      "block_id": "blk_adbfc65473baacf9",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 315.044,
+        "x1": 537.973,
+        "y1": 214.63300000000004,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In non mauris justo. Duis vehicula mi vel mi pretium, a viverra erat efficitur. Cras aliquam est ac eros varius, id iaculis dui auctor. Duis pretium neque ligula, et pulvinar mi placerat et. Nulla nec nunc sit amet nunc posuere vestibulum. Ut id neque eget tortor mattis tristique. Donec ante est, blandit sit amet tristique vel, lacinia pulvinar arcu. Pellentesque scelerisque fermentum erat, id posuere justo pulvinar ut. Cras id eros sed enim aliquam lobortis. Sed lobortis nisl ut eros efficitur tincidunt. Cras justo mi, porttitor quis mattis vel, ultricies ut purus. Ut facilisis et lacus eu cursus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 128,
+        "spatial_order": 44,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 128
+    },
+    {
+      "block_id": "blk_9f92799499ae984d",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 190.38,
+        "x1": 446.976,
+        "y1": 172.524,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In eleifend velit vitae libero sollicitudin euismod.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 129,
+        "spatial_order": 10,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 129
+    },
+    {
+      "block_id": "blk_daad2b281c6aae73",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 166.54399999999998,
+        "x1": 538.32,
+        "y1": 110.23299999999995,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Fusce vitae vestibulum velit. Pellentesque vulputate lectus quis pellentesque commodo. Aliquam erat volutpat. Vestibulum in egestas velit. Pellentesque fermentum nisl vitae fringilla   venenatis.   Etiam   id   mauris   vitae   orci   maximus   ultricies.   Cras   fringilla   ipsum magna, in fringilla dui commodo a.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 130,
+        "spatial_order": 6,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 130
+    },
+    {
+      "block_id": "blk_0230ff6d31c19063",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 391.644,
+        "x1": 538.257,
+        "y1": 261.8330000000001,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Etiam vehicula luctus fermentum. In vel metus congue, pulvinar lectus vel, fermentum dui. Maecenas ante orci, egestas ut aliquet sit amet, sagittis a magna. Aliquam ante quam, pellentesque ut dignissim quis, laoreet eget est. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nosatra, per inceptos himenaeos. Ut ullamcorper justo sapien, in cursus libero viverra eget. Vivamus auctor imperdiet urna, at pulvinar leo posuere laoreet. Suspendisse neque nisl, fringilla at iaculis scelerisque, ornare vel dolor. Ut et   pulvinar   nunc.   Pellentesque   fringilla   mollis   efficitur.   Nullam   venenatis   commodo imperdiet. Morbi velit neque, semper quis lorem quis, efficitur dignissim ipsum. Ut ac lorem sed turpis imperdiet eleifend sit amet id sapien.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 131,
+        "spatial_order": 74,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 131
+    },
+    {
+      "block_id": "blk_e83b98ca4889800b",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 206.0,
+        "y0": 772.34,
+        "x1": 389.372,
+        "y1": 741.092,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Lorem ipsum",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 132,
+        "spatial_order": 169,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 132
+    },
+    {
+      "block_id": "blk_4eae9e7fbd10b88e",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 696.49,
+        "x1": 521.416,
+        "y1": 655.702,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac faucibus odio.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 133,
+        "spatial_order": 149,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 133
+    },
+    {
+      "block_id": "blk_76d5b5d6ff5c3d86",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.139,
+        "y0": 623.744,
+        "x1": 539.979,
+        "y1": 493.933,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Vestibulum neque massa, scelerisque sit amet ligula eu, congue molestie mi. Praesent ut varius sem. Nullam at porttitor arcu, nec lacinia nisi. Ut ac dolor vitae odio interdum condimentum. Vivamus   dapibus   sodales   ex,   vitae   malesuada   ipsum   cursus convallis. Maecenas sed egestas nulla, ac condimentum orci. Mauris diam felis, vulputate ac suscipit et, iaculis non est. Curabitur semper arcu ac ligula semper, nec luctus nisl blandit. Integer lacinia ante ac libero lobortis imperdiet. Nullam mollis convallis ipsum, ac accumsan nunc vehicula vitae. Nulla eget justo in felis tristique fringilla. Morbi sit amet tortor quis risus auctor condimentum. Morbi in ullamcorper elit. Nulla iaculis tellus sit amet mauris tempus fringilla.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 134,
+        "spatial_order": 135,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 134
+    },
+    {
+      "block_id": "blk_69aeedeaec43a7e5",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 480.244,
+        "x1": 430.768,
+        "y1": 468.033,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas mauris lectus, lobortis et purus mattis, blandit dictum tellus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 135,
+        "spatial_order": 109,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 135
+    },
+    {
+      "block_id": "blk_aaf584d631cd8f27",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 454.305,
+        "x1": 380.206,
+        "y1": 440.624,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Maecenas non lorem quis tellus placerat varius.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 136,
+        "spatial_order": 99,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 136
+    },
+    {
+      "block_id": "blk_048d5bc9ab74777c",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 426.605,
+        "x1": 165.173,
+        "y1": 412.924,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Nulla facilisi.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 137,
+        "spatial_order": 87,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 137
+    },
+    {
+      "block_id": "blk_ce8f85d97c882ed1",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 399.005,
+        "x1": 312.355,
+        "y1": 385.323,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Aenean congue fringilla justo ut aliquam.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 138,
+        "spatial_order": 79,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 138
+    },
+    {
+      "block_id": "blk_738a8edbbf59bf97",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 371.32,
+        "x1": 538.168,
+        "y1": 341.033,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Mauris id ex erat. Nunc vulputate neque vitae justo facilisis, non condimentum ante sagittis.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 139,
+        "spatial_order": 63,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 139
+    },
+    {
+      "block_id": "blk_cede6f865d05d385",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 327.30500000000006,
+        "x1": 315.631,
+        "y1": 313.624,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Morbi viverra semper lorem nec molestie.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 140,
+        "spatial_order": 55,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 140
+    },
+    {
+      "block_id": "blk_6c7cb65a14bc3d8c",
+      "type": "list",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 299.605,
+        "x1": 501.659,
+        "y1": 285.924,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": " Maecenas tincidunt est efficitur ligula euismod, sit amet ornare est vulputate.",
+      "metadata": {
+        "label": "list_item"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 141,
+        "spatial_order": 41,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 141
+    },
+    {
+      "block_id": "blk_425a20cb0998ebc4",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 759.344,
+        "x1": 537.973,
+        "y1": 658.933,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In non mauris justo. Duis vehicula mi vel mi pretium, a viverra erat efficitur. Cras aliquam est ac eros varius, id iaculis dui auctor. Duis pretium neque ligula, et pulvinar mi placerat et. Nulla nec nunc sit amet nunc posuere vestibulum. Ut id neque eget tortor mattis tristique. Donec ante est, blandit sit amet tristique vel, lacinia pulvinar arcu. Pellentesque scelerisque fermentum erat, id posuere justo pulvinar ut. Cras id eros sed enim aliquam lobortis. Sed lobortis nisl ut eros efficitur tincidunt. Cras justo mi, porttitor quis mattis vel, ultricies ut purus. Ut facilisis et lacus eu cursus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 142,
+        "spatial_order": 161,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 142
+    },
+    {
+      "block_id": "blk_905c0bd76b62c74c",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 645.144,
+        "x1": 537.984,
+        "y1": 588.833,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In eleifend velit vitae libero sollicitudin euismod. Fusce vitae vestibulum velit. Pellentesque vulputate lectus quis pellentesque commodo. Aliquam erat volutpat. Vestibulum in egestas velit.   Pellentesque  fermentum nisl vitae fringilla venenatis. Etiam id mauris vitae orci maximus ultricies.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 143,
+        "spatial_order": 141,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 143
+    },
+    {
+      "block_id": "blk_235c5eddb35ea526",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 536.59,
+        "x1": 529.282,
+        "y1": 495.802,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Cras fringilla ipsum magna, in fringilla dui commodo a.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 144,
+        "spatial_order": 121,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 144
+    },
+    {
+      "block_id": "blk_8635dc1d68757cf6",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 248.44399999999996,
+        "x1": 538.299,
+        "y1": 118.63300000000004,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Etiam vehicula luctus fermentum. In vel metus congue, pulvinar lectus vel, fermentum dui. Maecenas ante orci, egestas ut aliquet sit amet, sagittis a magna. Aliquam ante quam, pellentesque ut dignissim quis, laoreet eget est. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ullamcorper justo sapien, in cursus libero viverra eget. Vivamus auctor imperdiet urna, at pulvinar leo posuere laoreet. Suspendisse neque nisl, fringilla at iaculis scelerisque, ornare vel dolor. Ut et   pulvinar   nunc.   Pellentesque   fringilla   mollis   efficitur.   Nullam   venenatis   commodo imperdiet. Morbi velit neque, semper quis lorem quis, efficitur dignissim ipsum. Ut ac lorem sed turpis imperdiet eleifend sit amet id sapien.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 145,
+        "spatial_order": 19,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 145
+    },
+    {
+      "block_id": "blk_6b7c4a4a974ac89f",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 784.69,
+        "x1": 521.416,
+        "y1": 743.902,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 146,
+        "spatial_order": 173,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 146
+    },
+    {
+      "block_id": "blk_67d56041356c8e70",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 711.944,
+        "x1": 538.141,
+        "y1": 582.133,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Nunc ac faucibus odio. Vestibulum neque massa, scelerisque sit amet ligula eu, congue molestie mi. Praesent ut varius sem. Nullam at porttitor arcu, nec lacinia nisi. Ut ac dolor vitae odio interdum condimentum. Vivamus dapibus sodales ex, vitae malesuada ipsum cursus convallis. Maecenas sed egestas nulla, ac condimentum orci. Mauris diam felis, vulputate ac suscipit et, iaculis non est. Curabitur semper arcu ac ligula semper, nec luctus nisl blandit. Integer lacinia ante ac libero lobortis imperdiet. Nullam mollis convallis ipsum, ac accumsan nunc vehicula vitae. Nulla eget justo in felis tristique fringilla. Morbi sit amet tortor quis risus auctor condimentum. Morbi in ullamcorper elit. Nulla iaculis tellus sit amet mauris tempus fringilla.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 147,
+        "spatial_order": 153,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 147
+    },
+    {
+      "block_id": "blk_ed9a8baa33250e65",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 557.88,
+        "x1": 510.928,
+        "y1": 521.624,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas mauris lectus, lobortis et purus mattis, blandit dictum tellus.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 148,
+        "spatial_order": 125,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 148
+    },
+    {
+      "block_id": "blk_036ec78613051118",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 515.544,
+        "x1": 538.204,
+        "y1": 345.133,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas non lorem quis tellus placerat varius. Nulla facilisi. Aenean congue fringilla justo ut aliquam. Mauris id ex erat. Nunc vulputate neque vitae justo facilisis, non condimentum ante sagittis. Morbi viverra semper lorem nec molestie. Maecenas tincidunt est efficitur ligula euismod, sit amet ornare est vulputate. In non mauris justo. Duis vehicula mi vel mi pretium, a viverra erat efficitur. Cras aliquam est ac eros varius, id iaculis dui auctor. Duis pretium neque ligula, et pulvinar mi placerat et. Nulla nec nunc sit amet nunc posuere vestibulum. Ut id neque eget tortor mattis tristique. Donec ante est, blandit sit amet tristique vel, lacinia pulvinar arcu. Pellentesque scelerisque fermentum erat, id posuere justo pulvinar ut. Cras id eros sed enim aliquam lobortis. Sed lobortis nisl ut eros efficitur tincidunt. Cras justo mi, porttitor quis mattis vel, ultricies ut purus. Ut facilisis et lacus eu cursus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 149,
+        "spatial_order": 115,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 149
+    },
+    {
+      "block_id": "blk_0c9d841cff735310",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 320.88,
+        "x1": 446.976,
+        "y1": 303.024,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In eleifend velit vitae libero sollicitudin euismod.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 150,
+        "spatial_order": 49,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 150
+    },
+    {
+      "block_id": "blk_953f29f93fa68f50",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 296.94399999999996,
+        "x1": 538.32,
+        "y1": 97.13300000000004,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Fusce vitae vestibulum velit. Pellentesque vulputate lectus quis pellentesque commodo. Aliquam erat volutpat. Vestibulum in egestas velit. Pellentesque fermentum nisl vitae fringilla   venenatis.   Etiam   id   mauris   vitae   orci   maximus   ultricies.   Cras   fringilla   ipsum magna, in fringilla dui commodo a. Etiam vehicula luctus fermentum. In vel metus congue, pulvinar lectus vel, fermentum dui. Maecenas ante orci, egestas ut aliquet sit amet, sagittis a magna. Aliquam ante quam, pellentesque ut dignissim quis, laoreet eget est. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ullamcorper justo sapien, in cursus libero viverra eget. Vivamus auctor imperdiet urna, at pulvinar leo posuere laoreet. Suspendisse neque nisl, fringilla at iaculis scelerisque, ornare vel dolor. Ut et   pulvinar   nunc.   Pellentesque   fringilla   mollis   efficitur.   Nullam   venenatis   commodo imperdiet. Morbi velit neque, semper quis lorem quis, efficitur dignissim ipsum. Ut ac lorem sed turpis imperdiet eleifend sit amet id sapien.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 151,
+        "spatial_order": 37,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 151
+    },
+    {
+      "block_id": "blk_b2cfc08326fea1f1",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 427.38,
+        "x1": 510.928,
+        "y1": 391.124,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas mauris lectus, lobortis et purus mattis, blandit dictum tellus.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 152,
+        "spatial_order": 91,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 152
+    },
+    {
+      "block_id": "blk_2b43e64e4021b062",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 385.144,
+        "x1": 538.204,
+        "y1": 328.8330000000001,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Maecenas non lorem quis tellus placerat varius. Nulla facilisi. Aenean congue fringilla justo ut aliquam. Mauris id ex erat. Nunc vulputate neque vitae justo facilisis, non condimentum ante sagittis. Morbi viverra semper lorem nec molestie. Maecenas tincidunt est efficitur ligula euismod, sit amet ornare est vulputate.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 153,
+        "spatial_order": 69,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 153
+    },
+    {
+      "block_id": "blk_ac0611b80cff6c6a",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 315.044,
+        "x1": 537.973,
+        "y1": 214.63300000000004,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In non mauris justo. Duis vehicula mi vel mi pretium, a viverra erat efficitur. Cras aliquam est ac eros varius, id iaculis dui auctor. Duis pretium neque ligula, et pulvinar mi placerat et. Nulla nec nunc sit amet nunc posuere vestibulum. Ut id neque eget tortor mattis tristique. Donec ante est, blandit sit amet tristique vel, lacinia pulvinar arcu. Pellentesque scelerisque fermentum erat, id posuere justo pulvinar ut. Cras id eros sed enim aliquam lobortis. Sed lobortis nisl ut eros efficitur tincidunt. Cras justo mi, porttitor quis mattis vel, ultricies ut purus. Ut facilisis et lacus eu cursus.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 154,
+        "spatial_order": 45,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 154
+    },
+    {
+      "block_id": "blk_f7f3e27c1bb430e3",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 74.8,
+        "y0": 190.38,
+        "x1": 446.976,
+        "y1": 172.524,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "In eleifend velit vitae libero sollicitudin euismod.",
+      "metadata": {
+        "label": "section_header"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 155,
+        "spatial_order": 11,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 155
+    },
+    {
+      "block_id": "blk_98767335479e0a1c",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 166.54399999999998,
+        "x1": 538.32,
+        "y1": 110.23299999999995,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Fusce vitae vestibulum velit. Pellentesque vulputate lectus quis pellentesque commodo. Aliquam erat volutpat. Vestibulum in egestas velit. Pellentesque fermentum nisl vitae fringilla   venenatis.   Etiam   id   mauris   vitae   orci   maximus   ultricies.   Cras   fringilla   ipsum magna, in fringilla dui commodo a.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 156,
+        "spatial_order": 7,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 156
+    },
+    {
+      "block_id": "blk_6e621ba7ae98b501",
+      "type": "paragraph",
+      "parent_id": null,
+      "page_number": 1,
+      "bbox": {
+        "x0": 56.8,
+        "y0": 391.644,
+        "x1": 538.257,
+        "y1": 261.8330000000001,
+        "page_width": null,
+        "page_height": null
+      },
+      "content": "Etiam vehicula luctus fermentum. In vel metus congue, pulvinar lectus vel, fermentum dui. Maecenas ante orci, egestas ut aliquet sit amet, sagittis a magna. Aliquam ante quam, pellentesque ut dignissim quis, laoreet eget est. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nosatra, per inceptos himenaeos. Ut ullamcorper justo sapien, in cursus libero viverra eget. Vivamus auctor imperdiet urna, at pulvinar leo posuere laoreet. Suspendisse neque nisl, fringilla at iaculis scelerisque, ornare vel dolor. Ut et   pulvinar   nunc.   Pellentesque   fringilla   mollis   efficitur.   Nullam   venenatis   commodo imperdiet. Morbi velit neque, semper quis lorem quis, efficitur dignissim ipsum. Ut ac lorem sed turpis imperdiet eleifend sit amet id sapien.",
+      "metadata": {
+        "label": "text"
+      },
+      "formatting_data": null,
+      "ordering_metadata": {
+        "docling_order": 157,
+        "spatial_order": 75,
+        "order_discrepancy": true
+      },
+      "table_data": null,
+      "image_data": null,
+      "level": null,
+      "list_level": null,
+      "order": 157
+    }
+  ],
+  "relationships": [],
+  "stats": {
+    "block_count": 184,
+    "table_count": 6,
+    "image_count": 20,
+    "page_count": 30
+  },
+  "processing_timestamp": "2026-02-18T13:00:29.594332",
+  "config_used": {}
+}

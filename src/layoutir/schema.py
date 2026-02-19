@@ -3,6 +3,11 @@ Canonical Intermediate Representation (IR) Schema
 
 This module defines the strict typed schema for the document IR.
 All IDs are deterministic (hash-based) for idempotent processing.
+
+Schema Version: 1.0.0 (backward-compatible additive extension)
+- FormattingData, OrderingMetadata, CellSpan added as optional fields
+- All new fields default to None for backward compatibility
+- Existing IR files load without modification
 """
 
 from __future__ import annotations
@@ -39,6 +44,64 @@ class BoundingBox(BaseModel):
         frozen = True  # Immutable for hashing
 
 
+class TextStyle(BaseModel):
+    """Text styling properties (optional for round-trip stability)"""
+    bold: Optional[bool] = Field(None, description="Bold text")
+    italic: Optional[bool] = Field(None, description="Italic text")
+    underline: Optional[bool] = Field(None, description="Underlined text")
+
+    class Config:
+        frozen = True
+
+
+class FontProperties(BaseModel):
+    """Font metadata (optional for round-trip stability)"""
+    name: Optional[str] = Field(None, description="Font family name")
+    size: Optional[float] = Field(None, description="Font size in points")
+    weight: Optional[int] = Field(None, description="Font weight (100-900)")
+    color: Optional[str] = Field(None, description="Font color as hex (#RRGGBB)")
+
+    class Config:
+        frozen = True
+
+
+class FormattingData(BaseModel):
+    """
+    Optional styling information for blocks (forward-compatible extension).
+    Not considered in semantic equality testing.
+    """
+    font: Optional[FontProperties] = Field(None, description="Font properties")
+    style: Optional[TextStyle] = Field(None, description="Text style")
+    links: Optional[List[str]] = Field(default_factory=list, description="URLs in block")
+
+    class Config:
+        frozen = False  # Allow mutation during construction
+
+
+class CellSpan(BaseModel):
+    """Cell spanning metadata for tables"""
+    row: int = Field(..., description="Row index")
+    col: int = Field(..., description="Column index")
+    rowspan: int = Field(1, description="Number of rows spanned")
+    colspan: int = Field(1, description="Number of columns spanned")
+
+    class Config:
+        frozen = True
+
+
+class OrderingMetadata(BaseModel):
+    """
+    Ordering validation metadata (not considered in semantic equality).
+    Tracks whether Docling's reading order matches spatial order.
+    """
+    docling_order: int = Field(..., description="Order from Docling's iterate_items()")
+    spatial_order: Optional[int] = Field(None, description="Computed spatial order from bboxes")
+    order_discrepancy: Optional[bool] = Field(None, description="True if spatial != docling order")
+
+    class Config:
+        frozen = True
+
+
 class TableData(BaseModel):
     """Structured table representation"""
     table_id: str = Field(..., description="Deterministic hash-based table ID")
@@ -47,6 +110,12 @@ class TableData(BaseModel):
     headers: Optional[List[str]] = Field(None, description="Column headers if detected")
     data: List[List[str]] = Field(..., description="Table data as list of rows")
     raw_text: str = Field(..., description="Fallback plain text representation")
+
+    # NEW: Cell spanning preservation (explicit structure for round-trip stability)
+    cell_spans: Optional[List[CellSpan]] = Field(
+        None,
+        description="Cell spanning metadata (rowspan/colspan)"
+    )
 
     class Config:
         frozen = False  # Allow mutation during construction
@@ -73,6 +142,16 @@ class Block(BaseModel):
     bbox: Optional[BoundingBox] = Field(None, description="Bounding box coordinates")
     content: str = Field(..., description="Text content of the block")
     metadata: Dict[str, Any] = Field(default_factory=dict, description="Additional block metadata")
+
+    # NEW: Optional fields for round-trip stability (backward-compatible)
+    formatting_data: Optional[FormattingData] = Field(
+        None,
+        description="Optional styling information (not considered in semantic equality)"
+    )
+    ordering_metadata: Optional[OrderingMetadata] = Field(
+        None,
+        description="Ordering validation data (not considered in semantic equality)"
+    )
 
     # For specialized blocks
     table_data: Optional[TableData] = Field(None, description="Populated for TABLE blocks")
