@@ -18,33 +18,31 @@ class StructuredFormatter(logging.Formatter):
     def format(self, record: logging.LogRecord) -> str:
         """Format log record as JSON"""
         log_data = {
-            'timestamp': datetime.utcnow().isoformat(),
-            'level': record.levelname,
-            'logger': record.name,
-            'message': record.getMessage(),
+            "timestamp": datetime.utcnow().isoformat(),
+            "level": record.levelname,
+            "logger": record.name,
+            "message": record.getMessage(),
         }
 
         # Add extra fields if present
-        if hasattr(record, 'document_id'):
-            log_data['document_id'] = record.document_id
+        if hasattr(record, "document_id"):
+            log_data["document_id"] = record.document_id
 
-        if hasattr(record, 'stage'):
-            log_data['stage'] = record.stage
+        if hasattr(record, "stage"):
+            log_data["stage"] = record.stage
 
-        if hasattr(record, 'duration'):
-            log_data['duration_seconds'] = record.duration
+        if hasattr(record, "duration"):
+            log_data["duration_seconds"] = record.duration
 
         # Add exception info if present
         if record.exc_info:
-            log_data['exception'] = self.formatException(record.exc_info)
+            log_data["exception"] = self.formatException(record.exc_info)
 
         return json.dumps(log_data)
 
 
 def setup_logging(
-    log_level: str = "INFO",
-    log_file: Optional[Path] = None,
-    structured: bool = True
+    log_level: str = "INFO", log_file: Optional[Path] = None, structured: bool = True
 ) -> None:
     """
     Setup logging configuration.
@@ -72,9 +70,7 @@ def setup_logging(
         console_handler.setFormatter(StructuredFormatter())
     else:
         console_handler.setFormatter(
-            logging.Formatter(
-                '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-            )
+            logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
         )
 
     root_logger.addHandler(console_handler)
@@ -90,8 +86,8 @@ def setup_logging(
         root_logger.addHandler(file_handler)
 
     # Set log level for specific libraries
-    logging.getLogger('PIL').setLevel(logging.WARNING)
-    logging.getLogger('matplotlib').setLevel(logging.WARNING)
+    logging.getLogger("PIL").setLevel(logging.WARNING)
+    logging.getLogger("matplotlib").setLevel(logging.WARNING)
 
 
 class LogContext:
@@ -111,6 +107,7 @@ class LogContext:
 
     def __enter__(self):
         """Enter context"""
+
         def record_factory(*args, **kwargs):
             record = self.old_factory(*args, **kwargs)
             for key, value in self.context.items():

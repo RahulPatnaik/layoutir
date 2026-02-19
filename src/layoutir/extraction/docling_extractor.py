@@ -15,6 +15,7 @@ logger = logging.getLogger(__name__)
 @dataclass
 class RawBlock:
     """Raw extracted block before normalization"""
+
     text: str
     block_type: str
     page_number: int
@@ -27,6 +28,7 @@ class RawBlock:
 @dataclass
 class RawTable:
     """Raw extracted table before normalization"""
+
     page_number: int
     bbox: Optional[Dict[str, float]]
     data: List[List[str]]
@@ -38,6 +40,7 @@ class RawTable:
 @dataclass
 class RawImage:
     """Raw extracted image before normalization"""
+
     page_number: int
     bbox: Optional[Dict[str, float]]
     image_bytes: bytes
@@ -51,6 +54,7 @@ class RawImage:
 @dataclass
 class RawDocument:
     """Raw extracted document structure"""
+
     blocks: List[RawBlock]
     tables: List[RawTable]
     images: List[RawImage]
@@ -101,7 +105,7 @@ class DoclingExtractor:
             item_type = type(item).__name__
 
             # Extract text blocks
-            if hasattr(item, 'text'):
+            if hasattr(item, "text"):
                 text = item.text.strip() if item.text else ""
 
                 if not text:
@@ -122,18 +126,20 @@ class DoclingExtractor:
                 # NEW: Extract formatting (conditional - performance optimization)
                 # Default False to preserve baseline performance
                 formatting = None
-                if self.config.get('capture_formatting', False):
+                if self.config.get("capture_formatting", False):
                     formatting = self._extract_formatting(item)
 
-                blocks.append(RawBlock(
-                    text=text,
-                    block_type=block_type,
-                    page_number=page_num,
-                    bbox=bbox,
-                    order=global_order,
-                    metadata=metadata,
-                    formatting=formatting  # NEW (None if not enabled)
-                ))
+                blocks.append(
+                    RawBlock(
+                        text=text,
+                        block_type=block_type,
+                        page_number=page_num,
+                        bbox=bbox,
+                        order=global_order,
+                        metadata=metadata,
+                        formatting=formatting,  # NEW (None if not enabled)
+                    )
+                )
 
                 global_order += 1
 
@@ -165,54 +171,54 @@ class DoclingExtractor:
             blocks=blocks,
             tables=tables,
             images=images,
-            page_count=doc_metadata.get('page_count', 0),
-            metadata=doc_metadata
+            page_count=doc_metadata.get("page_count", 0),
+            metadata=doc_metadata,
         )
 
     def _map_docling_type(self, docling_type: str, item: Any) -> str:
         """Map Docling item type to canonical block type"""
         type_map = {
-            'Title': 'heading',
-            'Heading': 'heading',
-            'Paragraph': 'paragraph',
-            'List': 'list',
-            'ListItem': 'list',
-            'Table': 'table',
-            'Picture': 'image',
-            'Equation': 'equation',
-            'Code': 'code',
-            'Caption': 'caption',
-            'Footer': 'footer',
-            'Header': 'header',
+            "Title": "heading",
+            "Heading": "heading",
+            "Paragraph": "paragraph",
+            "List": "list",
+            "ListItem": "list",
+            "Table": "table",
+            "Picture": "image",
+            "Equation": "equation",
+            "Code": "code",
+            "Caption": "caption",
+            "Footer": "footer",
+            "Header": "header",
         }
 
         # Check for specific attributes
-        if hasattr(item, 'label'):
+        if hasattr(item, "label"):
             label = str(item.label).lower()
-            if 'title' in label or 'heading' in label:
-                return 'heading'
+            if "title" in label or "heading" in label:
+                return "heading"
 
-        return type_map.get(docling_type, 'paragraph')
+        return type_map.get(docling_type, "paragraph")
 
     def _extract_bbox(self, item: Any) -> Optional[Dict[str, float]]:
         """Extract bounding box from Docling item"""
-        if hasattr(item, 'prov') and item.prov:
+        if hasattr(item, "prov") and item.prov:
             for prov_item in item.prov:
-                if hasattr(prov_item, 'bbox'):
+                if hasattr(prov_item, "bbox"):
                     bbox = prov_item.bbox
                     return {
-                        'x0': bbox.l,
-                        'y0': bbox.t,
-                        'x1': bbox.r,
-                        'y1': bbox.b,
+                        "x0": bbox.l,
+                        "y0": bbox.t,
+                        "x1": bbox.r,
+                        "y1": bbox.b,
                     }
         return None
 
     def _get_page_number(self, item: Any) -> int:
         """Extract page number from Docling item"""
-        if hasattr(item, 'prov') and item.prov:
+        if hasattr(item, "prov") and item.prov:
             for prov_item in item.prov:
-                if hasattr(prov_item, 'page'):
+                if hasattr(prov_item, "page"):
                     return prov_item.page + 1  # Convert to 1-indexed
 
         return 1  # Default to page 1
@@ -222,15 +228,15 @@ class DoclingExtractor:
         metadata = {}
 
         # Extract heading level
-        if hasattr(item, 'label'):
+        if hasattr(item, "label"):
             label = str(item.label)
-            metadata['label'] = label
+            metadata["label"] = label
 
             # Try to extract heading level
-            if 'heading' in label.lower():
+            if "heading" in label.lower():
                 try:
-                    level = int(label.split('_')[-1])
-                    metadata['level'] = level
+                    level = int(label.split("_")[-1])
+                    metadata["level"] = level
                 except (ValueError, IndexError):
                     pass
 
@@ -245,50 +251,50 @@ class DoclingExtractor:
 
         # Extract font properties
         font_props = {}
-        if hasattr(item, 'prov') and item.prov:
+        if hasattr(item, "prov") and item.prov:
             for prov_item in item.prov:
-                if hasattr(prov_item, 'font'):
+                if hasattr(prov_item, "font"):
                     font_obj = prov_item.font
-                    if hasattr(font_obj, 'name'):
-                        font_props['name'] = str(font_obj.name)
-                    if hasattr(font_obj, 'size'):
-                        font_props['size'] = float(font_obj.size)
-                    if hasattr(font_obj, 'weight'):
-                        font_props['weight'] = int(font_obj.weight)
-                    if hasattr(font_obj, 'color'):
+                    if hasattr(font_obj, "name"):
+                        font_props["name"] = str(font_obj.name)
+                    if hasattr(font_obj, "size"):
+                        font_props["size"] = float(font_obj.size)
+                    if hasattr(font_obj, "weight"):
+                        font_props["weight"] = int(font_obj.weight)
+                    if hasattr(font_obj, "color"):
                         # Convert to hex
                         color = font_obj.color
                         if isinstance(color, tuple) and len(color) >= 3:
-                            font_props['color'] = f"#{color[0]:02x}{color[1]:02x}{color[2]:02x}"
+                            font_props["color"] = f"#{color[0]:02x}{color[1]:02x}{color[2]:02x}"
 
         if font_props:
-            formatting['font'] = font_props
+            formatting["font"] = font_props
 
         # Extract text styling
         style_props = {}
-        if hasattr(item, 'text_style') or hasattr(item, 'style'):
-            style_obj = getattr(item, 'text_style', None) or getattr(item, 'style', None)
+        if hasattr(item, "text_style") or hasattr(item, "style"):
+            style_obj = getattr(item, "text_style", None) or getattr(item, "style", None)
             if style_obj:
-                if hasattr(style_obj, 'bold'):
-                    style_props['bold'] = bool(style_obj.bold)
-                if hasattr(style_obj, 'italic'):
-                    style_props['italic'] = bool(style_obj.italic)
-                if hasattr(style_obj, 'underline'):
-                    style_props['underline'] = bool(style_obj.underline)
+                if hasattr(style_obj, "bold"):
+                    style_props["bold"] = bool(style_obj.bold)
+                if hasattr(style_obj, "italic"):
+                    style_props["italic"] = bool(style_obj.italic)
+                if hasattr(style_obj, "underline"):
+                    style_props["underline"] = bool(style_obj.underline)
 
         if style_props:
-            formatting['style'] = style_props
+            formatting["style"] = style_props
 
         # Extract links
         links = []
-        if hasattr(item, 'links') and item.links:
+        if hasattr(item, "links") and item.links:
             for link in item.links:
-                uri = getattr(link, 'uri', None) or getattr(link, 'url', None)
+                uri = getattr(link, "uri", None) or getattr(link, "url", None)
                 if uri:
                     links.append(str(uri))
 
         if links:
-            formatting['links'] = links
+            formatting["links"] = links
 
         return formatting if formatting else None
 
@@ -296,7 +302,7 @@ class DoclingExtractor:
         """Extract table data"""
         try:
             # Get table data as DataFrame
-            if hasattr(table, 'data') and hasattr(table.data, 'grid'):
+            if hasattr(table, "data") and hasattr(table.data, "grid"):
                 grid = table.data.grid
 
                 # Convert to list of lists
@@ -306,7 +312,7 @@ class DoclingExtractor:
                 for row_idx, row in enumerate(grid):
                     row_data = []
                     for cell in row:
-                        cell_text = cell.text if hasattr(cell, 'text') else str(cell)
+                        cell_text = cell.text if hasattr(cell, "text") else str(cell)
                         row_data.append(cell_text)
 
                     if row_idx == 0:
@@ -315,7 +321,7 @@ class DoclingExtractor:
                         data.append(row_data)
 
                 # Get raw text
-                raw_text = str(table.text) if hasattr(table, 'text') else ""
+                raw_text = str(table.text) if hasattr(table, "text") else ""
 
                 # Get bbox and page
                 bbox = self._extract_bbox(table)
@@ -327,7 +333,7 @@ class DoclingExtractor:
                     data=data,
                     headers=headers,
                     raw_text=raw_text,
-                    order=order
+                    order=order,
                 )
 
         except Exception as e:
@@ -339,12 +345,12 @@ class DoclingExtractor:
         """Extract image data"""
         try:
             # Get image bytes
-            if hasattr(picture, 'image') and hasattr(picture.image, 'pil_image'):
+            if hasattr(picture, "image") and hasattr(picture.image, "pil_image"):
                 pil_image = picture.image.pil_image
 
                 # Convert to bytes
                 buffer = BytesIO()
-                pil_image.save(buffer, format='PNG')
+                pil_image.save(buffer, format="PNG")
                 image_bytes = buffer.getvalue()
 
                 # Get dimensions
@@ -356,18 +362,18 @@ class DoclingExtractor:
 
                 # Try to get caption
                 caption = None
-                if hasattr(picture, 'text'):
+                if hasattr(picture, "text"):
                     caption = picture.text
 
                 return RawImage(
                     page_number=page_num,
                     bbox=bbox,
                     image_bytes=image_bytes,
-                    format='png',
+                    format="png",
                     width=width,
                     height=height,
                     order=order,
-                    caption=caption
+                    caption=caption,
                 )
 
         except Exception as e:
@@ -380,15 +386,15 @@ class DoclingExtractor:
         metadata = {}
 
         # Get page count
-        if hasattr(doc, 'pages'):
-            metadata['page_count'] = len(doc.pages)
+        if hasattr(doc, "pages"):
+            metadata["page_count"] = len(doc.pages)
 
         # Try to extract other metadata
-        if hasattr(doc, 'metadata'):
+        if hasattr(doc, "metadata"):
             doc_meta = doc.metadata
-            if hasattr(doc_meta, 'title'):
-                metadata['title'] = doc_meta.title
-            if hasattr(doc_meta, 'author'):
-                metadata['author'] = doc_meta.author
+            if hasattr(doc_meta, "title"):
+                metadata["title"] = doc_meta.title
+            if hasattr(doc_meta, "author"):
+                metadata["author"] = doc_meta.author
 
         return metadata

@@ -31,68 +31,56 @@ Examples:
   layoutir --input paper.pdf --output ./out
   layoutir --input paper.pdf --output ./out --chunk-strategy token --chunk-size 1024
   layoutir --input paper.pdf --output ./out --use-gpu --log-level DEBUG
-        """
+        """,
+    )
+
+    parser.add_argument("--input", required=True, type=Path, help="Input file path (PDF)")
+
+    parser.add_argument(
+        "--output", required=True, type=Path, help="Output directory for processed documents"
     )
 
     parser.add_argument(
-        '--input',
-        required=True,
-        type=Path,
-        help='Input file path (PDF)'
+        "--chunk-strategy",
+        choices=["semantic", "token", "layout"],
+        default="semantic",
+        help="Chunking strategy (default: semantic)",
     )
 
     parser.add_argument(
-        '--output',
-        required=True,
-        type=Path,
-        help='Output directory for processed documents'
-    )
-
-    parser.add_argument(
-        '--chunk-strategy',
-        choices=['semantic', 'token', 'layout'],
-        default='semantic',
-        help='Chunking strategy (default: semantic)'
-    )
-
-    parser.add_argument(
-        '--chunk-size',
+        "--chunk-size",
         type=int,
         default=512,
-        help='Chunk size in tokens for token strategy (default: 512)'
+        help="Chunk size in tokens for token strategy (default: 512)",
     )
 
     parser.add_argument(
-        '--chunk-overlap',
+        "--chunk-overlap",
         type=int,
         default=50,
-        help='Chunk overlap in tokens for token strategy (default: 50)'
+        help="Chunk overlap in tokens for token strategy (default: 50)",
     )
 
     parser.add_argument(
-        '--max-heading-level',
+        "--max-heading-level",
         type=int,
         default=2,
-        help='Max heading level for semantic chunking (default: 2)'
+        help="Max heading level for semantic chunking (default: 2)",
     )
 
     parser.add_argument(
-        '--use-gpu',
-        action='store_true',
-        help='Enable GPU acceleration for PDF processing'
+        "--use-gpu", action="store_true", help="Enable GPU acceleration for PDF processing"
     )
 
     parser.add_argument(
-        '--log-level',
-        choices=['DEBUG', 'INFO', 'WARNING', 'ERROR'],
-        default='INFO',
-        help='Logging level (default: INFO)'
+        "--log-level",
+        choices=["DEBUG", "INFO", "WARNING", "ERROR"],
+        default="INFO",
+        help="Logging level (default: INFO)",
     )
 
     parser.add_argument(
-        '--structured-logs',
-        action='store_true',
-        help='Enable JSON structured logging'
+        "--structured-logs", action="store_true", help="Enable JSON structured logging"
     )
 
     return parser.parse_args()
@@ -100,14 +88,11 @@ Examples:
 
 def create_chunk_strategy(args):
     """Create chunking strategy from arguments"""
-    if args.chunk_strategy == 'semantic':
+    if args.chunk_strategy == "semantic":
         return SemanticSectionChunker(max_heading_level=args.max_heading_level)
-    elif args.chunk_strategy == 'token':
-        return TokenWindowChunker(
-            chunk_size=args.chunk_size,
-            overlap=args.chunk_overlap
-        )
-    elif args.chunk_strategy == 'layout':
+    elif args.chunk_strategy == "token":
+        return TokenWindowChunker(chunk_size=args.chunk_size, overlap=args.chunk_overlap)
+    elif args.chunk_strategy == "layout":
         return LayoutAwareChunker()
     else:
         raise ValueError(f"Unknown chunk strategy: {args.chunk_strategy}")
@@ -118,10 +103,7 @@ def main():
     args = parse_args()
 
     # Setup logging
-    setup_logging(
-        log_level=args.log_level,
-        structured=args.structured_logs
-    )
+    setup_logging(log_level=args.log_level, structured=args.structured_logs)
 
     # Validate input
     if not args.input.exists():
@@ -139,11 +121,11 @@ def main():
         adapter=adapter,
         chunk_strategy=chunk_strategy,
         config={
-            'chunk_strategy': args.chunk_strategy,
-            'chunk_size': args.chunk_size,
-            'chunk_overlap': args.chunk_overlap,
-            'use_gpu': args.use_gpu,
-        }
+            "chunk_strategy": args.chunk_strategy,
+            "chunk_size": args.chunk_size,
+            "chunk_overlap": args.chunk_overlap,
+            "use_gpu": args.use_gpu,
+        },
     )
 
     # Process document
@@ -153,9 +135,9 @@ def main():
 
         # Print summary
         stats = pipeline.get_stats()
-        print("\n" + "="*60)
+        print("\n" + "=" * 60)
         print("Processing Complete")
-        print("="*60)
+        print("=" * 60)
         print(f"Document ID: {document.document_id}")
         print(f"Pages: {document.stats.get('page_count', 0)}")
         print(f"Blocks: {document.stats.get('block_count', 0)}")
@@ -163,21 +145,22 @@ def main():
         print(f"Images: {document.stats.get('image_count', 0)}")
         print(f"\nTotal time: {stats['total_time']:.2f}s")
         print("\nStage timing:")
-        for stage, duration in stats['timing'].items():
+        for stage, duration in stats["timing"].items():
             print(f"  {stage}: {duration:.2f}s")
 
         output_path = args.output / document.document_id
         print(f"\nOutput: {output_path}")
-        print("="*60)
+        print("=" * 60)
 
         return 0
 
     except Exception as e:
         print(f"Error: {e}", file=sys.stderr)
         import traceback
+
         traceback.print_exc()
         return 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sys.exit(main())

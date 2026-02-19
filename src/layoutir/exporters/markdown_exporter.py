@@ -45,7 +45,7 @@ class MarkdownExporter(Exporter):
 
     def _export_document(self, document: Document, output_path: Path):
         """Export full document to Markdown"""
-        with open(output_path, 'w', encoding='utf-8') as f:
+        with open(output_path, "w", encoding="utf-8") as f:
             # Write metadata header
             f.write(f"# Document: {document.document_id}\n\n")
 
@@ -124,7 +124,7 @@ class MarkdownExporter(Exporter):
         for row in table_data.data:
             # Pad row if needed
             padded_row = row + [""] * (table_data.columns - len(row))
-            f.write("| " + " | ".join(padded_row[:table_data.columns]) + " |\n")
+            f.write("| " + " | ".join(padded_row[: table_data.columns]) + " |\n")
 
         f.write("\n")
 
@@ -133,7 +133,7 @@ class MarkdownExporter(Exporter):
         for chunk in chunks:
             chunk_path = chunks_dir / f"chunk_{chunk.order:04d}.md"
 
-            with open(chunk_path, 'w', encoding='utf-8') as f:
+            with open(chunk_path, "w", encoding="utf-8") as f:
                 # Write chunk metadata
                 f.write(f"# Chunk {chunk.order}\n\n")
                 f.write(f"**Chunk ID:** {chunk.chunk_id}\n")

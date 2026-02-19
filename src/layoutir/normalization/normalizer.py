@@ -83,6 +83,7 @@ class Normalizer:
 
         # NEW: Validate and annotate ordering
         from .ordering_validator import OrderingValidator
+
         validator = OrderingValidator()
         blocks = validator.validate_and_annotate(blocks)
 
@@ -92,24 +93,25 @@ class Normalizer:
         # Create document metadata
         # Filter out keys we're setting explicitly to avoid duplicates
         extra_metadata = {
-            k: v for k, v in raw_doc.metadata.items()
-            if k not in {'page_count', 'source_format', 'source_path', 'source_hash'}
+            k: v
+            for k, v in raw_doc.metadata.items()
+            if k not in {"page_count", "source_format", "source_path", "source_hash"}
         }
 
         metadata = DocumentMetadata(
             page_count=raw_doc.page_count,
-            source_format=self.source_path.suffix.lstrip('.'),
+            source_format=self.source_path.suffix.lstrip("."),
             source_path=str(self.source_path),
             source_hash=self.source_hash,
-            **extra_metadata
+            **extra_metadata,
         )
 
         # Compute stats
         stats = {
-            'block_count': len(blocks),
-            'table_count': table_count,
-            'image_count': image_count,
-            'page_count': raw_doc.page_count,
+            "block_count": len(blocks),
+            "table_count": table_count,
+            "image_count": image_count,
+            "page_count": raw_doc.page_count,
         }
 
         # Create canonical document
@@ -142,7 +144,7 @@ class Normalizer:
                 content=raw_block.text,
                 page_number=raw_block.page_number,
                 order=raw_block.order,
-                block_type=raw_block.block_type
+                block_type=raw_block.block_type,
             )
 
             # Map to BlockType enum
@@ -169,7 +171,7 @@ class Normalizer:
                 bbox=bbox,
                 content=raw_block.text,
                 metadata=metadata,
-                level=metadata.get('level'),
+                level=metadata.get("level"),
                 order=raw_block.order,
             )
 
@@ -191,7 +193,7 @@ class Normalizer:
                 document_id=self.document_id,
                 page_number=raw_table.page_number,
                 table_index=idx,
-                raw_text=raw_table.raw_text
+                raw_text=raw_table.raw_text,
             )
 
             # Create TableData
@@ -209,7 +211,7 @@ class Normalizer:
                 content=raw_table.raw_text,
                 page_number=raw_table.page_number,
                 order=raw_table.order,
-                block_type="table"
+                block_type="table",
             )
 
             # Normalize bounding box
@@ -223,7 +225,7 @@ class Normalizer:
                 page_number=raw_table.page_number,
                 bbox=bbox,
                 content=raw_table.raw_text,
-                metadata={'table_id': table_id},
+                metadata={"table_id": table_id},
                 table_data=table_data,
                 order=raw_table.order,
             )
@@ -242,7 +244,7 @@ class Normalizer:
                 document_id=self.document_id,
                 page_number=raw_image.page_number,
                 image_index=idx,
-                image_bytes=raw_image.image_bytes
+                image_bytes=raw_image.image_bytes,
             )
 
             # Create ImageData (path will be set during export)
@@ -263,7 +265,7 @@ class Normalizer:
                 content=content,
                 page_number=raw_image.page_number,
                 order=raw_image.order,
-                block_type="image"
+                block_type="image",
             )
 
             # Normalize bounding box
@@ -271,8 +273,8 @@ class Normalizer:
 
             # Store image bytes in metadata for export
             metadata = {
-                'image_id': image_id,
-                'image_bytes': raw_image.image_bytes,  # Temporary for export
+                "image_id": image_id,
+                "image_bytes": raw_image.image_bytes,  # Temporary for export
             }
 
             # Create image block
@@ -295,36 +297,36 @@ class Normalizer:
     def _normalize_bbox(self, bbox_dict: Dict[str, float]) -> BoundingBox:
         """Normalize bounding box to canonical format"""
         return BoundingBox(
-            x0=bbox_dict.get('x0', 0.0),
-            y0=bbox_dict.get('y0', 0.0),
-            x1=bbox_dict.get('x1', 0.0),
-            y1=bbox_dict.get('y1', 0.0),
-            page_width=bbox_dict.get('page_width'),
-            page_height=bbox_dict.get('page_height'),
+            x0=bbox_dict.get("x0", 0.0),
+            y0=bbox_dict.get("y0", 0.0),
+            x1=bbox_dict.get("x1", 0.0),
+            y1=bbox_dict.get("y1", 0.0),
+            page_width=bbox_dict.get("page_width"),
+            page_height=bbox_dict.get("page_height"),
         )
 
     def _normalize_formatting(self, raw_formatting: Dict[str, Any]) -> FormattingData:
         """Convert raw formatting dict to FormattingData schema"""
         font = None
-        if 'font' in raw_formatting:
-            font_dict = raw_formatting['font']
+        if "font" in raw_formatting:
+            font_dict = raw_formatting["font"]
             font = FontProperties(
-                name=font_dict.get('name'),
-                size=font_dict.get('size'),
-                weight=font_dict.get('weight'),
-                color=font_dict.get('color'),
+                name=font_dict.get("name"),
+                size=font_dict.get("size"),
+                weight=font_dict.get("weight"),
+                color=font_dict.get("color"),
             )
 
         style = None
-        if 'style' in raw_formatting:
-            style_dict = raw_formatting['style']
+        if "style" in raw_formatting:
+            style_dict = raw_formatting["style"]
             style = TextStyle(
-                bold=style_dict.get('bold'),
-                italic=style_dict.get('italic'),
-                underline=style_dict.get('underline'),
+                bold=style_dict.get("bold"),
+                italic=style_dict.get("italic"),
+                underline=style_dict.get("underline"),
             )
 
-        links = raw_formatting.get('links', [])
+        links = raw_formatting.get("links", [])
 
         return FormattingData(font=font, style=style, links=links)
 
@@ -346,11 +348,13 @@ class Normalizer:
                     parent_id = heading_stack[-1][0]
                     block.parent_id = parent_id
 
-                    relationships.append(Relationship(
-                        source_block_id=parent_id,
-                        target_block_id=block.block_id,
-                        relation_type="parent_child"
-                    ))
+                    relationships.append(
+                        Relationship(
+                            source_block_id=parent_id,
+                            target_block_id=block.block_id,
+                            relation_type="parent_child",
+                        )
+                    )
 
                 # Add current heading to stack
                 heading_stack.append((block.block_id, block.level))
@@ -360,10 +364,12 @@ class Normalizer:
                 parent_id = heading_stack[-1][0]
                 block.parent_id = parent_id
 
-                relationships.append(Relationship(
-                    source_block_id=parent_id,
-                    target_block_id=block.block_id,
-                    relation_type="parent_child"
-                ))
+                relationships.append(
+                    Relationship(
+                        source_block_id=parent_id,
+                        target_block_id=block.block_id,
+                        relation_type="parent_child",
+                    )
+                )
 
         return relationships

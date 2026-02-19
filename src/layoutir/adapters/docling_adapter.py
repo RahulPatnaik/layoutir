@@ -5,7 +5,7 @@ Handles PDF parsing via Docling library with no business logic.
 """
 
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any
 import logging
 
 from .base import InputAdapter
@@ -21,7 +21,7 @@ class DoclingAdapter(InputAdapter):
         use_gpu: bool = False,
         ocr_batch_size: int = 8,
         layout_batch_size: int = 8,
-        table_batch_size: int = 4
+        table_batch_size: int = 4,
     ):
         """
         Initialize Docling adapter.
@@ -54,17 +54,13 @@ class DoclingAdapter(InputAdapter):
             # Configure pipeline to extract images
             pipeline_options = PdfPipelineOptions(
                 generate_picture_images=True,  # Extract images from PDF
-                generate_page_images=False,     # Don't need full page rasters
-                images_scale=2.0,              # Scale factor for image resolution (2.0 = 144 DPI)
+                generate_page_images=False,  # Don't need full page rasters
+                images_scale=2.0,  # Scale factor for image resolution (2.0 = 144 DPI)
             )
 
             # Create converter with image extraction enabled
             self._pipeline = DocumentConverter(
-                format_options={
-                    InputFormat.PDF: PdfFormatOption(
-                        pipeline_options=pipeline_options
-                    )
-                }
+                format_options={InputFormat.PDF: PdfFormatOption(pipeline_options=pipeline_options)}
             )
 
             self._docling = True
@@ -127,6 +123,7 @@ class DoclingAdapter(InputAdapter):
         """
         try:
             import docling
+
             return f"docling-{docling.__version__}"
         except (ImportError, AttributeError):
             return "docling-unknown"

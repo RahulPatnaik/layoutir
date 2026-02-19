@@ -10,7 +10,7 @@ import logging
 import json
 
 from .base import Exporter
-from ..schema import Document, Block, Chunk
+from ..schema import Document, Chunk
 
 logger = logging.getLogger(__name__)
 
@@ -29,7 +29,7 @@ class ParquetExporter(Exporter):
         """
         try:
             import pandas as pd
-            import pyarrow as pa
+            import pyarrow as pa  # noqa: F401  # side-effect: enables engine='pyarrow' in pandas
             import pyarrow.parquet as pq
         except ImportError:
             logger.error("Parquet export requires pandas and pyarrow")
@@ -58,31 +58,33 @@ class ParquetExporter(Exporter):
 
         for block in document.blocks:
             block_dict = {
-                'block_id': block.block_id,
-                'type': block.type.value,
-                'page_number': block.page_number,
-                'order': block.order,
-                'content': block.content,
-                'parent_id': block.parent_id,
-                'level': block.level,
-                'metadata': json.dumps(block.metadata),
+                "block_id": block.block_id,
+                "type": block.type.value,
+                "page_number": block.page_number,
+                "order": block.order,
+                "content": block.content,
+                "parent_id": block.parent_id,
+                "level": block.level,
+                "metadata": json.dumps(block.metadata),
             }
 
             # Add bbox if available
             if block.bbox:
-                block_dict.update({
-                    'bbox_x0': block.bbox.x0,
-                    'bbox_y0': block.bbox.y0,
-                    'bbox_x1': block.bbox.x1,
-                    'bbox_y1': block.bbox.y1,
-                })
+                block_dict.update(
+                    {
+                        "bbox_x0": block.bbox.x0,
+                        "bbox_y0": block.bbox.y0,
+                        "bbox_x1": block.bbox.x1,
+                        "bbox_y1": block.bbox.y1,
+                    }
+                )
 
             blocks_data.append(block_dict)
 
         # Create DataFrame and write
         df = pd.DataFrame(blocks_data)
         output_path = export_dir / "blocks.parquet"
-        df.to_parquet(output_path, engine='pyarrow', compression='snappy')
+        df.to_parquet(output_path, engine="pyarrow", compression="snappy")
 
         logger.info(f"Exported {len(blocks_data)} blocks to Parquet")
 
@@ -109,7 +111,7 @@ class ParquetExporter(Exporter):
 
                 # Write to Parquet
                 output_path = tables_dir / f"{table_data.table_id}.parquet"
-                df.to_parquet(output_path, engine='pyarrow', compression='snappy')
+                df.to_parquet(output_path, engine="pyarrow", compression="snappy")
 
                 table_count += 1
 
@@ -137,18 +139,18 @@ class ParquetExporter(Exporter):
 
         for chunk in chunks:
             chunk_dict = {
-                'chunk_id': chunk.chunk_id,
-                'document_id': chunk.document_id,
-                'order': chunk.order,
-                'content': chunk.content,
-                'block_ids': json.dumps(chunk.block_ids),
-                'metadata': json.dumps(chunk.metadata),
+                "chunk_id": chunk.chunk_id,
+                "document_id": chunk.document_id,
+                "order": chunk.order,
+                "content": chunk.content,
+                "block_ids": json.dumps(chunk.block_ids),
+                "metadata": json.dumps(chunk.metadata),
             }
             chunks_data.append(chunk_dict)
 
         # Create DataFrame and write
         df = pd.DataFrame(chunks_data)
         output_path = export_dir / "chunks.parquet"
-        df.to_parquet(output_path, engine='pyarrow', compression='snappy')
+        df.to_parquet(output_path, engine="pyarrow", compression="snappy")
 
         logger.info(f"Exported {len(chunks_data)} chunks to Parquet")

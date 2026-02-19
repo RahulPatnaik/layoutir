@@ -81,22 +81,22 @@ class Pipeline:
         # Stage 1: Parse input
         stage_start = time.time()
         parsed_doc = self._stage_parse(input_path)
-        self.timing['parse'] = time.time() - stage_start
+        self.timing["parse"] = time.time() - stage_start
 
         # Stage 2: Extract raw elements
         stage_start = time.time()
         raw_doc = self._stage_extract(parsed_doc)
-        self.timing['extract'] = time.time() - stage_start
+        self.timing["extract"] = time.time() - stage_start
 
         # Stage 3: Normalize to canonical IR
         stage_start = time.time()
         document = self._stage_normalize(input_path, raw_doc)
-        self.timing['normalize'] = time.time() - stage_start
+        self.timing["normalize"] = time.time() - stage_start
 
         # Stage 4: Chunk document
         stage_start = time.time()
         chunks = self._stage_chunk(document)
-        self.timing['chunk'] = time.time() - stage_start
+        self.timing["chunk"] = time.time() - stage_start
 
         # Stage 5: Create output directory structure
         doc_output_dir = self._create_output_structure(output_dir, document)
@@ -104,17 +104,17 @@ class Pipeline:
         # Stage 6: Write assets
         stage_start = time.time()
         self._stage_write_assets(document, doc_output_dir)
-        self.timing['write_assets'] = time.time() - stage_start
+        self.timing["write_assets"] = time.time() - stage_start
 
         # Stage 7: Export to formats
         stage_start = time.time()
         self._stage_export(document, chunks, doc_output_dir)
-        self.timing['export'] = time.time() - stage_start
+        self.timing["export"] = time.time() - stage_start
 
         # Stage 8: Write IR and manifest
         stage_start = time.time()
         self._stage_write_ir_and_manifest(document, chunks, doc_output_dir)
-        self.timing['write_metadata'] = time.time() - stage_start
+        self.timing["write_metadata"] = time.time() - stage_start
 
         # Log summary
         total_time = sum(self.timing.values())
@@ -204,23 +204,20 @@ class Pipeline:
         self.parquet_exporter.export(document, output_dir, chunks)
 
     def _stage_write_ir_and_manifest(
-        self,
-        document: Document,
-        chunks: List[Chunk],
-        output_dir: Path
+        self, document: Document, chunks: List[Chunk], output_dir: Path
     ):
         """Stage 8: Write IR and manifest"""
         logger.info("Stage 8/8: Writing IR and manifest")
 
         # Write canonical IR
         ir_path = output_dir / "ir.json"
-        with open(ir_path, 'w', encoding='utf-8') as f:
+        with open(ir_path, "w", encoding="utf-8") as f:
             f.write(document.model_dump_json(indent=2))
 
         # Write chunks
         if chunks:
             chunks_path = output_dir / "chunks.json"
-            with open(chunks_path, 'w', encoding='utf-8') as f:
+            with open(chunks_path, "w", encoding="utf-8") as f:
                 chunks_data = [chunk.model_dump() for chunk in chunks]
                 json.dump(chunks_data, f, indent=2)
 
@@ -234,18 +231,18 @@ class Pipeline:
             created_at=datetime.utcnow(),
             stats=document.stats,
             output_files={
-                'ir': 'ir.json',
-                'chunks': 'chunks.json',
-                'markdown': 'exports/markdown/full_document.md',
-                'text': 'exports/text/full_document.txt',
-                'parquet_blocks': 'exports/parquet/blocks.parquet',
-                'parquet_chunks': 'exports/parquet/chunks.parquet',
-            }
+                "ir": "ir.json",
+                "chunks": "chunks.json",
+                "markdown": "exports/markdown/full_document.md",
+                "text": "exports/text/full_document.txt",
+                "parquet_blocks": "exports/parquet/blocks.parquet",
+                "parquet_chunks": "exports/parquet/chunks.parquet",
+            },
         )
 
         # Write manifest
         manifest_path = output_dir / "manifest.json"
-        with open(manifest_path, 'w', encoding='utf-8') as f:
+        with open(manifest_path, "w", encoding="utf-8") as f:
             f.write(manifest.model_dump_json(indent=2))
 
         logger.info("IR and manifest written")
@@ -258,6 +255,6 @@ class Pipeline:
             Dictionary of timing and stats
         """
         return {
-            'timing': self.timing,
-            'total_time': sum(self.timing.values()),
+            "timing": self.timing,
+            "total_time": sum(self.timing.values()),
         }

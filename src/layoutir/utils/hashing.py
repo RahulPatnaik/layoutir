@@ -77,16 +77,13 @@ def hash_dict(data: Dict[str, Any], algorithm: str = BLOCK_ID_HASH_ALGORITHM) ->
     """
     # kwargs frozen in _stability_constants.HASH_DICT_*
     # ensure_ascii intentionally differs from canonical JSON — do not unify
-    normalized = json.dumps(data, sort_keys=HASH_DICT_SORT_KEYS, ensure_ascii=HASH_DICT_ENSURE_ASCII)
+    normalized = json.dumps(
+        data, sort_keys=HASH_DICT_SORT_KEYS, ensure_ascii=HASH_DICT_ENSURE_ASCII
+    )
     return hash_string(normalized, algorithm)
 
 
-def generate_block_id(
-    content: str,
-    page_number: int,
-    order: int,
-    block_type: str
-) -> str:
+def generate_block_id(content: str, page_number: int, order: int, block_type: str) -> str:
     """
     Generate deterministic block ID.
 
@@ -125,12 +122,7 @@ def generate_document_id(file_hash: str) -> str:
     return f"doc_{file_hash[:BLOCK_ID_HEX_LENGTH]}"
 
 
-def generate_table_id(
-    document_id: str,
-    page_number: int,
-    table_index: int,
-    raw_text: str
-) -> str:
+def generate_table_id(document_id: str, page_number: int, table_index: int, raw_text: str) -> str:
     """
     Generate deterministic table ID.
 
@@ -144,16 +136,15 @@ def generate_table_id(
         Table ID
     """
     # Text truncation length frozen in _stability_constants.TABLE_ID_TEXT_TRUNCATION
-    composite = f"{document_id}:table:{page_number}:{table_index}:{raw_text[:TABLE_ID_TEXT_TRUNCATION]}"
+    composite = (
+        f"{document_id}:table:{page_number}:{table_index}:{raw_text[:TABLE_ID_TEXT_TRUNCATION]}"
+    )
     full_hash = hash_string(composite)
     return f"tbl_{full_hash[:BLOCK_ID_HEX_LENGTH]}"
 
 
 def generate_image_id(
-    document_id: str,
-    page_number: int,
-    image_index: int,
-    image_bytes: bytes
+    document_id: str, page_number: int, image_index: int, image_bytes: bytes
 ) -> str:
     """
     Generate deterministic image ID.
@@ -179,11 +170,7 @@ def generate_image_id(
     return f"img_{full_hash[:BLOCK_ID_HEX_LENGTH]}"
 
 
-def generate_chunk_id(
-    document_id: str,
-    block_ids: List[str],
-    chunk_order: int
-) -> str:
+def generate_chunk_id(document_id: str, block_ids: List[str], chunk_order: int) -> str:
     """
     Generate deterministic chunk ID.
 

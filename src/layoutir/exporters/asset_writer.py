@@ -40,9 +40,7 @@ class AssetWriter:
         tables_dir.mkdir(exist_ok=True)
         table_count = self._write_tables(document, tables_dir)
 
-        logger.info(
-            f"Wrote {image_count} images and {table_count} tables to {assets_dir}"
-        )
+        logger.info(f"Wrote {image_count} images and {table_count} tables to {assets_dir}")
 
     def _write_images(self, document: Document, images_dir: Path) -> int:
         """Write image assets"""
@@ -53,22 +51,22 @@ class AssetWriter:
                 image_data = block.image_data
 
                 # Get image bytes from metadata (temporary storage)
-                image_bytes = block.metadata.get('image_bytes')
+                image_bytes = block.metadata.get("image_bytes")
 
                 if image_bytes:
                     # Write image file
                     image_filename = f"{image_data.image_id}.{image_data.format}"
                     image_path = images_dir / image_filename
 
-                    with open(image_path, 'wb') as f:
+                    with open(image_path, "wb") as f:
                         f.write(image_bytes)
 
                     # Update extracted_path (relative to output_dir)
                     image_data.extracted_path = f"assets/images/{image_filename}"
 
                     # Remove temporary bytes from metadata
-                    if 'image_bytes' in block.metadata:
-                        del block.metadata['image_bytes']
+                    if "image_bytes" in block.metadata:
+                        del block.metadata["image_bytes"]
 
                     image_count += 1
 
@@ -86,7 +84,7 @@ class AssetWriter:
                 csv_filename = f"{table_data.table_id}.csv"
                 csv_path = tables_dir / csv_filename
 
-                with open(csv_path, 'w', encoding='utf-8') as f:
+                with open(csv_path, "w", encoding="utf-8") as f:
                     # Write headers
                     if table_data.headers:
                         f.write(",".join(self._escape_csv(h) for h in table_data.headers))
@@ -103,6 +101,6 @@ class AssetWriter:
 
     def _escape_csv(self, value: str) -> str:
         """Escape value for CSV"""
-        if ',' in value or '"' in value or '\n' in value:
+        if "," in value or '"' in value or "\n" in value:
             return f'"{value.replace(chr(34), chr(34)+chr(34))}"'
         return value

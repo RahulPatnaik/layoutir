@@ -4,7 +4,6 @@ import pytest
 import re
 from pathlib import Path
 import json
-import tempfile
 from layoutir import Pipeline, Document
 from layoutir.adapters import DoclingAdapter
 from layoutir.utils.equality import assert_semantic_equality, compute_semantic_hash
@@ -49,11 +48,11 @@ class TestRoundTripStability:
 
         # Serialize
         json_path = tmp_path / "ir.json"
-        with open(json_path, 'w') as f:
+        with open(json_path, "w") as f:
             f.write(doc1.model_dump_json(indent=2))
 
         # Deserialize
-        with open(json_path, 'r') as f:
+        with open(json_path, "r") as f:
             doc2 = Document(**json.load(f))
 
         assert_semantic_equality(doc1, doc2)
@@ -67,10 +66,7 @@ class TestRoundTripStability:
             doc = pipeline.process(sample_pdf, output_dir)
             docs.append(doc)
 
-        block_orders = [
-            [(b.block_id, b.order) for b in doc.blocks]
-            for doc in docs
-        ]
+        block_orders = [[(b.block_id, b.order) for b in doc.blocks] for doc in docs]
 
         assert block_orders[0] == block_orders[1] == block_orders[2]
 
@@ -143,7 +139,7 @@ class TestGoldenIRFixtures:
         if not golden_hashes_path.exists():
             pytest.skip("Golden hashes file not found")
 
-        with open(golden_hashes_path, 'r') as f:
+        with open(golden_hashes_path, "r") as f:
             golden_hashes = json.load(f)
 
         # Test each golden PDF — PDFs live in docs/pdfs/, not in the fixture dir
@@ -180,7 +176,7 @@ class TestGoldenIRFixtures:
         # Sample PDFs to use as golden fixtures
         docs_dir = Path(__file__).parent.parent / "docs" / "pdfs"
         sample_pdfs = {
-            'table': docs_dir / 'table.pdf',
+            "table": docs_dir / "table.pdf",
         }
 
         golden_hashes = {}
@@ -199,13 +195,13 @@ class TestGoldenIRFixtures:
 
             # Save IR JSON as golden fixture
             ir_path = golden_fixtures_dir / f"{name}_ir.json"
-            with open(ir_path, 'w') as f:
+            with open(ir_path, "w") as f:
                 f.write(doc.model_dump_json(indent=2))
 
             print(f"Created golden fixture for {name}: {doc_hash}")
 
         # Save golden hashes
-        with open(golden_fixtures_dir / 'golden_hashes.json', 'w') as f:
+        with open(golden_fixtures_dir / "golden_hashes.json", "w") as f:
             json.dump(golden_hashes, f, indent=2)
 
         print(f"Golden fixtures created in {golden_fixtures_dir}")
@@ -224,27 +220,29 @@ class TestBackwardCompatibility:
                 "page_count": 1,
                 "source_format": "pdf",
                 "source_path": "/test.pdf",
-                "source_hash": "abc123"
+                "source_hash": "abc123",
             },
-            "blocks": [{
-                "block_id": "blk_test",
-                "type": "paragraph",
-                "page_number": 1,
-                "content": "Test",
-                "order": 0,
-                "metadata": {}
-            }],
+            "blocks": [
+                {
+                    "block_id": "blk_test",
+                    "type": "paragraph",
+                    "page_number": 1,
+                    "content": "Test",
+                    "order": 0,
+                    "metadata": {},
+                }
+            ],
             "relationships": [],
             "stats": {"block_count": 1},
             "processing_timestamp": "2024-01-01T00:00:00",
-            "config_used": {}
+            "config_used": {},
         }
 
         ir_path = tmp_path / "old_ir.json"
-        with open(ir_path, 'w') as f:
+        with open(ir_path, "w") as f:
             json.dump(ir_data, f)
 
-        with open(ir_path, 'r') as f:
+        with open(ir_path, "r") as f:
             doc = Document(**json.load(f))
 
         assert doc.document_id == "doc_test"
@@ -261,37 +259,39 @@ class TestBackwardCompatibility:
                 "page_count": 1,
                 "source_format": "pdf",
                 "source_path": "/test.pdf",
-                "source_hash": "abc123"
+                "source_hash": "abc123",
             },
-            "blocks": [{
-                "block_id": "blk_test",
-                "type": "paragraph",
-                "page_number": 1,
-                "content": "Test",
-                "order": 0,
-                "metadata": {},
-                "formatting_data": {
-                    "font": {"name": "Arial", "size": 12.0},
-                    "style": {"bold": True},
-                    "links": []
-                },
-                "ordering_metadata": {
-                    "docling_order": 0,
-                    "spatial_order": 0,
-                    "order_discrepancy": False
+            "blocks": [
+                {
+                    "block_id": "blk_test",
+                    "type": "paragraph",
+                    "page_number": 1,
+                    "content": "Test",
+                    "order": 0,
+                    "metadata": {},
+                    "formatting_data": {
+                        "font": {"name": "Arial", "size": 12.0},
+                        "style": {"bold": True},
+                        "links": [],
+                    },
+                    "ordering_metadata": {
+                        "docling_order": 0,
+                        "spatial_order": 0,
+                        "order_discrepancy": False,
+                    },
                 }
-            }],
+            ],
             "relationships": [],
             "stats": {"block_count": 1},
             "processing_timestamp": "2024-01-01T00:00:00",
-            "config_used": {}
+            "config_used": {},
         }
 
         ir_path = tmp_path / "new_ir.json"
-        with open(ir_path, 'w') as f:
+        with open(ir_path, "w") as f:
             json.dump(ir_data, f)
 
-        with open(ir_path, 'r') as f:
+        with open(ir_path, "r") as f:
             doc = Document(**json.load(f))
 
         assert doc.document_id == "doc_test"
@@ -348,18 +348,23 @@ class TestStabilityProtection:
     def _is_comment_or_docstring(self, line: str) -> bool:
         stripped = line.strip()
         return (
-            stripped.startswith('#') or
-            stripped.startswith('"""') or
-            stripped.startswith("'''") or
-            stripped.startswith('- ') or
-            stripped.startswith('* ')
+            stripped.startswith("#")
+            or stripped.startswith('"""')
+            or stripped.startswith("'''")
+            or stripped.startswith("- ")
+            or stripped.startswith("* ")
         )
 
     def _uses_constant(self, line: str) -> bool:
         """True if line references a _stability_constants name on the RHS."""
         constant_prefixes = (
-            'BLOCK_ID_', 'TABLE_ID_', 'HASH_STRING_', 'HASH_DICT_',
-            'SPATIAL_', 'CANONICAL_JSON_', 'SEMANTIC_HASH_',
+            "BLOCK_ID_",
+            "TABLE_ID_",
+            "HASH_STRING_",
+            "HASH_DICT_",
+            "SPATIAL_",
+            "CANONICAL_JSON_",
+            "SEMANTIC_HASH_",
         )
         return any(prefix in line for prefix in constant_prefixes)
 
@@ -379,7 +384,7 @@ class TestStabilityProtection:
         for rel, lineno, line in self._source_lines():
             if self._is_comment_or_docstring(line):
                 continue
-            for m in re.finditer(r'\[:(\d+)\]', line):
+            for m in re.finditer(r"\[:(\d+)\]", line):
                 n = int(m.group(1))
                 if n in critical_lengths and not self._uses_constant(line):
                     violations.append(f"{rel}:{lineno}: {line.strip()}")
@@ -387,8 +392,7 @@ class TestStabilityProtection:
             "Bare [:N] slice with stability-critical length found — use the corresponding constant:\n"
             "  [:16]  → BLOCK_ID_HEX_LENGTH\n"
             "  [:500] → BLOCK_ID_CONTENT_TRUNCATION\n"
-            "  [:200] → TABLE_ID_TEXT_TRUNCATION\n"
-            + "\n".join(violations)
+            "  [:200] → TABLE_ID_TEXT_TRUNCATION\n" + "\n".join(violations)
         )
 
     def test_no_inline_json_dumps_kwargs(self):
@@ -398,9 +402,11 @@ class TestStabilityProtection:
             if self._is_comment_or_docstring(line):
                 continue
             # Detect inline literal kwargs: sort_keys=True, ensure_ascii=False, etc.
-            if re.search(r'sort_keys\s*=\s*(True|False)', line) and not self._uses_constant(line):
+            if re.search(r"sort_keys\s*=\s*(True|False)", line) and not self._uses_constant(line):
                 violations.append(f"{rel}:{lineno}: {line.strip()}")
-            if re.search(r'ensure_ascii\s*=\s*(True|False)', line) and not self._uses_constant(line):
+            if re.search(r"ensure_ascii\s*=\s*(True|False)", line) and not self._uses_constant(
+                line
+            ):
                 violations.append(f"{rel}:{lineno}: {line.strip()}")
             if re.search(r"separators\s*=\s*[\(\[]", line) and not self._uses_constant(line):
                 violations.append(f"{rel}:{lineno}: {line.strip()}")
@@ -416,7 +422,7 @@ class TestStabilityProtection:
             if self._is_comment_or_docstring(line):
                 continue
             # Allow docstring default descriptions like (default: sha256)
-            if 'default:' in line or 'default =' in line:
+            if "default:" in line or "default =" in line:
                 continue
             if re.search(r'["\']sha256["\']', line) and not self._uses_constant(line):
                 violations.append(f"{rel}:{lineno}: {line.strip()}")
@@ -444,27 +450,41 @@ class TestStabilityProtection:
     def test_stability_constants_exports_all_critical_names(self):
         """_stability_constants.py must export the full set of expected names"""
         from layoutir._stability_constants import (
+            BLOCK_ID_CONTENT_TRUNCATION,
             BLOCK_ID_HASH_ALGORITHM,
             BLOCK_ID_HEX_LENGTH,
-            BLOCK_ID_CONTENT_TRUNCATION,
-            TABLE_ID_TEXT_TRUNCATION,
-            HASH_STRING_ENCODING,
-            HASH_DICT_SORT_KEYS,
-            HASH_DICT_ENSURE_ASCII,
-            SPATIAL_ROUND_PRECISION,
             BLOCK_TYPE_SORT_PRIORITY,
-            CANONICAL_JSON_SORT_KEYS,
-            CANONICAL_JSON_SEPARATORS,
             CANONICAL_JSON_ENSURE_ASCII,
             CANONICAL_JSON_INDENT,
+            CANONICAL_JSON_SEPARATORS,
+            CANONICAL_JSON_SORT_KEYS,
+            HASH_DICT_ENSURE_ASCII,
+            HASH_DICT_SORT_KEYS,
+            HASH_STRING_ENCODING,
+            SCHEMA_VERSION,
             SEMANTIC_HASH_ALGORITHM,
             SEMANTIC_HASH_ENCODING,
-            SCHEMA_VERSION,
+            SPATIAL_ROUND_PRECISION,
+            TABLE_ID_TEXT_TRUNCATION,
         )
-        # If any of these imports fail, the test fails — all names must exist
+
+        # Assert exact expected values — import alone is not enough
         assert BLOCK_ID_HASH_ALGORITHM == "sha256"
         assert BLOCK_ID_HEX_LENGTH == 16
+        assert BLOCK_ID_CONTENT_TRUNCATION == 500
+        assert TABLE_ID_TEXT_TRUNCATION == 200
+        assert HASH_STRING_ENCODING == "utf-8"
+        assert HASH_DICT_SORT_KEYS is True
+        assert HASH_DICT_ENSURE_ASCII is True
         assert SPATIAL_ROUND_PRECISION == 4
+        assert isinstance(BLOCK_TYPE_SORT_PRIORITY, dict)
+        assert CANONICAL_JSON_SORT_KEYS is True
+        assert CANONICAL_JSON_SEPARATORS == (",", ":")
         assert CANONICAL_JSON_ENSURE_ASCII is False
-        assert HASH_DICT_ENSURE_ASCII is True  # intentionally different
-        assert CANONICAL_JSON_ENSURE_ASCII != HASH_DICT_ENSURE_ASCII
+        assert CANONICAL_JSON_INDENT is None
+        assert SEMANTIC_HASH_ALGORITHM == "sha256"
+        assert SEMANTIC_HASH_ENCODING == "utf-8"
+        assert isinstance(SCHEMA_VERSION, str)
+        # Critical divergence: these two must differ by design
+        assert HASH_DICT_ENSURE_ASCII is True
+        assert CANONICAL_JSON_ENSURE_ASCII is False

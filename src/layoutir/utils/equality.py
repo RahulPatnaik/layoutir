@@ -25,9 +25,9 @@ class SemanticEqualityChecker:
     NO external dependencies (no DeepDiff) - uses built-in json module.
     """
 
-    DOCUMENT_EXCLUDE_FIELDS = {'processing_timestamp', 'config_used'}
-    BLOCK_EXCLUDE_FIELDS = {'formatting_data', 'ordering_metadata'}
-    METADATA_EXCLUDE_KEYS = {'processing_time', 'image_bytes'}
+    DOCUMENT_EXCLUDE_FIELDS = {"processing_timestamp", "config_used"}
+    BLOCK_EXCLUDE_FIELDS = {"formatting_data", "ordering_metadata"}
+    METADATA_EXCLUDE_KEYS = {"processing_time", "image_bytes"}
 
     def assert_equal(self, doc1: Document, doc2: Document) -> None:
         """
@@ -42,8 +42,8 @@ class SemanticEqualityChecker:
 
         if json1 != json2:
             # Find first difference for debugging
-            lines1 = json1.split('\n')
-            lines2 = json2.split('\n')
+            lines1 = json1.split("\n")
+            lines2 = json2.split("\n")
             diff_line = None
             for i, (line1, line2) in enumerate(zip(lines1, lines2)):
                 if line1 != line2:
@@ -65,7 +65,9 @@ class SemanticEqualityChecker:
         canonical_dict = self._to_canonical_dict(doc)
         canonical_json = self._to_canonical_json(canonical_dict)
         # Algorithm and encoding frozen in _stability_constants.SEMANTIC_HASH_*
-        return hashlib.new(SEMANTIC_HASH_ALGORITHM, canonical_json.encode(SEMANTIC_HASH_ENCODING)).hexdigest()
+        return hashlib.new(
+            SEMANTIC_HASH_ALGORITHM, canonical_json.encode(SEMANTIC_HASH_ENCODING)
+        ).hexdigest()
 
     def _to_canonical_json(self, obj: Dict[str, Any]) -> str:
         """
@@ -101,19 +103,19 @@ class SemanticEqualityChecker:
             doc_dict.pop(field, None)
 
         # Clean blocks (MUST be sorted by order for strict ordering)
-        if 'blocks' in doc_dict:
-            doc_dict['blocks'] = [self._clean_block(b) for b in doc_dict['blocks']]
-            doc_dict['blocks'].sort(key=lambda b: b['order'])
+        if "blocks" in doc_dict:
+            doc_dict["blocks"] = [self._clean_block(b) for b in doc_dict["blocks"]]
+            doc_dict["blocks"].sort(key=lambda b: b["order"])
 
         # Clean metadata
-        if 'metadata' in doc_dict:
+        if "metadata" in doc_dict:
             for key in self.METADATA_EXCLUDE_KEYS:
-                doc_dict['metadata'].pop(key, None)
+                doc_dict["metadata"].pop(key, None)
 
         # Sort relationships for canonical order
-        if 'relationships' in doc_dict:
-            doc_dict['relationships'].sort(
-                key=lambda r: (r['source_block_id'], r['target_block_id'])
+        if "relationships" in doc_dict:
+            doc_dict["relationships"].sort(
+                key=lambda r: (r["source_block_id"], r["target_block_id"])
             )
 
         return doc_dict
@@ -123,9 +125,9 @@ class SemanticEqualityChecker:
         block = block_dict.copy()
         for field in self.BLOCK_EXCLUDE_FIELDS:
             block.pop(field, None)
-        if 'metadata' in block:
+        if "metadata" in block:
             for key in self.METADATA_EXCLUDE_KEYS:
-                block['metadata'].pop(key, None)
+                block["metadata"].pop(key, None)
         return block
 
 

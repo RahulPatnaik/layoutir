@@ -8,7 +8,11 @@ BLOCK_TYPE_SORT_PRIORITY inline here; change them there with a schema bump.
 from typing import List, Tuple
 import logging
 from ..schema import Block, OrderingMetadata, BlockType
-from .._stability_constants import SPATIAL_ROUND_PRECISION, BLOCK_TYPE_SORT_PRIORITY, BLOCK_ID_HEX_LENGTH
+from .._stability_constants import (
+    SPATIAL_ROUND_PRECISION,
+    BLOCK_TYPE_SORT_PRIORITY,
+    BLOCK_ID_HEX_LENGTH,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -18,9 +22,7 @@ class OrderingValidator:
 
     # Aliases pointing to frozen constants — do not override locally
     ROUND_PRECISION = SPATIAL_ROUND_PRECISION
-    BLOCK_TYPE_PRIORITY = {
-        BlockType(k): v for k, v in BLOCK_TYPE_SORT_PRIORITY.items()
-    }
+    BLOCK_TYPE_PRIORITY = {BlockType(k): v for k, v in BLOCK_TYPE_SORT_PRIORITY.items()}
 
     def __init__(self):
         pass
@@ -55,11 +57,11 @@ class OrderingValidator:
             type_priority = self.BLOCK_TYPE_PRIORITY.get(block.type, 99)
 
             return (
-                block.page_number,      # 1. Page (ascending)
-                y,                       # 2. Top (ascending, rounded)
-                x,                       # 3. Left (ascending, rounded)
-                type_priority,           # 4. Block type priority
-                block.order              # 5. Original Docling order (final tiebreaker)
+                block.page_number,  # 1. Page (ascending)
+                y,  # 2. Top (ascending, rounded)
+                x,  # 3. Left (ascending, rounded)
+                type_priority,  # 4. Block type priority
+                block.order,  # 5. Original Docling order (final tiebreaker)
             )
 
         sorted_blocks = sorted(blocks_with_bbox, key=sort_key)
@@ -90,17 +92,19 @@ class OrderingValidator:
             ordering_meta = OrderingMetadata(
                 docling_order=docling_order,
                 spatial_order=spatial_order,
-                order_discrepancy=(spatial_order is not None and spatial_order != docling_order)
+                order_discrepancy=(spatial_order is not None and spatial_order != docling_order),
             )
             block.ordering_metadata = ordering_meta
 
             if ordering_meta.order_discrepancy:
-                discrepancies.append({
-                    'block_id': block.block_id[:BLOCK_ID_HEX_LENGTH],
-                    'docling_order': docling_order,
-                    'spatial_order': spatial_order,
-                    'content': block.content[:30]
-                })
+                discrepancies.append(
+                    {
+                        "block_id": block.block_id[:BLOCK_ID_HEX_LENGTH],
+                        "docling_order": docling_order,
+                        "spatial_order": spatial_order,
+                        "content": block.content[:30],
+                    }
+                )
 
         if discrepancies:
             logger.warning(

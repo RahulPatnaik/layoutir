@@ -45,7 +45,7 @@ class TextExporter(Exporter):
 
     def _export_document(self, document: Document, output_path: Path):
         """Export full document to plain text"""
-        with open(output_path, 'w', encoding='utf-8') as f:
+        with open(output_path, "w", encoding="utf-8") as f:
             # Write blocks
             for block in document.blocks:
                 f.write(block.content)
@@ -56,7 +56,7 @@ class TextExporter(Exporter):
         for chunk in chunks:
             chunk_path = chunks_dir / f"chunk_{chunk.order:04d}.txt"
 
-            with open(chunk_path, 'w', encoding='utf-8') as f:
+            with open(chunk_path, "w", encoding="utf-8") as f:
                 f.write(chunk.content)
                 f.write("\n")
 

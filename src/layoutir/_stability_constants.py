@@ -83,16 +83,16 @@ SPATIAL_ROUND_PRECISION: int = 4
 # New block types added to the schema must be assigned a priority here.
 # Do not renumber existing entries; only append new ones.
 BLOCK_TYPE_SORT_PRIORITY: dict = {
-    "heading":   1,
+    "heading": 1,
     "paragraph": 2,
-    "list":      3,
-    "table":     4,
-    "image":     5,
-    "equation":  6,
-    "code":      7,
-    "caption":   8,
-    "header":    9,
-    "footer":   10,
+    "list": 3,
+    "table": 4,
+    "image": 5,
+    "equation": 6,
+    "code": 7,
+    "caption": 8,
+    "header": 9,
+    "footer": 10,
 }
 
 # ---------------------------------------------------------------------------
@@ -103,9 +103,9 @@ BLOCK_TYPE_SORT_PRIORITY: dict = {
 
 # All four arguments must be passed explicitly — never rely on defaults.
 CANONICAL_JSON_SORT_KEYS: bool = True
-CANONICAL_JSON_SEPARATORS: tuple = (',', ':')   # compact, no whitespace
-CANONICAL_JSON_ENSURE_ASCII: bool = False        # preserve UTF-8; do not escape
-CANONICAL_JSON_INDENT: None = None              # single-line output
+CANONICAL_JSON_SEPARATORS: tuple = (",", ":")  # compact, no whitespace
+CANONICAL_JSON_ENSURE_ASCII: bool = False  # preserve UTF-8; do not escape
+CANONICAL_JSON_INDENT: None = None  # single-line output
 
 # ---------------------------------------------------------------------------
 # HASH_DICT serialization (general-purpose utility — NOT the semantic hash path)

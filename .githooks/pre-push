@@ -1,0 +1,100 @@
+#!/usr/bin/env bash
+# Pre-push hook: lint (auto-fix) → format (auto-fix) → test
+# Blocks the push if tests fail or if auto-fixes produce uncommitted changes.
+#
+# Activate once per clone:
+#   git config core.hooksPath .githooks
+
+set -euo pipefail
+
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BOLD='\033[1m'
+RESET='\033[0m'
+
+echo ""
+echo -e "${BOLD}=== Pre-push checks ===${RESET}"
+
+# ---------------------------------------------------------------------------
+# 1. Ruff — auto-fix safe issues, then error on remaining violations
+# ---------------------------------------------------------------------------
+echo ""
+echo -e "${BOLD}[1/3] Ruff lint (auto-fix)${RESET}"
+
+if ! command -v ruff &>/dev/null; then
+    echo -e "${RED}ruff not found. Run: pip install ruff${RESET}"
+    exit 1
+fi
+
+ruff check src/ tests/ --fix --silent
+RUFF_EXIT=$?
+
+if [ $RUFF_EXIT -ne 0 ]; then
+    echo -e "${RED}Ruff found violations it could not auto-fix. Review above and recommit.${RESET}"
+    exit 1
+fi
+
+# Check if ruff auto-fixed anything
+if ! git diff --quiet src/ tests/; then
+    echo -e "${YELLOW}Ruff auto-fixed lint issues. Stage the changes and recommit:${RESET}"
+    git diff --name-only src/ tests/
+    exit 1
+fi
+
+echo -e "${GREEN}Ruff: clean${RESET}"
+
+# ---------------------------------------------------------------------------
+# 2. Black — auto-format, then block if changes were made
+# ---------------------------------------------------------------------------
+echo ""
+echo -e "${BOLD}[2/3] Black format (auto-fix)${RESET}"
+
+if ! command -v black &>/dev/null; then
+    echo -e "${RED}black not found. Run: pip install black${RESET}"
+    exit 1
+fi
+
+black src/ tests/ --quiet
+BLACK_EXIT=$?
+
+if [ $BLACK_EXIT -ne 0 ]; then
+    echo -e "${RED}Black failed unexpectedly.${RESET}"
+    exit 1
+fi
+
+if ! git diff --quiet src/ tests/; then
+    echo -e "${YELLOW}Black reformatted files. Stage the changes and recommit:${RESET}"
+    git diff --name-only src/ tests/
+    exit 1
+fi
+
+echo -e "${GREEN}Black: clean${RESET}"
+
+# ---------------------------------------------------------------------------
+# 3. Pytest — full test suite
+# ---------------------------------------------------------------------------
+echo ""
+echo -e "${BOLD}[3/3] Pytest${RESET}"
+
+if ! command -v pytest &>/dev/null && ! python3 -m pytest --version &>/dev/null 2>&1; then
+    echo -e "${RED}pytest not found. Run: pip install pytest${RESET}"
+    exit 1
+fi
+
+python3 -m pytest tests/ -q
+PYTEST_EXIT=$?
+
+if [ $PYTEST_EXIT -ne 0 ]; then
+    echo ""
+    echo -e "${RED}Tests failed. Push blocked.${RESET}"
+    exit 1
+fi
+
+# ---------------------------------------------------------------------------
+echo ""
+echo -e "${GREEN}${BOLD}All checks passed. Pushing.${RESET}"
+echo ""

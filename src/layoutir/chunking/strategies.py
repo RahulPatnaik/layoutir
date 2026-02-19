@@ -31,11 +31,7 @@ class ChunkStrategy(ABC):
         pass
 
     def _create_chunk(
-        self,
-        document: Document,
-        blocks: List[Block],
-        order: int,
-        **metadata
+        self, document: Document, blocks: List[Block], order: int, **metadata
     ) -> Chunk:
         """
         Helper to create a chunk from blocks.
@@ -53,9 +49,7 @@ class ChunkStrategy(ABC):
         content = "\n\n".join(b.content for b in blocks)
 
         chunk_id = generate_chunk_id(
-            document_id=document.document_id,
-            block_ids=block_ids,
-            chunk_order=order
+            document_id=document.document_id, block_ids=block_ids, chunk_order=order
         )
 
         # Compute page range
@@ -63,10 +57,10 @@ class ChunkStrategy(ABC):
         page_range = f"{min(page_numbers)}-{max(page_numbers)}" if page_numbers else "0"
 
         chunk_metadata = {
-            'page_range': page_range,
-            'block_count': len(blocks),
-            'char_count': len(content),
-            **metadata
+            "page_range": page_range,
+            "block_count": len(blocks),
+            "char_count": len(content),
+            **metadata,
         }
 
         return Chunk(
@@ -75,7 +69,7 @@ class ChunkStrategy(ABC):
             block_ids=block_ids,
             content=content,
             metadata=chunk_metadata,
-            order=order
+            order=order,
         )
 
 
@@ -114,9 +108,9 @@ class SemanticSectionChunker(ChunkStrategy):
         for block in document.blocks:
             # Check if this is a section boundary
             is_boundary = (
-                block.type == BlockType.HEADING and
-                block.level is not None and
-                block.level <= self.max_heading_level
+                block.type == BlockType.HEADING
+                and block.level is not None
+                and block.level <= self.max_heading_level
             )
 
             if is_boundary and current_section:
@@ -125,7 +119,7 @@ class SemanticSectionChunker(ChunkStrategy):
                     document=document,
                     blocks=current_section,
                     order=chunk_order,
-                    strategy='semantic_section'
+                    strategy="semantic_section",
                 )
                 chunks.append(chunk)
                 chunk_order += 1
@@ -142,7 +136,7 @@ class SemanticSectionChunker(ChunkStrategy):
                 document=document,
                 blocks=current_section,
                 order=chunk_order,
-                strategy='semantic_section'
+                strategy="semantic_section",
             )
             chunks.append(chunk)
 
@@ -207,9 +201,9 @@ class TokenWindowChunker(ChunkStrategy):
                     document=document,
                     blocks=current_window,
                     order=chunk_order,
-                    strategy='token_window',
+                    strategy="token_window",
                     token_size=self.chunk_size,
-                    overlap_tokens=self.overlap
+                    overlap_tokens=self.overlap,
                 )
                 chunks.append(chunk)
                 chunk_order += 1
@@ -243,9 +237,9 @@ class TokenWindowChunker(ChunkStrategy):
                 document=document,
                 blocks=current_window,
                 order=chunk_order,
-                strategy='token_window',
+                strategy="token_window",
                 token_size=self.chunk_size,
-                overlap_tokens=self.overlap
+                overlap_tokens=self.overlap,
             )
             chunks.append(chunk)
 
